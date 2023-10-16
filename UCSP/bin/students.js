@@ -17,8 +17,8 @@ const ICT_CLASS =
     },
     {
         Name: "Calaguas, Venedick Janeo",
-        Content: "No Information Given",
-        image: ""
+        Content: "Your Nationality is the country you come from: American, Canadian,Russian and more Countries are all Nationalities. Evaluation of other cultures according to Preconceptions Originating in the standards and customs of one's own culture. The Unjust or Prejudicial treatment of different categories of people, especially on the grounds of ethnicity, age, sex, or disability.",
+        image: "students/Calaguas,%20Venedick%20Janeo/1.jpg"
     },
     {
         Name: "Canonoy, Klyde Dogelio",
@@ -182,8 +182,8 @@ const ICT_CLASS =
     },
     {
         Name: "Castro, Princess Yexa Raiven Ramos",
-        Content: "No Information Given",
-        image: ""
+        Content: " activities associated with governance of a country or other area, especially the debate or conflict among individuals. the custom, arts,, social institutions beliefs and achievements of a particular people, nayion or other social group.",
+        image: "https://www.worldatlas.com/upload/e7/2e/50/shutterstock-1913349307.jpg"
     },
     {
         Name: "Clarito, Reeze Monique Salinas",

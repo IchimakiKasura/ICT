@@ -1,35 +1,3 @@
-for (let i = 0; i < ICT_CLASS.length; i++) {
-    let name = ICT_CLASS[i].Name
-    let content = ICT_CLASS[i].Content
-    let lateStudent = ""
-    let img = "https://upload.wikimedia.org/wikipedia/commons/3/3c/No_Essay.svg"
-
-    LATE_STUDENTS.forEach(el=>
-        {
-            if(name == el) lateStudent = "lateStudent"
-        }
-    )
-
-    if(ICT_CLASS[i].image != "")    
-        img = ICT_CLASS[i].image
-    else
-        // added after 8:00pm on October 16, 2023
-        lateStudent = "lateStudent"
-    
-    
-    document.querySelector(".selection").innerHTML +=
-    `
-    <article ${lateStudent} id="studentList" class="selectableSection" onclick="openStudent('${name}')">
-        <img src="${img}">
-        <div class="sectionHeader">
-            <h1>${name}</h1>
-            <div class="preText">
-                ${content}
-            </div>
-        </div>                
-    </article>
-    `
-}
 
 (()=> {
     let StudentPassedPeta = 0;
@@ -40,6 +8,40 @@ for (let i = 0; i < ICT_CLASS.length; i++) {
     })
     
     document.querySelector("#numberOfStudents").innerHTML = `Student who passed the Peta: ${StudentPassedPeta}`
+    
+    for (let i = 0; i < ICT_CLASS.length; i++) {
+        let name = ICT_CLASS[i].Name
+        let content = ICT_CLASS[i].Content
+        let lateStudent = ""
+        let img = "https://upload.wikimedia.org/wikipedia/commons/3/3c/No_Essay.svg"
+    
+        LATE_STUDENTS.forEach(el=>
+            {
+                if(name == el) lateStudent = "lateStudent"
+            }
+        )
+    
+        if(ICT_CLASS[i].image != "")    
+            img = ICT_CLASS[i].image
+        else
+            // added after 8:00pm on October 16, 2023
+            lateStudent = "lateStudent"
+        
+        
+        document.querySelector(".selection").innerHTML +=
+        `
+        <article ${lateStudent} id="studentList" class="selectableSection" onclick="openStudent('${name}')">
+            <img src="${img}">
+            <div class="sectionHeader">
+                <h1>${name}</h1>
+                <div class="preText">
+                    ${content}
+                </div>
+            </div>                
+        </article>
+        `
+    }
+
 })()
 
 function checkStudents(elem) {
