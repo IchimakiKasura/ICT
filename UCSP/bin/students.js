@@ -162,8 +162,8 @@ const ICT_CLASS =
     },
     {
         Name: "Villanueva, Christian Jr. Peruelo",
-        Content: "No Information Given",
-        image: ""
+        Content: "the activities associated with the governance of a country or other area, especially the debate or conflict among individuals or parties having or hoping to achieve power. A society is a group of people participating in continuous social connection, or a broad social group occupying the same social or spatial territory, normally exposed to the same political power and cultural standards that are dominant.",
+        image: "https://static.vecteezy.com/system/resources/thumbnails/004/141/669/small/no-photo-or-blank-image-icon-loading-images-or-missing-image-mark-image-not-available-or-image-coming-soon-sign-simple-nature-silhouette-in-frame-isolated-illustration-vector.jpg"
     },
     {
         Name: "Villanueva, John Ace Durante",
