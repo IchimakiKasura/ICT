@@ -1,13 +1,19 @@
-
 (()=> {
     let StudentPassedPeta = 0;
+    let StudentNoPeta = 0;
     
     ICT_CLASS.forEach(el => {
         if(el.Content != "No Information Given")
             StudentPassedPeta++;
+        else StudentNoPeta++;
     })
     
-    document.querySelector("#numberOfStudents").innerHTML = `Student who passed the Peta: ${StudentPassedPeta}`
+    document.querySelectorAll("#numberOfStudents").forEach(el=>
+        el.innerHTML = `Student who passed the Peta: ${StudentPassedPeta}`
+        )
+    document.querySelectorAll("#NoPeta").forEach(el=>
+        el.innerHTML = `Students with no Peta: ${StudentNoPeta}`
+        )
     
     for (let i = 0; i < ICT_CLASS.length; i++) {
         let name = ICT_CLASS[i].Name
