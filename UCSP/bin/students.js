@@ -57,8 +57,8 @@ const ICT_CLASS =
     },
     {
         Name: "Francisco, Lance Anthony Manglili",
-        Content: "No Information Given",
-        image: ""
+        Content: "welcome to my ucsp race vs ethnicity",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW-mW0-zz2ez4wimRMwjuBLTeOrrhVmjC7OA&usqp=CAU"
     },
     {
         Name: "Gabion, John Aldrine Reyes",
@@ -92,8 +92,8 @@ const ICT_CLASS =
     },
     {
         Name: "Nabual, John Ray Dibdib",
-        Content: "No Information Given",
-        image: ""
+        Content: "description description description",
+        image: "students/Nabual,%20John%20Ray%20Dibdib/393063600_6633344916721269_1703079494925895643_n.jpg"
     },
     {
         Name: "Nora, Prince Eduard Rye Dacara",
@@ -225,4 +225,6 @@ const ICT_CLASS =
 const LATE_STUDENTS = [
     "Soria, Carlos Juaqin  Santos",
     "Caballero, Janna Lyn Condiman",
+    "Francisco, Lance Anthony Manglili",
+    "Nabual, John Ray Dibdib",
 ];
