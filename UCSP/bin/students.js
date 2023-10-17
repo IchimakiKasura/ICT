@@ -167,8 +167,8 @@ const ICT_CLASS =
     },
     {
         Name: "Villanueva, John Ace Durante",
-        Content: "No Information Given",
-        image: ""
+        Content: "Technology is progressing rapidly, and it is changing the way we live, work and play. New inventions are happening, and new paradigms are born almost every day. Conventional concepts we are used to as a human race for decades or even centuries are being disrupted by cutting edge technology.",
+        image: "http://wastelessfuture.com/wp-content/uploads/2017/01/evolution-of-man-to-computer.jpg"
     },
     {
         Name: "Villanueva, Kiel Anthony Cinense",
@@ -227,5 +227,6 @@ const LATE_STUDENTS = [
     "Caballero, Janna Lyn Condiman",
     "Francisco, Lance Anthony Manglili",
     "Nabual, John Ray Dibdib",
-    "Rivera, Phaul Richard Turno"
+    "Rivera, Phaul Richard Turno",
+    "Villanueva, John Ace Durante"
 ];
