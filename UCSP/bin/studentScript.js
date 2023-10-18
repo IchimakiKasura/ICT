@@ -1,3 +1,5 @@
+let showLatePasses = false;
+
 (()=> {
     let StudentPassedPeta = 0;
     let StudentNoPeta = 0;
@@ -21,17 +23,11 @@
         let lateStudent = ""
         let img = "https://upload.wikimedia.org/wikipedia/commons/3/3c/No_Essay.svg"
     
-        LATE_STUDENTS.forEach(el=>
-            {
-                if(name == el) lateStudent = "lateStudent"
-            }
-        )
-    
         if(ICT_CLASS[i].image != "")    
             img = ICT_CLASS[i].image
         else
             // added after 8:00pm on October 16, 2023
-            lateStudent = "lateStudent"
+            lateStudent = "NoPeta"
         
         
         document.querySelector(".selection").innerHTML +=
@@ -62,7 +58,29 @@ function checkStudents(elem) {
     })
 }
 
-function openStudent(name)
-{
+function openStudent(name) {
    window.open(`students/${name}`)
+}
+
+function showLate(elem) {
+    if(!showLatePasses)
+    {
+        elem.style.backgroundColor = "green"
+        
+        document.querySelectorAll("#studentList").forEach(studentElement=>{
+            LATE_STUDENTS.forEach(el=>
+                {
+                    if(studentElement.children[1].children[0].textContent == el)
+                        studentElement.setAttribute("ICTlateStudent", "")
+                }
+            )
+        })
+    }
+    else
+    {
+        elem.style.backgroundColor = "rgba(255, 211, 78, 0.436)"
+        document.querySelectorAll("#studentList").forEach(el=>el.removeAttribute("ICTlateStudent"))
+    }
+
+    showLatePasses = !showLatePasses;
 }

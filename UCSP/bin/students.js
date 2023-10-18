@@ -7,8 +7,8 @@ const ICT_CLASS =
     },
     {
         Name: "Alejandro, Jade Maglaya",
-        Content: "No Information Given",
-        image: ""
+        Content: "Ethnocentric people think the ways they do things is the way things should be done, and every other culture's way of doing things is unsavory or undesirable. Ethnocentrism can be a contributing factor to prejudice, racism, and xenophobia. In all these instances, you're considering yourself and your culture to be the best compared to all others.",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD5hf3pxkI6giwHlmH7v-SwbSMasQMvmri8g&usqp=CAU"
     },
     {
         Name: "Batta, Randy Milo",
@@ -102,8 +102,8 @@ const ICT_CLASS =
     },
     {
         Name: "Orbiso, Samoa Flores",
-        Content: "No Information Given",
-        image: ""
+        Content: "Humans first evolved in Africa, and much of human evolution occurred on that continent. The fossils of early humans who lived between 6 and 2 million years ago come entirely from Africa. Most scientists currently recognize some 15 to 20 different species of early humans.",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD5hf3pxkI6giwHlmH7v-SwbSMasQMvmri8g&usqp=CAU"
     },
     {
         Name: "Pepito, Kean James Delapa",
@@ -122,13 +122,13 @@ const ICT_CLASS =
     },
     {
         Name: "Santos, James Adrian",
-        Content: "No Information Given",
-        image: ""
+        Content: "In order to increase students' awareness of cultural, social, and political dynamics and their sensitivity to cultural diversity, as well as their comprehension of how culture, human agency, society, and politics function, this course draws on insights from anthropology, political science, and sociology. It also engages students in an analysis of the nation's current human development goals.",
+        image: "students/Santos, James Adrian/UCSP.jpg"
     },
     {
         Name: "San Pedro, Krishna Juachim Ibarra",
-        Content: "No Information Given",
-        image: ""
+        Content: "Ethnocentric people think the ways they do things is the way things should be done, and every other culture's way of doing things is unsavory or undesirable. Ethnocentrism can be a contributing factor to prejudice, racism, and xenophobia. In all these instances, you're considering yourself and your culture to be the best compared to all others.",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8Q0GOGAi6UuAeDcxOtzhszCnfKRMVS9QgjQ&usqp=CAU"
     },
     {
         Name: "Soria, Carlos Juaqin  Santos",
@@ -228,5 +228,9 @@ const LATE_STUDENTS = [
     "Francisco, Lance Anthony Manglili",
     "Nabual, John Ray Dibdib",
     "Rivera, Phaul Richard Turno",
-    "Villanueva, John Ace Durante"
+    "Villanueva, John Ace Durante",
+    "Orbiso, Samoa Flores",
+    "Alejandro, Jade Maglaya",
+    "San Pedro, Krishna Juachim Ibarra",
+    "Santos, James Adrian",
 ];

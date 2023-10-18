@@ -3,9 +3,180 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NO SUBMISSION</title>
-</head>
+    <title>UCSP/ICT</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'ROBOTO', sans-serif;
+
+        }
+        .CONTAINER{
+            width: 100%;
+            height: 100vh;
+            background-image: linear-gradient(RGBA(0,0,0,0.7),RGBA(0,0,0,0.7)),url(UCSP.jpg);
+            background-position: center;
+            background-size: cover;
+            padding-left: 8%;
+            padding-right: 8%;
+            box-sizing: border-box;
+        }
+        .NAVBAR{
+            height: 12%;
+            display: flex;
+            align-items: center;
+        }
+        .LOGO{
+            margin-top: 100px;
+           padding-left: -50px;
+            width: 150px;
+            height: 150px;
+            cursor: pointer;
+        } 
+        nav{
+            flex: 1;
+            text-align: right;
+        }
+        NAV UL LI{
+            list-style: none;
+            display: inline-block;
+            margin-left: 50PX;
+        }
+        NAV UL LI A{
+            text-decoration: none;
+            color: #fff;
+            font-size: 20PX;
+
+        }
+        .ROW{
+            display: flex;
+            height: 88%;
+                align-items: center;
+        }
+        .COL{
+            flex-basis: 50%;
+        }
+        H1{
+            color: #fff;
+            font-size: 100PX;
+        }
+        P{
+            color: #fff;
+            font-size: 15px;
+            line-height: 15px;
+        }
+        BUTTON{
+            width: 180PX;
+            color: #000;
+            font-size: 12px;
+            padding: 12px 0;
+            background: #FFF;
+            border: 0;
+            border-radius: 20PX;
+            outline: NONE;
+            margin-top: 30PX;
+
+        }
+        .CARD{
+            width: 200PX;
+            height: 230PX;
+            display: inline-block;
+            border-radius: 10PX;
+            padding: 15PX 25PX;
+            box-sizing: border-box;
+            cursor: POINTER;
+            margin: 10PX 15PX;
+            background-position: center;
+            background-size: cover;
+            transition: TRANSFORM 0.5;
+
+        }
+        .CARD1{
+            background-image: url(ETHNI.png);
+            
+        }
+        .CARD2{
+            background-image: url(ethnocentrism.jpg);
+        }
+        .CARD3{
+            background-image: url(RACEE.jpg);
+        }
+        .CARD4{
+            background-image: url(DISCRIMINATION.jpg);
+        }
+        .CARD:hover{
+            transform: translateY(-10PX);
+        }
+        H5{
+            color: #3c0af0;
+            text-shadow: 0 0 5PX #000000;
+            font-size: 20px;
+
+        }
+        .CARD1 P{
+            text-shadow: 0 0 15PX #000;
+            font-size: 15PX;
+            color: #fffafc;
+        }
+        .CARD2 P{
+            text-shadow: 0 0 15PX #0cd9e0;
+            font-size: 15PX;
+            color: #1900fae5;
+        }
+        .CARD3 P{
+            text-shadow: 0 0 15PX #000;
+            font-size: 15PX;
+            color: #d12525;
+        }
+        .CARD4 P{
+            text-shadow: 0 0 15PX #000;
+            font-size: 15PX;
+            color: #ebe7e8;
+        }
+
+
+       
+    </style>
+
+
 <body>
-    <h1>NO PETA SUBMITTED</h1>
+    <div class="CONTAINER">
+        <div class="NAVBAR">
+            <IMg src="HOLY.jpg" class="LOGO">
+            <NAV>
+                <UL>
+                    <LI><A href="">HOME</A></LI>
+                    <LI><A href="">ABOUT US</A></LI>
+                    <LI><A href="">CONTACT</A></LI>
+                </UL>
+            </NAV>
+        </div>
+        <DIv class="ROW">
+            <DIv class="COL">
+                <H1>UCSP</H1>
+                <P>In order to increase students' awareness of cultural, social, and political dynamics and their sensitivity to cultural diversity, as well as their comprehension of how culture, human agency, society, and politics function, this course draws on insights from anthropology, political science, and sociology. It also engages students in an analysis of the nation's current human development goals. By the end of the course, students should have a solid understanding of human cultures, human agency, society, and politics, as well as a recognition of cultural relativism and social inclusivity to help them overcome prejudices. They should also have developed social and cultural competence to help them navigate their interactions with other people and with organizations, networks, and networks of organizations.</P>
+                <BUTTOn type="BUTTON">READ MORE</BUTTOn>
+            </DIv>
+            <DIv class="COL">
+                <DIV class="CARD CARD1">
+                    <H5>ETHNICITY</H5>
+                    <P>Ethnicity, relates to culturally contingent features, characterizes all human groups. Refers to a sense of identity in a group that shares common language, cultural traits (values, beliefs, religion, food habits.)</P>
+                </DIV>
+                <DIV class="CARD CARD2">
+                    <H5>ETHNOCENTRISM</H5>
+                    <P>In social science and anthropology, as well as in everyday English language, the term "ethnocentrism" refers to the practice of using one's own culture or ethnicity as a frame of reference to evaluate other cultures</P>
+                </DIV>
+                <DIV class="CARD CARD3">
+                    <H5>RACE</H5>
+                    <P>Race is a categorization of humans based on shared physical or social qualities into groups generally viewed as distinct within a given society. The term came into common usage during the 16th century, </P>
+                </DIV>
+                <DIV class="CARD CARD4">
+                    <H5>DISCRIMINATION</H5>
+                    <P>Discrimination is making unfair distinctions between people based on the groups, classes, or other categories to which they belong or are perceived to belong, such as race, gender, age, religion, or sexual orientation.</P>
+                </DIV>
+            </DIv>
+        </DIv>
+    </div>
+
 </body>
 </html>
