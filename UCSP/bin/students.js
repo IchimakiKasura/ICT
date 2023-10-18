@@ -212,12 +212,12 @@ const ICT_CLASS =
     },
     {
         Name: "Sto. Domingo, Ma. Sophia Lorrainne Almodal",
-        Content: "Understanding Culture, Society, and Politics uses multidisciplinal insights from anthropology, political science, and sociology to develop student awareness of cultural, social, and political dynamics and sensitivity to cultural diversity. Culture is a a word for the 'way of life' of groups of people, meaning the way they do things.\"Excellence of taste in the fine arts and humanities\" also known as high culture. An integrated pattern of human knowledge, belief, and behavior.",
-        image: "https://ctb.ku.edu/sites/default/files/chapter_files/chapter_27_section_1_edit.jpg"
+        Content: "Human evolution is the lengthy process of change by which people originated from apelike ancestors. Scientific evidence shows that the physical and behavioral traits shared by all people originated from apelike ancestors and evolved over a period of approximately six million years.",
+        image: "https://media.istockphoto.com/id/165960104/vector/vector-of-human-evolution-concept.jpg?s=612x612&w=0&k=20&c=PVMx4SUkvlAZam4kxbx2lQF3MfWsCjUP7ueaylqdsyk="
     },
     {
         Name: "Ubilas, Veronica Wambangco",
-        Content: "UNDERSTANDING POLITICS CULTURE AND SOCIETY SOCIAL DIFFERENCES GENDER The male sex or the female sex, especially when considered with reference to social and cultural differences rather than biological ones, or one of a range of other identities that do not correspond to established ideas of male and female.",
+        Content: "THE MEANING OF CULTURAL VARIATION It refers to the differences in social behaviors that different cultures exhibit around the world. What may be considered good etiquette may be considered bad etiquette in another. SOCIAL DIFFERENCES The differences among the individuals on the basis of social characteristics and qualities.",
         image: "https://www.shutterstock.com/image-photo/group-multiethnic-diverse-occupational-people-260nw-211477180.jpg"
     }
 ]
