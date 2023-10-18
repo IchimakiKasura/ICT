@@ -67,14 +67,14 @@ function showLate(elem) {
     {
         elem.style.backgroundColor = "green"
         
-        document.querySelectorAll("#studentList").forEach(studentElement=>{
+        document.querySelectorAll("#studentList").forEach(studentElement=>
             LATE_STUDENTS.forEach(el=>
                 {
                     if(studentElement.children[1].children[0].textContent == el)
                         studentElement.setAttribute("ICTlateStudent", "")
                 }
             )
-        })
+        )
     }
     else
     {

@@ -20,16 +20,14 @@ function openNav()
     }
 }
 
-setTimeout(()=>{
-    か(document).scroll(()=>{
-        let maxScoll = document.documentElement.scrollHeight - 1500;
+か(document).scroll(()=>{
+    let maxScoll = document.documentElement.scrollHeight - 1500;
+
+    if(document.documentElement.scrollTop >= 102)
+        か("#navbar").sty("marginTop", `${document.documentElement.scrollTop - 80}px`)
+    else
+        か("#navbar").sty("marginTop", "20px")
     
-        if(document.documentElement.scrollTop >= 102)
-            か("#navbar").sty("marginTop", `${document.documentElement.scrollTop - 80}px`)
-        else
-            か("#navbar").sty("marginTop", "20px")
-        
-        if(document.documentElement.scrollTop >= maxScoll)
-            か("#navbar").sty("marginTop", `${maxScoll}px`)
-    })
-}, 500)
+    if(document.documentElement.scrollTop >= maxScoll && か("#navbar").gt.style.marginTop != "20px")
+        か("#navbar").sty("marginTop", `${maxScoll}px`)
+})
