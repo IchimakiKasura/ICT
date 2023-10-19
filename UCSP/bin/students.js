@@ -197,8 +197,8 @@ const ICT_CLASS =
     },
     {
         Name: "Gusto, Donnalyn Joy Reyllo",
-        Content: "No Information Given",
-        image: ""
+        Content: "Cultural variation refers to the differences in social behaviors, beliefs, customs, and traditions that exist among various groups and societies. These differences arise from historical, geographical, religious, and social factors that shape each culture. In multicultural societies, cultural variations exist within the same location.",
+        image: "https://static.vecteezy.com/system/resources/thumbnails/004/141/669/small/no-photo-or-blank-image-icon-loading-images-or-missing-image-mark-image-not-available-or-image-coming-soon-sign-simple-nature-silhouette-in-frame-isolated-illustration-vector.jpg"
     },
     {
         Name: "Malacama, Jillian Marie Semfranca",
@@ -233,4 +233,5 @@ const LATE_STUDENTS = [
     "Alejandro, Jade Maglaya",
     "San Pedro, Krishna Juachim Ibarra",
     "Santos, James Adrian",
+    "Gusto, Donnalyn Joy Reyllo"
 ];

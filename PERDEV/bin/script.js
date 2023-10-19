@@ -26,3 +26,8 @@
         );
     }
 })
+
+document.querySelectorAll("[breakLineAuto]").forEach(element=>{
+    for(let i = 0; i < element.getAttribute("data-brNum"); i++)
+        element.innerHTML += "<br>"
+})
