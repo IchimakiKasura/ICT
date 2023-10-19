@@ -1,4 +1,5 @@
 let showLatePasses = false;
+let oldButtonStyleTemplate = null;
 
 (()=> {
     let StudentPassedPeta = 0;
@@ -12,10 +13,11 @@ let showLatePasses = false;
     
     document.querySelectorAll("#numberOfStudents").forEach(el=>
         el.innerHTML = `Student who passed the Peta: ${StudentPassedPeta}`
-        )
+    )
+    
     document.querySelectorAll("#NoPeta").forEach(el=>
         el.innerHTML = `Students with no Peta: ${StudentNoPeta}`
-        )
+    )
     
     for (let i = 0; i < ICT_CLASS.length; i++) {
         let name = ICT_CLASS[i].Name
@@ -56,6 +58,7 @@ function checkStudents(elem) {
         else
             el.setAttribute("removeList", "")
     })
+
 }
 
 function openStudent(name) {
@@ -63,6 +66,9 @@ function openStudent(name) {
 }
 
 function showLate(elem) {
+
+    oldButtonStyleTemplate = oldButtonStyleTemplate==null ? elem.style : null
+    
     if(!showLatePasses)
     {
         elem.style.backgroundColor = "green"
@@ -78,7 +84,7 @@ function showLate(elem) {
     }
     else
     {
-        elem.style.backgroundColor = "rgba(255, 211, 78, 0.436)"
+        elem.style = oldButtonStyleTemplate
         document.querySelectorAll("#studentList").forEach(el=>el.removeAttribute("ICTlateStudent"))
     }
 

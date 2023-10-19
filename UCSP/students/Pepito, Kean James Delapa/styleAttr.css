@@ -1,0 +1,12 @@
+[textleft] {
+    text-align: left;
+}
+
+[textjustice] {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+[nodeco] {
+    text-decoration: none;
+}
