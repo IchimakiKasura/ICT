@@ -92,8 +92,8 @@ const ICT_CLASS =
     },
     {
         Name: "Nabual, John Ray Dibdib",
-        Content: "description description description",
-        image: "students/Nabual,%20John%20Ray%20Dibdib/393063600_6633344916721269_1703079494925895643_n.jpg"
+        Content: "Today, social media has created new styles of communication for us, which made huge impact on everyday lives of the people. Social media has brought people with common interests together and expanded the horizon of ideas worldwide. However, there has also been an impact of social media on human behavior and society.",
+        image: "https://i.ytimg.com/vi/67Yjubyd7Gg/maxresdefault.jpg"
     },
     {
         Name: "Nora, Prince Eduard Rye Dacara",
