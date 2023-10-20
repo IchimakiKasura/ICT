@@ -233,5 +233,6 @@ const LATE_STUDENTS = [
     "Alejandro, Jade Maglaya",
     "San Pedro, Krishna Juachim Ibarra",
     "Santos, James Adrian",
-    "Gusto, Donnalyn Joy Reyllo"
+    "Gusto, Donnalyn Joy Reyllo",
+    "Herradura, Julian Richmond San Juan"
 ];
