@@ -67,8 +67,8 @@ const ICT_CLASS =
     },
     {
         Name: "Herradura, Julian Richmond San Juan",
-        Content: "No Information Given",
-        image: ""
+        Content: "Because of Cultural Variation ethnocentrism was made for comparing the different cultures. In different cultures there are many differences from each other because of how the cultures grow to be in those countries.  Lastly we should respect each and everyone’s cultural variation because it’s where they grew up and where they learnt everything in their life so we should respect all and not make fun of anyone who is different since everyone is still human.",
+        image: "https://tse4.mm.bing.net/th?id=OIP.XlcNi9Gn12hv03b6bNTZ5wHaE7"
     },
     {
         Name: "Javier, Mark Augustine Pagente",
