@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    font-family: Arial;
+}
+
+body, html {
+    height: 100vh;
+}
+
+[bg] {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-image: url("../images/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+}
+
+.lmao {
+    position: relative;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: auto;
+    width: 70vw;    
+    text-align: center;
+}
+
+.topBar {
+    border-radius: 1vw 1vw 0 0;
+    background: rgba(0,0,0,0.5);
+    padding: 10px;
+    font-size: 30px;
+    font-family: Impact;
+    color: white
+}
+
+.selection {
+    display: flex;
+    height: 30vw;
+}
+
+.selection_one,
+.selection_two,
+.selection_three {
+    width: 100%;
+    background-color: black;
+}
+
+[bgSelection] {
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.selection_one h1,
+.selection_two h1,
+.selection_three h1 {
+    position: relative;
+    top: -5vw;
+    color: white;
+    font-size: 3vw;
+    transition: all 0.2s;
+    opacity: 0;
+    user-select: none;
+    pointer-events: none;
+}
+
+.selection_one:hover h1,
+.selection_two:hover h1,
+.selection_three:hover h1 {
+    top: -18vw;
+    opacity: 1;
+}
+.selection_one:active h1,
+.selection_two:active h1,
+.selection_three:active h1 {
+    opacity: 0.2;
+}
+.selection_one [bgSelection]{
+    background-image: url("../images/activities.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+.selection_two [bgSelection]{
+    background-image: url("../images/fun.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+.selection_three [bgSelection]{
+    background-image: url("../images/others.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+.selection_one [bgSelection]:hover, .selection_two [bgSelection]:hover, .selection_three [bgSelection]:hover {
+    filter: blur(2.5px);
+    -webkit-filter: blur(2.5px);
+    opacity: 0.5;
+}
+
+.bottomBar {
+    background: rgba(0,0,0,0.5);
+    padding: 15px;
+    border-radius: 0 0 1vw 1vw;
+}
