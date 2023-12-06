@@ -1,0 +1,30 @@
+@media only screen and (max-width:1200px),(max-height: 500px) {
+    body {
+        margin: 0 !important;
+        background-image: none !important;
+    }
+    #form1 {
+        background-color: transparent !important;
+        white-space: pre-wrap;
+        margin: 0 !important;
+        height: 100% !important;
+        width: 100% !important;
+        border-radius: 0 !important;
+        top: 50% !important;
+        box-shadow: 0 0 0 0 none !important;
+    }
+    .div1 {
+        display: inline !important;
+    }
+    #form1 p {
+        left:15px;
+    }
+    .f {
+        padding: 0 !important;
+        margin-bottom: -5vw !important;
+    }
+    .faintBG {
+        display: none;
+    }
+
+}

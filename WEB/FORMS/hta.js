@@ -15,30 +15,32 @@ function validateForm()
 {
   let isValid = true;
 
-  let usrForm = document.forms["htaForm"]["usrForm"].value;
-  let emlForm = document.forms["htaForm"]["emlForm"].value;
-  let pswForm = document.forms["htaForm"]["pswForm"].value;
-  let dtForm = document.forms["htaForm"]["dtForm"].value;
+  let Formlist = [
+    {
+      value: document.forms["htaForm"]["usrForm"].value,
+      style: usr.style
+    },
+    {
+      value: document.forms["htaForm"]["emlForm"].value,
+      style: eml.style
+    },
+    {
+      value: document.forms["htaForm"]["pswForm"].value,
+      style: psw.style
+    },
+    {
+      value: document.forms["htaForm"]["dtForm"].value,
+      style: dt.style
+    }
+  ]
 
-  if(usrForm == "") {
-    usr.style.borderColor = "rgba(255,0,0,0.5)";
-    isValid = false;
-  }
-
-  if(emlForm == "") {
-    eml.style.borderColor = "rgba(255,0,0,0.5)";
-    isValid = false;
-  }
-
-  if(pswForm == "") {
-    psw.style.borderColor = "rgba(255,0,0,0.5)";
-    isValid = false;
-  }
-
-  if(dtForm == "") {
-    dt.style.borderColor = "rgba(255,0,0,0.5)";
-    isValid = false;
-  }
+  Formlist.forEach(form => {
+    if(form.value == "")
+    {
+      form.style.borderColor = "rgba(255,0,0,0.5)"
+      isValid = false
+    }
+  });
 
   return isValid;
 }

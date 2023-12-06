@@ -1,21 +1,24 @@
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="hta_style.css">
+    <link rel="stylesheet" href="bin/hta_style.css">
+    <link rel="stylesheet" href="bin/hta_style_responsiveness.css">
+    <link rel="shortcut icon" href="bin/favicon.ico" type="image/x-icon">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register | Holy Trinity Academy</title>
 </head>
 <body>
+    <img class="faintBG" src="bin/1.png" unselect>
     <div id="form1">
-        <p>Welcome To</p><br/>
-        <img src="1.png" alt="holy_trinity"/>
-        <p class="f">Please register below</p>
-        <form name="htaForm" action="done.html" onsubmit="return validateForm()" class="actualForm">
+        <p unselect>Welcome To</p><br unselect/>
+        <img src="bin/1.png" alt="holy_trinity" unselect/>
+        <p class="f" unselect>Please register below</p>
+        <form name="htaForm" action="submit.html" onsubmit="return validateForm()" class="actualForm">
             <input id="usr" name="usrForm" type="text" placeholder="Username" title="Username"/>
             <input id="eml" name="emlForm" type="email" placeholder="Email" title="Email"/>
             <input id="psw" name="pswForm" type="password" placeholder="Password" title="Password"/>
-            <input id="dt" name="dtForm" type="date" placeholder="Birthday" title="Brithday"/>
-            <input name="usr" type="submit" value="LOGIN" Inputbutton/>
+            <input id="dt" name="dtForm" type="date" placeholder="Birthday" title="Birthday"/>
+            <input name="usr" type="submit" value="REGISTER" Inputbutton/>
         </form>
     </div>
 </body>
