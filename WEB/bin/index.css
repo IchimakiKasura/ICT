@@ -62,8 +62,8 @@ body, html {
     position: relative;
     top: -5vw;
     color: white;
-    font-size: 3vw;
-    transition: all 0.2s;
+    font-size: 0.5vw;
+    transition: all 0.3s, font-size 0.5s, opacity 0.5s, top 0.5s;
     opacity: 0;
     user-select: none;
     pointer-events: none;
@@ -74,6 +74,7 @@ body, html {
 .selection_three:hover h1 {
     top: -18vw;
     opacity: 1;
+    font-size: 3vw;
 }
 .selection_one:active h1,
 .selection_two:active h1,
@@ -103,6 +104,7 @@ body, html {
     filter: blur(2.5px);
     -webkit-filter: blur(2.5px);
     opacity: 0.5;
+    transform: scale(1.02);
 }
 
 .bottomBar {
