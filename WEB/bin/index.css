@@ -32,14 +32,18 @@ body, html {
 }
 
 .topBar {
+    text-shadow: 0 0 0.2rem black;
     border-radius: 1vw 1vw 0 0;
     background: rgba(0,0,0,0.5);
     padding: 10px;
     font-size: 30px;
     font-family: Impact;
-    color: white
+    color: white;
+    animation: wewo_wa 20s linear infinite;
 }
-
+.topBar span {
+    font-family: Impact;
+}
 .selection {
     display: flex;
     height: 30vw;
@@ -48,6 +52,7 @@ body, html {
 .selection_one,
 .selection_two,
 .selection_three {
+    overflow: hidden;
     width: 100%;
     background-color: black;
     transition: width 0.5s;
@@ -131,4 +136,42 @@ body, html {
     top: 33.4vw;
     height: 50vh;
     width: 100%;
+}
+
+@keyframes wewo_wa {
+    0% {
+        text-shadow: 0 0 1rem red;
+    }
+
+    12.5% {
+        text-shadow: 0 0 1rem orange;
+    }
+
+    25% {
+        text-shadow: 0 0 1rem yellow;
+    }
+
+    37.5% {
+        text-shadow: 0 0 1rem green;
+    }
+
+    50% {
+        text-shadow: 0 0 1rem blue;
+    }
+
+    62.5% {
+        text-shadow: 0 0 1rem #2e2b5f;
+    }
+
+    75.5% {
+        text-shadow: 0 0 1rem #8b00ff;
+    }
+
+    87.5% {
+        text-shadow: 0 0 1rem #ff6663;
+    }
+
+    100% {
+        text-shadow: 0 0 1rem red;
+    }
 }

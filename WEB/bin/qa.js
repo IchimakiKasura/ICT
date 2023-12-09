@@ -12,8 +12,12 @@ function GetURLParameter(sParam)
     }
 }
 
-document.querySelector("#usr").textContent = GetURLParameter("usrForm").replace(/\+/g, " ");
-document.querySelector("#eml").textContent = GetURLParameter("emlForm");
+try {
+    document.querySelector("#usr").textContent = GetURLParameter("usrForm").replace(/\+/g, " ");
+    document.querySelector("#eml").textContent = GetURLParameter("emlForm");
+} catch {
+    window.location.href += "FORMS"
+}
 
 let selections = [
     {
@@ -37,7 +41,7 @@ selections.forEach((types)=>{
     types.element.addEventListener("mouseenter", ()=>{
         types.late = setTimeout(()=>{
             types.elementShow.style.opacity = 1
-        }, 500)
+        }, 300)
     })
 
     types.element.addEventListener("mouseleave", ()=>{
