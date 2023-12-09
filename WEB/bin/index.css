@@ -5,6 +5,7 @@
 
 body, html {
     height: 100vh;
+    overflow: hidden;
 }
 
 [bg] {
@@ -22,7 +23,7 @@ body, html {
 
 .lmao {
     position: relative;
-    top: 45%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     height: auto;
@@ -49,37 +50,49 @@ body, html {
 .selection_three {
     width: 100%;
     background-color: black;
+    transition: width 0.5s;
 }
 
 [bgSelection] {
     transition: all 0.2s;
     cursor: pointer;
 }
+[notes] {
+    height: 27.8vw;
+    overflow-y: scroll;
+}
+[notes]::-webkit-scrollbar {
+    display: none;
+}
+.LateShow {
+    transition: opacity 0.2s;
+    opacity: 0;
+}
 
-.selection_one h1,
-.selection_two h1,
-.selection_three h1 {
+.selection_one [notes],
+.selection_two [notes],
+.selection_three [notes] {
     position: relative;
     top: -5vw;
     color: white;
     font-size: 0.5vw;
     transition: all 0.3s, font-size 0.5s, opacity 0.5s, top 0.5s;
     opacity: 0;
-    user-select: none;
-    pointer-events: none;
 }
-
-.selection_one:hover h1,
-.selection_two:hover h1,
-.selection_three:hover h1 {
-    top: -18vw;
+.selection_one:hover,
+.selection_two:hover,
+.selection_three:hover {
+    width: 200%;
+}
+.selection_two:hover [bgSelection]{
+    background-position: 100% 50%;
+}
+.selection_one:hover [notes],
+.selection_two:hover [notes],
+.selection_three:hover [notes] {
+    top: -28vw;
     opacity: 1;
-    font-size: 3vw;
-}
-.selection_one:active h1,
-.selection_two:active h1,
-.selection_three:active h1 {
-    opacity: 0.2;
+    font-size: 1vw;
 }
 .selection_one [bgSelection]{
     background-image: url("../images/activities.jpg");
@@ -100,7 +113,7 @@ body, html {
     height: 100%;
 }
 
-.selection_one [bgSelection]:hover, .selection_two [bgSelection]:hover, .selection_three [bgSelection]:hover {
+.selection_one:hover [bgSelection], .selection_two:hover [bgSelection], .selection_three:hover [bgSelection] {
     filter: blur(2.5px);
     -webkit-filter: blur(2.5px);
     opacity: 0.5;
@@ -111,4 +124,11 @@ body, html {
     background: rgba(0,0,0,0.5);
     padding: 15px;
     border-radius: 0 0 1vw 1vw;
+}
+
+[anti_select] {
+    position: absolute;
+    top: 33.4vw;
+    height: 50vh;
+    width: 100%;
 }

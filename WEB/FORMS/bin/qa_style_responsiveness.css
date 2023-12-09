@@ -16,8 +16,11 @@
     .div1 {
         display: inline !important;
     }
-    #form1 p {
-        left:15px;
+    #form1 p:nth-child(1) {
+        left: -5px;
+    }
+    .actualForm, #form1 img {
+        left: -25px;
     }
     .f {
         padding: 0 !important;

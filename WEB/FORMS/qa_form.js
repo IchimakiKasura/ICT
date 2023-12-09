@@ -42,5 +42,8 @@ function validateForm()
     }
   });
 
+  if(isValid)
+    document.forms["htaForm"]["pswForm"].value = btoa(document.forms["htaForm"]["pswForm"].value);
+
   return isValid;
 }

@@ -11,8 +11,9 @@
 .faintBG {
     position: absolute;
     mix-blend-mode: multiply;
-    right: -5vw;
-    top: 15vw;
+    height: 40rem;
+    right: -10vw;
+    top: 30vw;
     opacity: 0.2;
     animation: wewo infinite 120s linear;
 }
@@ -28,7 +29,7 @@
 
 body{
     overflow: hidden;
-    background-image: linear-gradient(rgb(0, 100, 150),rgb(139,206,222));
+    background-image: linear-gradient(rgb(0, 150, 60),rgb(139, 222, 60));
     background-repeat: no-repeat;
 }
 
@@ -83,14 +84,15 @@ body{
     font-family: Calibri;
     transition: border-color 0.2s;
     margin: 1vh;
+    font-size: 0.85vw;
 }
 
 #form1 input::placeholder{
-    opacity: 0.5;
+    opacity: 0.6;
 }
 
 #form1 input:focus{
-    border-color: rgba(0, 170, 255, 0.377) !important;
+    border-color: rgba(0, 255, 60, 0.5) !important;
 }
 
 #form1 [Inputbutton] {
@@ -99,18 +101,19 @@ body{
     padding: 12px;
     width: 35vh;
     top: 70px;
-    background-color: rgb(59, 87, 157);
+    background-color: rgb(59, 157, 60);
     border: none;
     color: white;
     font-size:11px;
     cursor: pointer;
     border-radius: 5px;
-    transition: background-color 0.2s;
+    transition: background-color 0.2s, box-shadow 0.2s;
 }
 
 #form1 [Inputbutton]:hover {
-    background-color: rgb(48, 71, 129);
+    background-color: rgb(48, 129, 60);
+    box-shadow: 0 0 5px 1px rgb(59, 157, 60);
 }
 #form1 [Inputbutton]:active {
-    background-color: rgb(33, 50, 92);
+    background-color: rgb(29, 105, 51);
 }
