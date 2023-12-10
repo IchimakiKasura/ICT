@@ -8,6 +8,11 @@ body, html {
     overflow: hidden;
 }
 
+[notes] h4 img,[notes] h4 video {
+    border-radius: 0.5vw;
+    height: 15vw;
+}
+
 [bg] {
     position: absolute;
     height: 100%;

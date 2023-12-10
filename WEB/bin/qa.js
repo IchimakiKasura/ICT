@@ -1,17 +1,4 @@
-function GetURLParameter(sParam)
-{
-    var sPageURL = window.location.search.substring(1);
-    var sURLVariables = sPageURL.split('&');
-    for (var i = 0; i < sURLVariables.length; i++) 
-    {
-        var sParameterName = sURLVariables[i].split('=');
-        if (sParameterName[0] == sParam) 
-        {
-            return decodeURIComponent(sParameterName[1]);
-        }
-    }
-}
-
+// Stops Illegal enters that doesn't submit info cuz' It causes weird bugs
 try {
     document.querySelector("#usr").textContent = GetURLParameter("usrForm").replace(/\+/g, " ");
     document.querySelector("#eml").textContent = GetURLParameter("emlForm");
@@ -19,6 +6,20 @@ try {
     window.location.href += "FORMS"
 }
 
+// gets the information from the url parameters from the form after being submitted
+function GetURLParameter(parameters)
+{
+    var pageURL = window.location.search.substring(1)
+    var urlVars = pageURL.split('&')
+    for (var i = 0; i < urlVars.length; i++) 
+    {
+        var paramName = urlVars[i].split('=')
+        if (paramName[0] == parameters) 
+            return decodeURIComponent(paramName[1])
+    }
+}
+
+// idk list of objects so I can iterate them lmao
 let selections = [
     {
         late: null,

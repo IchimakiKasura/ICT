@@ -1,36 +1,38 @@
-let usr = document.querySelector("#usr");
-let eml = document.querySelector("#eml");
-let psw = document.querySelector("#psw");
-let dt = document.querySelector("#dt");
 
-let list = [usr, eml, psw, dt];
+const list = [
+  document.querySelector("#usr"),
+  document.querySelector("#eml"),
+  document.querySelector("#psw"),
+  document.querySelector("#dt")
+];
 
 list.forEach(el => {
   el.addEventListener("focus", ()=>{
-    el.style.borderColor = "rgba(206, 206, 206, 0.3)";
+    el.style.borderColor = "rgba(206, 206, 206, 0.3)"
   })
 });
 
 function validateForm()
 {
   let isValid = true;
+  const hf = "htaForm"
 
   let Formlist = [
     {
-      value: document.forms["htaForm"]["usrForm"].value,
-      style: usr.style
+      value: document.forms[hf]["usrForm"].value,
+      style: list[0].style
     },
     {
-      value: document.forms["htaForm"]["emlForm"].value,
-      style: eml.style
+      value: document.forms[hf]["emlForm"].value,
+      style: list[1].style
     },
     {
-      value: document.forms["htaForm"]["pswForm"].value,
-      style: psw.style
+      value: document.forms[hf]["pswForm"].value,
+      style: list[2].style
     },
     {
-      value: document.forms["htaForm"]["dtForm"].value,
-      style: dt.style
+      value: document.forms[hf]["dtForm"].value,
+      style: list[3].style
     }
   ]
 
@@ -43,7 +45,7 @@ function validateForm()
   });
 
   if(isValid)
-    document.forms["htaForm"]["pswForm"].value = btoa(document.forms["htaForm"]["pswForm"].value);
+    document.forms["htaForm"]["pswForm"].value = btoa(document.forms["htaForm"]["pswForm"].value)
 
-  return isValid;
+  return isValid
 }
