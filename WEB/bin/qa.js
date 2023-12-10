@@ -50,5 +50,6 @@ selections.forEach((types)=>{
             types.elementShow.style.opacity = 0
         }, 100)
         clearTimeout(types.late)
+        document.querySelectorAll(".videoPlay").forEach((el)=>el.pause())
     })
 })
