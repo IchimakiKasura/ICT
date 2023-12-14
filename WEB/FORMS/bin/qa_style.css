@@ -89,7 +89,7 @@ body{
     font-family: Calibri;
     transition: border-color 0.2s;
     margin: 1vh;
-    font-size: 0.85vw;
+    font-size: 12px;
 }
 
 #form1 input::placeholder{

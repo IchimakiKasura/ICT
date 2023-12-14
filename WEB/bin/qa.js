@@ -3,7 +3,8 @@ try {
     document.querySelector("#usr").textContent = GetURLParameter("usrForm").replace(/\+/g, " ");
     document.querySelector("#eml").textContent = GetURLParameter("emlForm");
 } catch {
-    window.location.href += "FORMS"
+    console.log(window.location.href);
+    // window.location.href += "FORMS"
 }
 
 // gets the information from the url parameters from the form after being submitted

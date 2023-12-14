@@ -22,8 +22,8 @@ body, html {
     background-repeat: no-repeat;
     background-size: cover;
 
-    filter: blur(5px);
-    -webkit-filter: blur(5px);
+    filter: blur(0.3vw);
+    -webkit-filter: blur(0.3vw);
 }
 
 .lmao {
@@ -41,7 +41,7 @@ body, html {
     border-radius: 1vw 1vw 0 0;
     background: rgba(0,0,0,0.5);
     padding: 10px;
-    font-size: 30px;
+    font-size: 2vw;
     font-family: Impact;
     color: white;
     animation: wewo_wa 20s linear infinite;
@@ -65,7 +65,6 @@ body, html {
 
 [bgSelection] {
     transition: all 0.2s;
-    cursor: pointer;
 }
 [notes] {
     height: 27.8vw;
@@ -124,13 +123,14 @@ body, html {
 }
 
 .selection_one:hover [bgSelection], .selection_two:hover [bgSelection], .selection_three:hover [bgSelection] {
-    filter: blur(2.5px);
-    -webkit-filter: blur(2.5px);
+    filter: blur(0.5vw);
+    -webkit-filter: blur(0.5vw);
     opacity: 0.5;
     transform: scale(1.02);
 }
 
 .bottomBar {
+    font-size: 1vw;
     background: rgba(0,0,0,0.5);
     padding: 15px;
     border-radius: 0 0 1vw 1vw;

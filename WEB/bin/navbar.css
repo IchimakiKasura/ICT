@@ -2,7 +2,7 @@ nav {
     display: flex;
     position: absolute;
     background-color: rgba(0,0,0,0.5);
-    height: 5rem;
+    padding-bottom: 10px;
     width: 100vw;
 }
 

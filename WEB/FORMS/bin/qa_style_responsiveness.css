@@ -12,11 +12,11 @@
         border-radius: 0 !important;
         box-shadow: 0 0 0 0 none !important;
     }
-    .div1 {
-        display: inline !important;
-    }
     #form1 p:nth-child(1) {
         left: -5px;
+    }
+    .div1 {
+        display: inline !important;
     }
     .actualForm, #form1 img {
         left: -25px;
@@ -28,5 +28,4 @@
     .faintBG {
         display: none;
     }
-
 }
