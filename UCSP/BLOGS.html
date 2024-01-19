@@ -40,12 +40,13 @@
         <meta name="twitter:image" content="https://upload.wikimedia.org/wikipedia/en/thumb/3/39/Holy_Trinity_Academy_seal.svg/1200px-Holy_Trinity_Academy_seal.svg.png" />
 
         <link rel="stylesheet/less" href="./bin/main.less" type="text/css">
+        <link rel="stylesheet/less" href="./bin/blogSelection.less" type="text/css">
         <link rel="stylesheet/less" href="./bin/mobile.less" type="text/css">
         <script src="https://cdn.jsdelivr.net/npm/less@4.1.1" defer></script>
         
         <!-- My own library :P -->
         <script src="https://rawcdn.githack.com/IchimakiKasura/ichimakikasura.github.io/990dfa042563af01e8b2f54388838a78c37023dc/Old2/Old/js/kasu-beta-2.0.oc.mini.js"></script>
-        <script src="bin/students.js"></script>
+        <script src="bin/blogStudents.js"></script>
                 
         <script>
             document.addEventListener("DOMContentLoaded", ()=>{
@@ -65,7 +66,7 @@
         <header class="mainHeader">
             <nav>
                 <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/39/Holy_Trinity_Academy_seal.svg/1200px-Holy_Trinity_Academy_seal.svg.png">
-                &nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;
                 <h1>UNDERSTANDING CULTURE SOCIETY AND POLITICS</h1>
                 <div class="mobileSelectionButton" onclick="openNav()">
                     <img src="bin/opt.svg">
@@ -77,10 +78,11 @@
             <div class="mnav">
                 <input onkeyup="checkStudents(this)" name="search" type="text" placeholder="   FIND STUDENT..." spellcheck="false">
                 <div onclick="window.location.href='./index.html'"><span>Home</span></div>
-                <div onclick="window.location.href='./Students.html'"><span>Student Lists</span></div>
+                <div onclick="window.location.href='./BLOGS.html'"><span>Student Blogs</span></div>
+                <div onclick="window.location.href='./VIDEOS.html'"><span>Student Videos</span></div>
                 <div onclick="window.location.href='./About.html'"><span>About</span></div>
                 <div onclick="showLate(this)"><span>Show Late ICT</span></div>
-                <span class="spanText">
+                <div class="spanText">
                     <i>Teacher:</i><br/>
                     <b>Mrs. Baby Jane Alcantara</b><br/><br/>
                     <i>Adviser:</i><br/>
@@ -91,7 +93,7 @@
                     <br><br/>
                     <span id="numberOfStudents"></span><br/>
                     <span id="NoPeta"></span>
-                </span>
+                </div>
             </div>
         </div>
 
@@ -108,7 +110,8 @@
                 <div id="navbar" class="rightNav">
                     <input onkeyup="checkStudents(this)" name="search" type="text" placeholder="   FIND STUDENT..." spellcheck="false">
                     <div navButton onclick="window.location.href='./index.html'">Home</div>
-                    <div navButton onclick="window.location.href='./Students.html'">Student Lists</div>
+                    <div navButton onclick="window.location.href='./BLOGS.html'">Student Blogs</div>
+                    <div navButton onclick="window.location.href='./VIDEOS.html'">Student Videos</div>
                     <div navButton onclick="window.location.href='./About.html'">About</div>
                     <div navButton onclick="showLate(this)">Show Late ICT PETA</div>
                     <br/>
@@ -141,7 +144,7 @@
             <p>Pictures and Videos used belongs to their respective owners.</p>
         </footer>
         
-        <script src="bin/studentScript.js"></script>
+        <script src="bin/blogScript.js"></script>
         <script src="bin/scripts.js"></script>
     </body>
 

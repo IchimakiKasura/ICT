@@ -62,7 +62,7 @@ function checkStudents(elem) {
 }
 
 function openStudent(name) {
-   window.open(`students/${name}`)
+   window.open(`students/${name}/blog`)
 }
 
 function showLate(elem) {

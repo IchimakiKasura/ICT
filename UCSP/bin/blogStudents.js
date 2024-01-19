@@ -18,7 +18,7 @@ const ICT_CLASS =
     {
         Name: "Calaguas, Venedick Janeo",
         Content: "Your Nationality is the country you come from: American, Canadian,Russian and more Countries are all Nationalities. Evaluation of other cultures according to Preconceptions Originating in the standards and customs of one's own culture. The Unjust or Prejudicial treatment of different categories of people, especially on the grounds of ethnicity, age, sex, or disability.",
-        image: "students/Calaguas,%20Venedick%20Janeo/1.jpg"
+        image: "students/Calaguas,%20Venedick%20Janeo/blog/1.jpg"
     },
     {
         Name: "Canonoy, Klyde Dogelio",
@@ -73,7 +73,7 @@ const ICT_CLASS =
     {
         Name: "Javier, Mark Augustine Pagente",
         Content: "Wanting to understand who we are, where we come from and how we evolved is part of what makes us human. This an exciting time to be examining human evolution. Intriguing fossil and archaeological discoveries, combined with innovative techniques and DNA research, are transforming scientists' understanding of our ancient past.",
-        image: "students/Javier,%20Mark%20Augustine%20Pagente/bin/273264065_1641339056248906_5080821220517800302_n.png"
+        image: "students/Javier,%20Mark%20Augustine%20Pagente/blog/bin/273264065_1641339056248906_5080821220517800302_n.png"
     },
     {
         Name: "Lumpay, Shane Harvey Duavis",
@@ -123,7 +123,7 @@ const ICT_CLASS =
     {
         Name: "Santos, James Adrian",
         Content: "In order to increase students' awareness of cultural, social, and political dynamics and their sensitivity to cultural diversity, as well as their comprehension of how culture, human agency, society, and politics function, this course draws on insights from anthropology, political science, and sociology. It also engages students in an analysis of the nation's current human development goals.",
-        image: "students/Santos, James Adrian/UCSP.jpg"
+        image: "students/Santos, James Adrian/blog/UCSP.jpg"
     },
     {
         Name: "San Pedro, Krishna Juachim Ibarra",
@@ -193,7 +193,7 @@ const ICT_CLASS =
     {
         Name: "Gabriz, Lira Casssandra C",
         Content: "Human Evolution is the evolutionary process within the history of primates that led to the emergence of Homo sapiens as a distinct species of the hominid family, which includes all the great apes. This process involved the gradual development of traits such as human bipedalism, dexterity and complex language, as well as interbreeding with other hominins (a tribe of the African hominid subfamily), indicating that human evolution was not linear but weblike. The study of human evolution involves several scientific disciplines, including physical and evolutionary anthropology, paleontology, and genetics.",
-        image: "students/Gabriz,%20Lira%20Casssandra%20C/1.jpg"
+        image: "students/Gabriz,%20Lira%20Casssandra%20C/blog/1.jpg"
     },
     {
         Name: "Gusto, Donnalyn Joy Reyllo",

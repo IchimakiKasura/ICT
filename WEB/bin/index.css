@@ -3,6 +3,10 @@
     font-family: Arial;
 }
 
+body {
+    background-color: pink;
+}
+
 body, html {
     height: 100vh;
     overflow: hidden;

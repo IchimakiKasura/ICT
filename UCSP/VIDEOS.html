@@ -20,7 +20,7 @@
                 justify-content: center;
             }
         </style>
-        
+
         <!-- main -->
         <meta name="owner" content="GRADE-11 ICT" />
         <meta name="title" content="ICT | UNDERSTANDING CULTURE SOCIETY AND POLITICS" />
@@ -40,13 +40,14 @@
         <meta name="twitter:image" content="https://upload.wikimedia.org/wikipedia/en/thumb/3/39/Holy_Trinity_Academy_seal.svg/1200px-Holy_Trinity_Academy_seal.svg.png" />
 
         <link rel="stylesheet/less" href="./bin/main.less" type="text/css">
+        <link rel="stylesheet/less" href="./bin/videoSelection.less" type="text/css">
         <link rel="stylesheet/less" href="./bin/mobile.less" type="text/css">
         <script src="https://cdn.jsdelivr.net/npm/less@4.1.1" defer></script>
-
+        
         <!-- My own library :P -->
         <script src="https://rawcdn.githack.com/IchimakiKasura/ichimakikasura.github.io/990dfa042563af01e8b2f54388838a78c37023dc/Old2/Old/js/kasu-beta-2.0.oc.mini.js"></script>
-        <script src="bin/students.js"></script>
-        
+        <script src="bin/videoStudents.js"></script>
+                
         <script>
             document.addEventListener("DOMContentLoaded", ()=>{
                 document.querySelector("body").style.overflow = "auto";
@@ -54,18 +55,18 @@
             })
         </script>
 
-        <title>UCSP - ABOUT</title>
+        <title>UCSP - GRADE-11 ICT</title>
     </head>
 
     <body style="overflow: hidden;">
         <div class="load">
             <h1>LOADING</h1>
         </div>
-
+        
         <header class="mainHeader">
             <nav>
                 <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/39/Holy_Trinity_Academy_seal.svg/1200px-Holy_Trinity_Academy_seal.svg.png">
-                &nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;
                 <h1>UNDERSTANDING CULTURE SOCIETY AND POLITICS</h1>
                 <div class="mobileSelectionButton" onclick="openNav()">
                     <img src="bin/opt.svg">
@@ -79,6 +80,7 @@
                 <div onclick="window.location.href='./BLOGS.html'"><span>Student Blogs</span></div>
                 <div onclick="window.location.href='./VIDEOS.html'"><span>Student Videos</span></div>
                 <div onclick="window.location.href='./About.html'"><span>About</span></div>
+                <div onclick="showLate(this)"><span>Show Late ICT</span></div>
                 <div class="spanText">
                     <i>Teacher:</i><br/>
                     <b>Mrs. Baby Jane Alcantara</b><br/><br/>
@@ -87,42 +89,57 @@
                     <br/>
                     <i>Designed by</i><br/>
                     <a title="Ichimaki Kasura portfolio" href="https://ichimakikasura.github.io">Ichimaki Kasura</a>
+                    <br><br/>
+                    <span id="numberOfStudents"></span><br/>
+                    <span id="NoPeta"></span>
                 </div>
             </div>
         </div>
 
-
         <main class="mainBody">
             <section class="topSection">
-                <h1>About</h1>
+                <h1>Lists of students videos</h1>
                 <hr style="margin-top:10px;background-color:black;height: 2px; border-radius: 50px; border-style: none;"/>
             </section>
+
             <div style="display: flex">
                 <div class="selection">
-                    <br>
-                    <br>
-                    <h2>
-                        &nbsp;&nbsp;&nbsp;&nbsp; This website is created for compiling students PETA.
-                    </h2>
-                    <br>
-                    <br>
-                    <!-- <p style="font-size: 1.5rem;font-style: italic;padding-top: 0.5vw;">if the student has a <span style="color: red">red indicator</span>, he/she passed the PETA late on <b>ICT</b>.</p> -->
+                    <div video_placeholder>
+                        <iframe id="player" allow="autoplay; fullscreen"></iframe>
+                        <div style="margin-left: 10px">
+                            <h1 video_title style="font-size: 3vw"></h1>
+                            <h2 video_creator style="font-size: 2vw; color: rgb(98, 98, 98)"></h2>
+                            <h3 video_passed style="font-size: 1.5vw; color: rgb(113, 113, 113)"></h3>
+                        </div>
+                    </div>
+                    <div articles>
+                        <!-- articles -->
+                    </div>
                 </div>
-                <div class="rightNav">
+                <div id="navbar" class="rightNav">
                     <div navButton onclick="window.location.href='./index.html'">Home</div>
-                    <div navButton onclick="window.location.href='./BLOGS.html'">Student Websites</div>
+                    <div navButton onclick="window.location.href='./BLOGS.html'">Student Blogs</div>
                     <div navButton onclick="window.location.href='./VIDEOS.html'">Student Videos</div>
                     <div navButton onclick="window.location.href='./About.html'">About</div>
+                    <!-- <div navButton onclick="showLate(this)">Show Late ICT PETA</div> -->
                     <br/>
-                    <span>
+                    <div>
                         <i>Teacher:</i><br/>
                         <b>Mrs. Baby Jane Alcantara</b><br/><br/>
                         <i>Adviser:</i><br/>
                         <b>Mr. Vincent Charles E. Victore</b><br/>
                         <br/>
                         <i>Designed by</i><br/>
-                        <a title="Ichimaki Kasura portfolio" href="https://ichimakikasura.github.io">Ichimaki Kasura</a>
-                    </span>
+                        <a title="Ichimaki Kasura portfolio" target="__blank" href="https://ichimakikasura.github.io">Ichimaki Kasura</a>
+                        <br/>
+                        <br/>
+                        <i>Students Source Codes:</i><br/>
+                        <a title="Students Source Codes" target="__blank" href="https://github.com/IchimakiKasura/ICT/tree/main/UCSP/students">Source Codes</a>                        
+                    </div>
+                    <!-- <br>
+                    <br>
+                    <div id="numberOfStudents"></div><br/>
+                    <div id="NoPeta"></div> -->
                 </div>
             </div>
         </main>
@@ -134,6 +151,8 @@
             <p>&copy; Copyright 2023, UCSP G11-ICT</p>
             <p>Pictures and Videos used belongs to their respective owners.</p>
         </footer>
+        
+        <script src="bin/videoScript.js"></script>
         <script src="bin/scripts.js"></script>
     </body>
 

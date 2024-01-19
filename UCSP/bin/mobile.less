@@ -7,20 +7,10 @@
     }
     .mobileSelectionButton {
         display: block !important;
+        left: 85% !important;
     }
     .topSection {
         font-size: 3vw !important;
-    }
-    .sectionHeader {
-
-        h1 {
-            padding-top: 1.8vw;
-            font-size: 4vw !important;
-        }
-
-        .preText {
-            display: none;
-        }
     }
     [homeVideo] {
         width: 100% !important;
@@ -34,12 +24,28 @@
         bottom: 1.5vw;
         text-align: center;
     }
+    .mainHeader {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+    
+        nav {
+            font-size: 2vw;
+
+            img {
+                height: 5vw;
+            }
+        }
+    }
+    .mainBody {
+        padding-top: 80px !important;
+    }
 }
 
 .mobileSelectionButton {
     display: none;
     position: absolute;
-    left: 85%;
+    left: 92%;
     border-radius: 0.5vw;
     pointer-events: auto;
     cursor: pointer;
@@ -70,11 +76,11 @@
 
         .spanText {
             position: relative;
-            top: 10vw;
+            padding-top: 50px;
             font-size: 3vw;
         }
 
-        div {
+        div[onclick] {
             position: relative;
             background-color: rgba(255, 211, 78, 0.436);
             border-radius: 2vw;

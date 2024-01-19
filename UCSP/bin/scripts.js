@@ -1,13 +1,16 @@
 let isNavbarOpen = false;
 
-function openNav()
+function openNav(evt)
 {
     isNavbarOpen = !isNavbarOpen
+    か(".mobileSelectionButton").sty("pointerEvents", "none")
 
+    
     if(isNavbarOpen)
     {
         setTimeout(()=>{
             か(".mobileNavigation").sty("top", "0px")
+            か(".mobileSelectionButton").sty("pointerEvents", "auto")
         }, 10)
         か(".mobileNavigation").sty("display", "block")
     }
@@ -15,6 +18,7 @@ function openNav()
     {
         setTimeout(()=>{
             か(".mobileNavigation").sty("display", "none")
+            か(".mobileSelectionButton").sty("pointerEvents", "auto")
         }, 400)
         か(".mobileNavigation").sty("top", "-1000px")
     }
