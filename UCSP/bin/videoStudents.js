@@ -148,11 +148,11 @@ const ICT_CLASS =
         DatePass: ""
     },
     {
-        Title: "",
+        Title: "Depression",
         Name: "Pepito, Kean James Delapa",
-        Thumbnail: "",
-        VideoLink: "",
-        DatePass: ""
+        Thumbnail: "./students/Pepito, Kean James Delapa/video/1.png",
+        VideoLink: "https://drive.google.com/file/d/1fM6f41soED6tPTxhgZeSPgZwWm_1saNT/preview",
+        DatePass: "January 15, 2024 @ 5:10 PM"
     },
     {
         Title: "",
