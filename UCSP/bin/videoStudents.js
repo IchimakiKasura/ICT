@@ -281,7 +281,7 @@ const ICT_CLASS =
         DatePass: ""
     },
     {
-        Title: "10000000_24533014143009285_6485469516488595119_n",
+        Title: "Tulong Ko, Aral Mo",
         Name: "Malacaman, Jillian Marie Semfranca",
         Thumbnail: "./students/Malacaman, Jillian Marie Semfranca/video/1.png",
         VideoLink: "https://drive.google.com/file/d/1eOhuazgE3wSLm--_WWRxBS5CiArgsU1I/preview",

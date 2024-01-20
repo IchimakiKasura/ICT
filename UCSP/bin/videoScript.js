@@ -23,7 +23,7 @@ let showVideo = false;
         
         document.querySelector("[articles]").innerHTML +=
         `
-        <article class="selectableSection" onclick="changevid('${ICT_CLASS[i].VideoLink}', ${i})">
+        <article class="selectableSection" onclick="changevid(${i})">
             <img src="${thumbnail}">
             <div class="sectionHeader">
                 <h1>${title}</h1>
@@ -37,11 +37,11 @@ let showVideo = false;
 
 })()
 
-function changevid(link, number)
+function changevid(number)
 {
     window.scrollTo({top: 0, behavior: "smooth"})
 
-    か("#player").gt.src = link
+    か("#player").gt.src = ICT_CLASS[number].VideoLink
     か("[video_title]").text(ICT_CLASS[number].Title ? ICT_CLASS[number].Title : "No Title")
     か("[video_creator]").text(ICT_CLASS[number].Name)
     か("[video_passed]").text(ICT_CLASS[number].DatePass ? ICT_CLASS[number].DatePass : "January 00, 0000 @ 00:00 NA")
