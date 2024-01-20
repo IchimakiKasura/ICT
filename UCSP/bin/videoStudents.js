@@ -1,11 +1,11 @@
 const ICT_CLASS =
 [
     {
-        Title: "",
+        Title: "Sa pag aaral may pag asa",
         Name: "Alejaga, Rowin Carl Gravides",
-        Thumbnail: "",
-        VideoLink: "",
-        DatePass: "January 20, 2024 @ 00:00 NA"
+        Thumbnail: "./students/Alejaga, Rowin Carl Gravides/video/1.jpg",
+        VideoLink: "https://drive.google.com/file/d/1eu35drQkpZWWAhJoBjKcPmeuKyONyMFG/preview",
+        DatePass: "January 20, 2024 @ 07:15 PM"
     },
     {
         Title: "",
@@ -15,11 +15,11 @@ const ICT_CLASS =
         DatePass: "January 20, 2024 @ 00:00 NA"
     },
     {
-        Title: "",
+        Title: "TULONG KO PAALAGAHAN MO",
         Name: "Batta, Randy Milo",
-        Thumbnail: "",
-        VideoLink: "",
-        DatePass: "January 20, 2024 @ 00:00 NA"
+        Thumbnail: "./students/Batta, Randy Milo/video/1.png",
+        VideoLink: "https://drive.google.com/file/d/1ZdlWjWMz5abrbUBkKIeN-FtPYc7rM7UV/preview",
+        DatePass: "January 20, 2024 @ 10:45 PM"
     },
     {
         Title: "",
@@ -64,11 +64,11 @@ const ICT_CLASS =
         DatePass: "January 20, 2024 @ 00:00 NA"
     },
     {
-        Title: "",
+        Title: "Blood donation: A hero without a cape",
         Name: "Escomen, Arped Jey titong",
-        Thumbnail: "",
-        VideoLink: "",
-        DatePass: "January 20, 2024 @ 00:00 NA"
+        Thumbnail: "./students/Escomen, Arped Jey titong/video/1.jpg",
+        VideoLink: "https://drive.google.com/file/d/1Lf_s-vfvjNLMOcTo5gBpMbNcAV1Ua6nH/preview",
+        DatePass: "January 20, 2024 @ 08:00 PM"
     },
     {
         Title: "",
@@ -99,10 +99,10 @@ const ICT_CLASS =
         DatePass: "January 20, 2024 @ 00:00 NA"
     },
     {
-        Title: "",
+        Title: "PAG BABALIK NEGOSYO SA MGA NAWALAN NG TRABAHO.",
         Name: "Javier, Mark Augustine Pagente",
-        Thumbnail: "",
-        VideoLink: "",
+        Thumbnail: "./students/Javier, Mark Augustine Pagente/video/1.png",
+        VideoLink: "https://drive.google.com/file/d/1smBjYy__jrrxev0doQRc1u-ENBe4DP8M/preview",
         DatePass: "January 20, 2024 @ 00:00 NA"
     },
     {
@@ -113,11 +113,11 @@ const ICT_CLASS =
         DatePass: "January 20, 2024 @ 00:00 NA"
     },
     {
-        Title: "",
+        Title: "UCSP FINALS-PETA",
         Name: "Magat, Aldrian Cedrick Olipano",
-        Thumbnail: "",
-        VideoLink: "",
-        DatePass: "January 20, 2024 @ 00:00 NA"
+        Thumbnail: "./students/Magat, Aldrian Cedrick Olipano/video/1.jpg",
+        VideoLink: "https://drive.google.com/file/d/1mx5FT5iHbR2HR5EipgoNZ73t29PBi39a/preview",
+        DatePass: "January 20, 2024 @ 10:05 PM"
     },
     {
         Title: "",
@@ -134,11 +134,11 @@ const ICT_CLASS =
         DatePass: "January 20, 2024 @ 12:19 PM"
     },
     {
-        Title: "",
+        Title: "KALAKIP NA DULOT NG SIMPLENG PAGDAMPOT NG BASURA",
         Name: "Nora, Prince Eduard Rye Dacara",
-        Thumbnail: "",
-        VideoLink: "",
-        DatePass: "January 20, 2024 @ 00:00 NA"
+        Thumbnail: "./students/Nora, Prince Eduard Rye Dacara/video/1.png",
+        VideoLink: "https://drive.google.com/file/d/1eN4rFOc-CampiEXotrPclW1t0h549QhG/preview",
+        DatePass: "January 20, 2024 @ 07:45 PM"
     },
     {
         Title: "",
@@ -152,7 +152,7 @@ const ICT_CLASS =
         Name: "Pepito, Kean James Delapa",
         Thumbnail: "./students/Pepito, Kean James Delapa/video/1.png",
         VideoLink: "",
-        DatePass: "January 20, 2024 @ 00:00 NA"
+        DatePass: "January 00, 0000 @ 00:00 NA"
     },
     {
         Title: "",
@@ -190,11 +190,11 @@ const ICT_CLASS =
         DatePass: "January 20, 2024 @ 5:56 PM"
     },
     {
-        Title: "",
+        Title: "Pag-asa sa panahon ng Pagsubok",
         Name: "Sorio, Marco Polenio",
-        Thumbnail: "",
-        VideoLink: "",
-        DatePass: "January 20, 2024 @ 00:00 NA"
+        Thumbnail: "./students/Sorio, Marco Polenio/video/1.png",
+        VideoLink: "https://drive.google.com/file/d/1kBavnUtkt3ylnIApBDkKq_1I8A_lAquZ/preview",
+        DatePass: "January 20, 2024 @ 07:47 PM"
     },
     {
         Title: "",
@@ -218,18 +218,18 @@ const ICT_CLASS =
         DatePass: "January 20, 2024 @ 00:00 NA"
     },
     {
-        Title: "",
+        Title: "IMPLUWENSYA KO, INSPIRASYON MO.",
         Name: "Ventura, Richie Rich Erquiza",
-        Thumbnail: "",
+        Thumbnail: "./students/Ventura, Richie Rich Erquiza/video/1.png",
         VideoLink: "",
-        DatePass: "January 20, 2024 @ 00:00 NA"
+        DatePass: "January 20, 2024 @ 08:10 PM"
     },
     {
-        Title: "",
+        Title: "Pag asa sa edukasyon",
         Name: "Villanueva, Christian Jr. Peruelo",
-        Thumbnail: "",
-        VideoLink: "",
-        DatePass: "January 20, 2024 @ 00:00 NA"
+        Thumbnail: "./students/Villanueva, Christian Jr. Peruelo/video/1.png",
+        VideoLink: "https://drive.google.com/file/d/1-igLbqSbULyWHukkLlxruM-MB2GED1cK/preview",
+        DatePass: "January 20, 2024 @ 08:02 PM"
     },
     {
         Title: "",
@@ -239,18 +239,18 @@ const ICT_CLASS =
         DatePass: "January 20, 2024 @ 00:00 NA"
     },
     {
-        Title: "",
+        Title: "Negosyo niyo, Susuportahan ko",
         Name: "Villanueva, Kiel Anthony Cinense",
-        Thumbnail: "",
-        VideoLink: "",
-        DatePass: "January 20, 2024 @ 00:00 NA"
+        Thumbnail: "./students/Villanueva, Kiel Anthony Cinense/video/1.jpg",
+        VideoLink: "https://drive.google.com/file/d/1DwnRW_D0-IWc8r4AYwoLiPSL71XFkqf7/view",
+        DatePass: "January 20, 2024 @ 08:12 PM"
     },
     {
-        Title: "",
+        Title: "Hope in Action: Transformative Ideas for Poverty Eradication",
         Name: "Caballero, Janna Lyn Condiman",
-        Thumbnail: "",
-        VideoLink: "",
-        DatePass: "January 20, 2024 @ 00:00 NA"
+        Thumbnail: "./students/Caballero, Janna Lyn Condiman/video/1.png",
+        VideoLink: "https://drive.google.com/file/d/17s6PBIpbp5CGTnJFYrFTJIfLtGdCjAlq/preview",
+        DatePass: "January 20, 2024 @ 08:27 PM"
     },
     {
         Title: "",
@@ -260,18 +260,18 @@ const ICT_CLASS =
         DatePass: "January 20, 2024 @ 00:00 NA"
     },
     {
-        Title: "",
+        Title: "Mental wellness unmasked: shedding light on the invisible struggles",
         Name: "Clarito, Reeze Monique Salinas",
-        Thumbnail: "",
-        VideoLink: "",
-        DatePass: "January 20, 2024 @ 00:00 NA"
+        Thumbnail: "./students/Clarito, Reeze Monique Salinas/video/1.jpg",
+        VideoLink: "https://www.youtube.com/embed/9UmYZfAMgKY",
+        DatePass: "January 20, 2024 @ 07:01 PM"
     },
     {
-        Title: "",
+        Title: "SA BAWAT ARAW, MAY TULONG NA DALA",
         Name: "Gabriz, Lira Casssandra C",
-        Thumbnail: "",
-        VideoLink: "",
-        DatePass: "January 20, 2024 @ 00:00 NA"
+        Thumbnail: "./students/Gabriz, Lira Casssandra C/video/1.png",
+        VideoLink: "https://drive.google.com/file/d/1zfh1U-arl0f8RfN25qZC0p5KuNAbG1vs/preview",
+        DatePass: "January 20, 2024 @ 07:45 PM"
     },
     {
         Title: "",
@@ -288,11 +288,11 @@ const ICT_CLASS =
         DatePass: "January 20, 2024 @ 11:16 AM"
     },
     {
-        Title: "",
+        Title: "HEALTHCARE",
         Name: "Sto. Domingo, Ma. Raine Conception",
-        Thumbnail: "",
-        VideoLink: "",
-        DatePass: "January 20, 2024 @ 00:00 NA"
+        Thumbnail: "./students/Sto. Domingo, Ma. Raine Conception/video/1.jpg",
+        VideoLink: "https://drive.google.com/file/d/1LO70gDEIgFXr9jNWeojPuCIvIDqd-jTb/preview",
+        DatePass: "January 20, 2024 @ 07:37 PM"
     },
     {
         Title: "Pagtutulong-tulong upang sabay sabay tayo umangat sa kahirapan.",

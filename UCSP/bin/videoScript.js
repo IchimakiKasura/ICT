@@ -15,12 +15,17 @@ let showVideo = false;
     // document.querySelectorAll("#NoPeta").forEach(el=>
     //     el.innerHTML = `Students with no Peta: ${StudentNoPeta}`
     // )
+
+    let studentNoPeta = 0;
     
     for (let i = 0; i < ICT_CLASS.length; i++) {
         let name = ICT_CLASS[i].Name
         let title = ICT_CLASS[i].Title ? ICT_CLASS[i].Title : "No Title";
         let thumbnail = ICT_CLASS[i].Thumbnail ? ICT_CLASS[i].Thumbnail : "https://media.istockphoto.com/id/1454186575/vector/video-coming-soon-no-footage-video-no-video-available-default-video-thumbnail-available.jpg?s=612x612&w=0&k=20&c=GQnpSK2qy09Ps6g6zZQgHsMMzJx6lA7Ptf2ALgdMOVw="
         
+        if(title=="No Title")
+            studentNoPeta++;
+
         document.querySelector("[articles]").innerHTML +=
         `
         <article class="selectableSection" onclick="changevid(${i})">
@@ -37,6 +42,8 @@ let showVideo = false;
         </article>
         `
     }
+
+    console.log(studentNoPeta)
 
 })()
 
