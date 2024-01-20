@@ -24,7 +24,10 @@ let showVideo = false;
         document.querySelector("[articles]").innerHTML +=
         `
         <article class="selectableSection" onclick="changevid(${i})">
-            <img src="${thumbnail}">
+            <div class="selectableImage" current-watch="0">
+                <img src="${thumbnail}">
+                <div>Now Playing</div>
+            </div>
             <div class="sectionHeader">
                 <h1>${title}</h1>
                 <div class="preText">
@@ -39,12 +42,19 @@ let showVideo = false;
 
 function changevid(number)
 {
+    か(".selectableImage").gAll.forEach(el => el.setAttribute("current-watch", 0));
+    か(".selectableImage").gAll[number].setAttribute("current-watch", 1)
+
     window.scrollTo({top: 0, behavior: "smooth"})
 
+    let title = ICT_CLASS[number].Title ? ICT_CLASS[number].Title : "No Title";
+
     か("#player").gt.src = ICT_CLASS[number].VideoLink
-    か("[video_title]").text(ICT_CLASS[number].Title ? ICT_CLASS[number].Title : "No Title")
+    か("[video_title]").text(title)
     か("[video_creator]").text(ICT_CLASS[number].Name)
     か("[video_passed]").text(ICT_CLASS[number].DatePass ? ICT_CLASS[number].DatePass : "January 00, 0000 @ 00:00 NA")
+
+    か("[video_title]").gt.setAttribute("title", title)
 
     if(!showVideo)
     {
@@ -53,7 +63,7 @@ function changevid(number)
         resizeVideo()
         か(window).resize(resizeVideo)
         
-        か("[video_placeholder]").sty("marginBottom", "12%")
+        か("[video_placeholder]").sty("marginBottom", "15%")
         か("[video_placeholder]").sty("opacity", "1")
         setTimeout(()=>{
             か("[video_placeholder]").sty("transition", "all 0s")

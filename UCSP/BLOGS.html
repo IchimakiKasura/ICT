@@ -19,6 +19,20 @@
                 place-items: center;
                 justify-content: center;
             }
+            [hta_bg]
+            {
+                overflow: hidden;
+                display: flex;
+                justify-content: center;
+            }
+
+            [hta_bg] img
+            {
+                position: fixed;
+                height: 50vw;
+                z-index: -99;
+                opacity: 0.1;
+            }
         </style>
 
         <!-- main -->
@@ -59,6 +73,11 @@
     </head>
 
     <body style="overflow: hidden;">
+
+        <div hta_bg>
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/39/Holy_Trinity_Academy_seal.svg/1200px-Holy_Trinity_Academy_seal.svg.png" alt="">
+        </div>
+        
         <div class="load">
             <h1>LOADING</h1>
         </div>

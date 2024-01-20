@@ -19,6 +19,20 @@
                 place-items: center;
                 justify-content: center;
             }
+            [hta_bg]
+            {
+                overflow: hidden;
+                display: flex;
+                justify-content: center;
+            }
+
+            [hta_bg] img
+            {
+                position: fixed;
+                height: 50vw;
+                z-index: -99;
+                opacity: 0.1;
+            }
         </style>
 
         <!-- main -->
@@ -59,6 +73,11 @@
     </head>
 
     <body style="overflow: hidden;">
+
+        <div hta_bg>
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/39/Holy_Trinity_Academy_seal.svg/1200px-Holy_Trinity_Academy_seal.svg.png" alt="">
+        </div>
+
         <div class="load">
             <h1>LOADING</h1>
         </div>
@@ -106,8 +125,8 @@
                 <div class="selection">
                     <div video_placeholder>
                         <iframe id="player" allow="autoplay; fullscreen"></iframe>
-                        <div style="margin-left: 10px">
-                            <h1 video_title style="font-size: 3vw; width: 50vw; text-overflow: ellipsis; overflow: hidden;"></h1>
+                        <div video_detail>
+                            <h1 video_title></h1>
                             <h2 video_creator style="font-size: 2vw; color: rgb(98, 98, 98)"></h2>
                             <h3 video_passed style="font-size: 1.5vw; color: rgb(113, 113, 113)"></h3>
                         </div>
