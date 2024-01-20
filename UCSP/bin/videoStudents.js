@@ -1,18 +1,18 @@
 const ICT_CLASS =
 [
     {
-        Title: "TEST",
+        Title: "",
         Name: "Alejaga, Rowin Carl Gravides",
-        Thumbnail: "https://lh3.googleusercontent.com/u/0/drive-viewer/AEYmBYTI-PpqwiW5U6qqdcnRjRVJqtQBENE6lH7hvMFXqst1vL12hVVhRPpONHNpP1EOKBYeucISf5a7mrHCSJtUiW5QQK8P-w=w1920-h1080-k-pd",
-        VideoLink: "https://drive.google.com/file/d/12giG3t3eR74u8AQVD1BLm8cH-nTeuqv4/preview",
-        DatePass: "January 18, 2024 @ 10:26 PM"
+        Thumbnail: "",
+        VideoLink: "",
+        DatePass: ""
     },
     {
-        Title: "very epic test",
+        Title: "",
         Name: "Alejandro, Jade Maglaya",
-        Thumbnail: "https://i.ytimg.com/vi/WXVykQO4uak/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDTctmddiEEEtdx2gvTjUCDlWUvdg",
-        VideoLink: "https://www.youtube.com/embed/WXVykQO4uak",
-        DatePass: "January 17, 2024 @ 5:56 PM"
+        Thumbnail: "",
+        VideoLink: "",
+        DatePass: ""
     },
     {
         Title: "",
@@ -50,11 +50,11 @@ const ICT_CLASS =
         DatePass: ""
     },
     {
-        Title: "",
+        Title: "feed-a-child",
         Name: "Dimaano, Kyle john  Ashley Endaya",
-        Thumbnail: "",
-        VideoLink: "",
-        DatePass: ""
+        Thumbnail: "./students/Dimaano, Kyle john  Ashley Endaya/video/1.png",
+        VideoLink: "https://drive.google.com/file/d/1GuQSJ8MjPzaewW1Hw68FBbS5nUcav2M4/preview",
+        DatePass: "January 20, 2024 @ 2:03 PM"
     },
     {
         Title: "",
@@ -127,11 +127,11 @@ const ICT_CLASS =
         DatePass: ""
     },
     {
-        Title: "",
+        Title: "Galaw ko kinabukasan ko",
         Name: "Nabual, John Ray Dibdib",
-        Thumbnail: "",
-        VideoLink: "",
-        DatePass: ""
+        Thumbnail: "./students/Nabual, John Ray Dibdib/video/1.png",
+        VideoLink: "https://drive.google.com/file/d/1YD94Jb9DcG0dZk37guZofNHMf3PBtm1T/preview",
+        DatePass: "January 20, 2024 @ 12:19 PM"
     },
     {
         Title: "",
@@ -148,11 +148,11 @@ const ICT_CLASS =
         DatePass: ""
     },
     {
-        Title: "Depression",
+        Title: "",
         Name: "Pepito, Kean James Delapa",
-        Thumbnail: "./students/Pepito, Kean James Delapa/video/1.png",
-        VideoLink: "https://drive.google.com/file/d/1fM6f41soED6tPTxhgZeSPgZwWm_1saNT/preview",
-        DatePass: "January 15, 2024 @ 5:10 PM"
+        Thumbnail: "",
+        VideoLink: "",
+        DatePass: ""
     },
     {
         Title: "",
@@ -281,11 +281,11 @@ const ICT_CLASS =
         DatePass: ""
     },
     {
-        Title: "",
-        Name: "Malacama, Jillian Marie Semfranca",
-        Thumbnail: "",
-        VideoLink: "",
-        DatePass: ""
+        Title: "10000000_24533014143009285_6485469516488595119_n",
+        Name: "Malacaman, Jillian Marie Semfranca",
+        Thumbnail: "./students/Malacaman, Jillian Marie Semfranca/video/1.png",
+        VideoLink: "https://drive.google.com/file/d/1eOhuazgE3wSLm--_WWRxBS5CiArgsU1I/preview",
+        DatePass: "January 20, 2024 @ 11:16 AM"
     },
     {
         Title: "",

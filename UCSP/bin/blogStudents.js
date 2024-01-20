@@ -201,7 +201,7 @@ const ICT_CLASS =
         image: "https://static.vecteezy.com/system/resources/thumbnails/004/141/669/small/no-photo-or-blank-image-icon-loading-images-or-missing-image-mark-image-not-available-or-image-coming-soon-sign-simple-nature-silhouette-in-frame-isolated-illustration-vector.jpg"
     },
     {
-        Name: "Malacama, Jillian Marie Semfranca",
+        Name: "Malacaman, Jillian Marie Semfranca",
         Content: "Understanding Culture and ICT PETA Q1 Ma'am Jane and Sir Charles Collab Lesson 1 Politics (Polis) The set of activities that are associated with making decisions in groups, or other forms of power relations among individuals such as the distribution of resources or status. The branch of social branch of social science that studies  olitics and government is referred to as political science. Society (Societas) A large group of people who live together in an organized way making decisions about how to do things and sharing the work that needs to be done. Culture (Cultura) The customary beliefs, social forms , and material traits of a racial, religious, or social group.",
         image: "https://www.teachearlyyears.com/images/made/images/uploads/article/understanding-diversity-2_630_465_84_int_s_c1.jpg"
     },

@@ -49,8 +49,11 @@ function changevid(link, number)
     if(!showVideo)
     {
         showVideo = true;
-        か("[video_placeholder]").sty("height", "32.25vw")
-        か("[video_placeholder]").sty("marginBottom", "120px")
+
+        resizeVideo()
+        か(window).resize(resizeVideo)
+        
+        か("[video_placeholder]").sty("marginBottom", "12%")
         か("[video_placeholder]").sty("opacity", "1")
         setTimeout(()=>{
             か("[video_placeholder]").sty("transition", "all 0s")
@@ -58,3 +61,11 @@ function changevid(link, number)
     }
 }
 
+
+function resizeVideo()
+{
+    if (window.innerWidth < "1000")
+        か("[video_placeholder]").sty("height", "40vw")
+    else
+        か("[video_placeholder]").sty("height", "32.25vw")
+}
