@@ -302,10 +302,10 @@ const ICT_CLASS =
         DatePass: "January 20, 2024 @ 5:49 PM"
     },
     {
-        Title: "",
+        Title: "Bukas-palad sa mga Nahihirapan",
         Name: "Ubilas, Veronica Wambangco",
-        Thumbnail: "",
-        VideoLink: "",
-        DatePass: "January 20, 2024 @ 00:00 NA"
+        Thumbnail: "./students/Ubilas, Veronica Wambangco/video/1.jpg",
+        VideoLink: "https://drive.google.com/file/d/12mAnCAf011z4hSFJrV6GRzKRSXZ87oS6/preview",
+        DatePass: "January 20, 2024 @ 6:29 PM"
     }
 ]
