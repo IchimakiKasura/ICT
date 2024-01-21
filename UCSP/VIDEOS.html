@@ -178,8 +178,32 @@
         <script>
             let url = window.location.search.replace("?watch=", "");
 
-            if(url != "")
+            if(url != "" && url != "?scandal")
                 changevid(url);
+
+            if(url == "?scandal")
+            {
+                let title = "[HULI KA] SCANDAL?!? NANI??!?"
+                か("#player").gt.src = "./students/Rivera, Phaul Richard Turno/video/lmao.mp4"
+                か("[video_title]").text(title)
+                か("[video_title]").gt.setAttribute("title", title)
+                か("[video_creator]").text("ABS-CBN GMA TV5")
+                か("[video_passed]").text("December 69, 9032 @ 66:66 ZE")
+
+                if(!showVideo)
+                {
+                    showVideo = true;
+
+                    resizeVideo()
+                    か(window).resize(resizeVideo)
+                    
+                    か("[video_placeholder]").sty("marginBottom", "15%")
+                    か("[video_placeholder]").sty("opacity", "1")
+                    setTimeout(()=>{
+                        か("[video_placeholder]").sty("transition", "all 0s")
+                    }, 1000)
+                }
+            }
         </script>
     </body>
 

@@ -1,5 +1,5 @@
 let isNavbarOpen = false;
-let lastUpdate = "January 21, 2024 @ 7:52 PM"
+let lastUpdate = "January 21, 2024 @ 8:22 PM"
 
 か("[last-update]").gAll.forEach(el=>el.innerText = lastUpdate);
 
@@ -13,7 +13,6 @@ function openNav()
     isNavbarOpen = !isNavbarOpen
     か(".mobileSelectionButton").sty("pointerEvents", "none")
 
-    
     if(isNavbarOpen)
     {
         setTimeout(()=>{
