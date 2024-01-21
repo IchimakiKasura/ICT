@@ -6,7 +6,7 @@ const ICT_CLASS =
         Thumbnail: "./students/Alejaga, Rowin Carl Gravides/video/1.jpg",
         VideoLink: "https://drive.google.com/file/d/1eu35drQkpZWWAhJoBjKcPmeuKyONyMFG/preview",
         DatePass: "January 20, 2024 @ 07:15 PM",
-        Duration: "5:02"
+        Duration: "5:01"
     },
     {
         Title: "",
@@ -22,7 +22,7 @@ const ICT_CLASS =
         Thumbnail: "./students/Batta, Randy Milo/video/1.png",
         VideoLink: "https://drive.google.com/file/d/1nN5y0wA80-gRP0fTVSuy3O8g60MFDWue/preview",
         DatePass: "January 20, 2024 @ 10:45 PM",
-        Duration: " 5:02"
+        Duration: " 5:01"
     },
     {
         Title: "",
@@ -46,7 +46,7 @@ const ICT_CLASS =
         Thumbnail: "./students/Cinco, Raven Zabala/video/1.jpg",
         VideoLink: "https://drive.google.com/file/d/1xJdHvMvuuDib3-6GShj7QkXB9d-RdO9B/preview",
         DatePass: "January 21, 2024 @ 03:20 PM",
-        Duration: "8:59"
+        Duration: "8:58"
     },
     {
         Title: "WE HEAL AS ONE",
@@ -54,7 +54,7 @@ const ICT_CLASS =
         Thumbnail: "./students/Cruz, Hayden Kyle De Vries/video/1.png",
         VideoLink: "https://drive.google.com/file/d/1W-Fjjd2HNFpMQEG4s1b2T976AycO8ZTd/preview",
         DatePass: "January 20, 2024 @ 03:08 PM",
-        Duration: "7:39"
+        Duration: "7:38"
     },
     {
         Title: "feed-a-child",
@@ -62,7 +62,7 @@ const ICT_CLASS =
         Thumbnail: "./students/Dimaano, Kyle john  Ashley Endaya/video/1.png",
         VideoLink: "https://drive.google.com/file/d/1GuQSJ8MjPzaewW1Hw68FBbS5nUcav2M4/preview",
         DatePass: "January 20, 2024 @ 2:03 PM",
-        Duration: "3:10"
+        Duration: "3:09"
     },
     {
         Title: "",
@@ -78,7 +78,7 @@ const ICT_CLASS =
         Thumbnail: "./students/Escomen, Arped Jey titong/video/1.jpg",
         VideoLink: "https://drive.google.com/file/d/1Lf_s-vfvjNLMOcTo5gBpMbNcAV1Ua6nH/preview",
         DatePass: "January 20, 2024 @ 08:00 PM",
-        Duration: "3:44"
+        Duration: "3:43"
     },
     {
         Title: "Paggaling Mo, Kasiyahan Ko",
@@ -86,7 +86,7 @@ const ICT_CLASS =
         Thumbnail: "./students/Espinosa, Christian Subere/video/1.png",
         VideoLink: "https://drive.google.com/file/d/11ronOczncSP_1U3LOA_1AvCIb63MLqhi/preview",
         DatePass: "January 21, 2024 @ 12:53 AM",
-        Duration: "3:15"
+        Duration: "3:14"
     },
     {
         Title: "",
@@ -118,7 +118,7 @@ const ICT_CLASS =
         Thumbnail: "./students/Javier, Mark Augustine Pagente/video/1.png",
         VideoLink: "https://drive.google.com/file/d/1smBjYy__jrrxev0doQRc1u-ENBe4DP8M/preview",
         DatePass: "January 20, 2024 @ 07:34 PM",
-        Duration: "3:32"
+        Duration: "3:31"
     },
     {
         Title: "",
@@ -134,15 +134,15 @@ const ICT_CLASS =
         Thumbnail: "./students/Magat, Aldrian Cedrick Olipano/video/1.jpg",
         VideoLink: "https://drive.google.com/file/d/1mx5FT5iHbR2HR5EipgoNZ73t29PBi39a/preview",
         DatePass: "January 20, 2024 @ 10:05 PM",
-        Duration: "5:02"
+        Duration: "5:01"
     },
     {
-        Title: "",
+        Title: "Ang Binibigkas na Plano ng Barangay Chairman para sa Kalusugan",
         Name: "Mendoza, Gilsen Maribao",
-        Thumbnail: "",
-        VideoLink: "",
-        DatePass: "January 21, 2024 @ 00:00 NA",
-        Duration: "00:00"
+        Thumbnail: "./students/Mendoza, Gilsen Maribao/video/1.png",
+        VideoLink: "https://drive.google.com/file/d/1-FBQHVfbjZaj-vOOY7lYIIZpBwMjSsQ9/preview",
+        DatePass: "January 21, 2024 @ 06:07 PM",
+        Duration: "4:52"
     },
     {
         Title: "Galaw ko kinabukasan ko",
@@ -150,7 +150,7 @@ const ICT_CLASS =
         Thumbnail: "./students/Nabual, John Ray Dibdib/video/1.png",
         VideoLink: "https://drive.google.com/file/d/1YD94Jb9DcG0dZk37guZofNHMf3PBtm1T/preview",
         DatePass: "January 20, 2024 @ 12:19 PM",
-        Duration: "5:57"
+        Duration: "5:56"
     },
     {
         Title: "KALAKIP NA DULOT NG SIMPLENG PAGDAMPOT NG BASURA",
@@ -158,7 +158,7 @@ const ICT_CLASS =
         Thumbnail: "./students/Nora, Prince Eduard Rye Dacara/video/1.png",
         VideoLink: "https://drive.google.com/file/d/1eN4rFOc-CampiEXotrPclW1t0h549QhG/preview",
         DatePass: "January 20, 2024 @ 07:45 PM",
-        Duration: "5:49"
+        Duration: "5:48"
     },
     {
         Title: "",
@@ -190,7 +190,7 @@ const ICT_CLASS =
         Thumbnail: "./students/Rivera, Phaul Richard Turno/video/1.png",
         VideoLink: "https://drive.google.com/file/d/1NBi9I7QMMC3lOxcvgIbvOSK60N1mWtJP/preview",
         DatePass: "January 20, 2024 @ 04:11 PM",
-        Duration: "3:07"
+        Duration: "3:06"
     },
     {
         Title: "",
@@ -214,7 +214,7 @@ const ICT_CLASS =
         Thumbnail: "./students/Soria, Carlos Juaqin  Santos/video/1.png",
         VideoLink: "https://drive.google.com/file/d/1M7onVXB8E2DXrj3u8ngrOfVv5RwHPxNw/preview",
         DatePass: "January 20, 2024 @ 5:56 PM",
-        Duration: "5:38"
+        Duration: "5:37"
     },
     {
         Title: "Pag-asa sa panahon ng Pagsubok",
@@ -222,7 +222,7 @@ const ICT_CLASS =
         Thumbnail: "./students/Sorio, Marco Polenio/video/1.png",
         VideoLink: "https://drive.google.com/file/d/1kBavnUtkt3ylnIApBDkKq_1I8A_lAquZ/preview",
         DatePass: "January 20, 2024 @ 07:47 PM",
-        Duration: "3:35"
+        Duration: "3:34"
     },
     {
         Title: "LIBRE KO ARAL MO",
@@ -230,7 +230,7 @@ const ICT_CLASS =
         Thumbnail: "./students/Tangaro, Jeric Maximo/video/1.jpg",
         VideoLink: "https://drive.google.com/file/d/1TXfrlBUfS-Zlhx6k_4f-74ASu2NCp4Dv/preview",
         DatePass: "January 20, 2024 @ 07:43 PM",
-        Duration: "3:41"
+        Duration: "3:40"
     },
     {
         Title: "Sagot koBuhay mo",
@@ -238,7 +238,7 @@ const ICT_CLASS =
         Thumbnail: "./students/Tano, Jomar Calagbang/video/1.png",
         VideoLink: "https://drive.google.com/file/d/1-2ASqlXgqVWkaI8_Cmzrt9j1hdD5ijCZ/preview",
         DatePass: "January 20, 2024 @ 05:24 PM",
-        Duration: "5:32"
+        Duration: "5:31"
     },
     {
         Title: "",
@@ -254,7 +254,7 @@ const ICT_CLASS =
         Thumbnail: "./students/Ventura, Richie Rich Erquiza/video/1.png",
         VideoLink: "https://drive.google.com/file/d/1HEvd6uZc0PUVdy3pHapDQNR45zh3Ooa9/preview",
         DatePass: "January 20, 2024 @ 08:10 PM",
-        Duration: "3:57"
+        Duration: "3:56"
     },
     {
         Title: "Pag asa sa edukasyon",
@@ -262,7 +262,7 @@ const ICT_CLASS =
         Thumbnail: "./students/Villanueva, Christian Jr. Peruelo/video/1.png",
         VideoLink: "https://drive.google.com/file/d/1-igLbqSbULyWHukkLlxruM-MB2GED1cK/preview",
         DatePass: "January 20, 2024 @ 08:02 PM",
-        Duration: "3:44"
+        Duration: "3:43"
     },
     {
         Title: "",
@@ -278,7 +278,7 @@ const ICT_CLASS =
         Thumbnail: "./students/Villanueva, Kiel Anthony Cinense/video/1.jpg",
         VideoLink: "https://drive.google.com/file/d/1DwnRW_D0-IWc8r4AYwoLiPSL71XFkqf7/preview",
         DatePass: "January 20, 2024 @ 08:12 PM",
-        Duration: "4:55"
+        Duration: "4:54"
     },
     {
         Title: "Hope in Action: Transformative Ideas for Poverty Eradication",
@@ -286,7 +286,7 @@ const ICT_CLASS =
         Thumbnail: "./students/Caballero, Janna Lyn Condiman/video/1.png",
         VideoLink: "https://drive.google.com/file/d/17s6PBIpbp5CGTnJFYrFTJIfLtGdCjAlq/preview",
         DatePass: "January 20, 2024 @ 08:27 PM",
-        Duration: " 3:05"
+        Duration: " 3:04"
     },
     {
         Title: "",
@@ -302,7 +302,7 @@ const ICT_CLASS =
         Thumbnail: "./students/Clarito, Reeze Monique Salinas/video/1.jpg",
         VideoLink: "https://www.youtube.com/embed/9UmYZfAMgKY",
         DatePass: "January 20, 2024 @ 07:01 PM",
-        Duration: "8:36"
+        Duration: "8:35"
     },
     {
         Title: "SA BAWAT ARAW, MAY TULONG NA DALA",
@@ -310,7 +310,7 @@ const ICT_CLASS =
         Thumbnail: "./students/Gabriz, Lira Casssandra C/video/1.png",
         VideoLink: "https://drive.google.com/file/d/1zfh1U-arl0f8RfN25qZC0p5KuNAbG1vs/preview",
         DatePass: "January 20, 2024 @ 07:45 PM",
-        Duration: "5:02"
+        Duration: "5:01"
     },
     {
         Title: "",
@@ -326,7 +326,7 @@ const ICT_CLASS =
         Thumbnail: "./students/Malacaman, Jillian Marie Semfranca/video/1.png",
         VideoLink: "https://drive.google.com/file/d/1eOhuazgE3wSLm--_WWRxBS5CiArgsU1I/preview",
         DatePass: "January 20, 2024 @ 11:16 AM",
-        Duration: "2:05"
+        Duration: "2:04"
     },
     {
         Title: "HEALTHCARE",
@@ -334,7 +334,7 @@ const ICT_CLASS =
         Thumbnail: "./students/Sto. Domingo, Ma. Raine Conception/video/1.jpg",
         VideoLink: "https://drive.google.com/file/d/1LO70gDEIgFXr9jNWeojPuCIvIDqd-jTb/preview",
         DatePass: "January 20, 2024 @ 07:37 PM",
-        Duration: "6:01"
+        Duration: "6:00"
     },
     {
         Title: "Pagtutulong-tulong upang sabay sabay tayo umangat sa kahirapan.",
@@ -342,7 +342,7 @@ const ICT_CLASS =
         Thumbnail: "./students/Sto. Domingo, Ma. Sophia Lorrainne Almodal/video/1.jpg",
         VideoLink: "https://drive.google.com/file/d/1UwDFKwKZhRvjj7UJryhScLfTsbJGqsRB/preview",
         DatePass: "January 20, 2024 @ 5:49 PM",
-        Duration: "4:47"
+        Duration: "4:46"
     },
     {
         Title: "Bukas-palad sa mga Nahihirapan",
@@ -350,6 +350,6 @@ const ICT_CLASS =
         Thumbnail: "./students/Ubilas, Veronica Wambangco/video/1.jpg",
         VideoLink: "https://drive.google.com/file/d/12mAnCAf011z4hSFJrV6GRzKRSXZ87oS6/preview",
         DatePass: "January 20, 2024 @ 6:29 PM",
-        Duration: "6:02"
+        Duration: "6:01"
     }
 ]
