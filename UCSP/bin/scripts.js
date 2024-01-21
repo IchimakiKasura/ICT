@@ -25,6 +25,9 @@ function openNav(evt)
 }
 
 か(document).scroll(()=>{
+    
+    if(か("#navbar").gt == null) return
+
     let maxScoll = document.documentElement.scrollHeight - 1500;
 
     if(document.documentElement.scrollTop >= 102)
@@ -35,3 +38,14 @@ function openNav(evt)
     if(document.documentElement.scrollTop >= maxScoll && か("#navbar").gt.style.marginTop != "20px")
         か("#navbar").sty("marginTop", `${maxScoll}px`)
 })
+
+// because fuck live server not removing ".html" or I can't seem to fucking remove it.
+function onclickWeb(file)
+{
+    let fuck = ".html"
+
+    if(!window.location.host.includes("127"))
+        fuck = "";
+
+    window.location.href=`./${file}${fuck}`
+}

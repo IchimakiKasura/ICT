@@ -95,10 +95,10 @@
 
         <div class="mobileNavigation">
             <div class="mnav">
-                <div onclick="window.location.href='./index.html'"><span>Home</span></div>
-                <div onclick="window.location.href='./BLOGS.html'"><span>Student Blogs</span></div>
-                <div onclick="window.location.href='./VIDEOS.html'"><span>Student Videos</span></div>
-                <div onclick="window.location.href='./About.html'"><span>About</span></div>
+                <div onclick="onclickWeb('index')"><span>Home</span></div>
+                <div onclick="onclickWeb('BLOGS')"><span>Student Blogs</span></div>
+                <div onclick="onclickWeb('VIDEOS')"><span>Student Videos</span></div>
+                <div onclick="onclickWeb('About')"><span>About</span></div>
                 <span class="spanText">
                     <i>Teacher:</i><br/>
                     <b>Mrs. Baby Jane Alcantara</b><br/><br/>
@@ -135,10 +135,10 @@
                     </div>
                 </div>
                 <div id="navbar" class="rightNav">
-                    <div navButton onclick="window.location.href='./index.html'">Home</div>
-                    <div navButton onclick="window.location.href='./BLOGS.html'">Student Blogs</div>
-                    <div navButton onclick="window.location.href='./VIDEOS.html'">Student Videos</div>
-                    <div navButton onclick="window.location.href='./About.html'">About</div>
+                    <div navButton onclick="onclickWeb('index')">Home</div>
+                    <div navButton onclick="onclickWeb('BLOGS')">Student Blogs</div>
+                    <div navButton onclick="onclickWeb('VIDEOS')">Student Videos</div>
+                    <div navButton onclick="onclickWeb('About')">About</div>
                     <!-- <div navButton onclick="showLate(this)">Show Late ICT PETA</div> -->
                     <br/>
                     <div>
@@ -172,6 +172,10 @@
         
         <script src="bin/videoScript.js"></script>
         <script src="bin/scripts.js"></script>
+        <script>
+            let url = window.location.search.replace("?watch=", "");
+            changevid(url);
+        </script>
     </body>
 
 </html>
