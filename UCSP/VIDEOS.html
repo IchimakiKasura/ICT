@@ -53,6 +53,12 @@
         <meta name="twitter:description" content="Grade-11 ICT UCSP Peta." />
         <meta name="twitter:image" content="https://upload.wikimedia.org/wikipedia/en/thumb/3/39/Holy_Trinity_Academy_seal.svg/1200px-Holy_Trinity_Academy_seal.svg.png" />
 
+        <script>
+            let url = window.location.search.replace("?watch=", "");
+
+            
+        </script>
+
         <link rel="stylesheet/less" href="./bin/main.less" type="text/css">
         <link rel="stylesheet/less" href="./bin/videoSelection.less" type="text/css">
         <link rel="stylesheet/less" href="./bin/mobile.less" type="text/css">
@@ -176,8 +182,6 @@
         <script src="bin/videoScript.js"></script>
         <script src="bin/scripts.js"></script>
         <script>
-            let url = window.location.search.replace("?watch=", "");
-
             if(url != "" && url != "?scandal")
                 changevid(url);
 

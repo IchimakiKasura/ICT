@@ -1,5 +1,5 @@
 let isNavbarOpen = false;
-let lastUpdate = "January 21, 2024 @ 8:22 PM"
+let lastUpdate = "January 21, 2024 @ 9:08 PM"
 
 か("[last-update]").gAll.forEach(el=>el.innerText = lastUpdate);
 

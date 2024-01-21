@@ -291,10 +291,10 @@ const ICT_CLASS =
     {
         Title: "learn, grow, succeed the power of education",
         Name: "Castro, Princess Yexa Raiven Ramos",
-        Thumbnail: "./students/Castro, Princess Yexa Raiven Ramos/video/1.png",
-        VideoLink: "",
-        DatePass: "January 21, 2024 @ 00:00 NA",
-        Duration: "0:00"
+        Thumbnail: "./students/Castro, Princess Yexa Raiven Ramos/video/1.jpg",
+        VideoLink: "https://drive.google.com/file/d/1-0WwhIQsK8CEr971S6FrFQblxbiHh1q0/preview",
+        DatePass: "January 21, 2024 @ 07:40 PM",
+        Duration: "8:29"
     },
     {
         Title: "Mental wellness unmasked: shedding light on the invisible struggles",
