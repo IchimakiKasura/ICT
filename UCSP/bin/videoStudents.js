@@ -74,7 +74,7 @@ const ICT_CLASS =
         Title: "Paggaling Mo, Kasiyahan Ko",
         Name: "Espinosa, Christian Subere",
         Thumbnail: "./students/Espinosa, Christian Subere/video/1.png",
-        VideoLink: "https://drive.google.com/file/d/11ronOczncSP_1U3LOA_1AvCIb63MLqhi/view",
+        VideoLink: "https://drive.google.com/file/d/11ronOczncSP_1U3LOA_1AvCIb63MLqhi/preview",
         DatePass: "January 21, 2024 @ 12:53 AM"
     },
     {
@@ -200,7 +200,7 @@ const ICT_CLASS =
         Title: "LIBRE KO ARAL MO",
         Name: "Tangaro, Jeric Maximo",
         Thumbnail: "./students/Tangaro, Jeric Maximo/video/1.jpg",
-        VideoLink: "https://drive.google.com/file/d/1nN5y0wA80-gRP0fTVSuy3O8g60MFDWue/preview",
+        VideoLink: "https://drive.google.com/file/d/1TXfrlBUfS-Zlhx6k_4f-74ASu2NCp4Dv/preview",
         DatePass: "January 20, 2024 @ 07:43 PM"
     },
     {
@@ -242,7 +242,7 @@ const ICT_CLASS =
         Title: "Negosyo niyo, Susuportahan ko",
         Name: "Villanueva, Kiel Anthony Cinense",
         Thumbnail: "./students/Villanueva, Kiel Anthony Cinense/video/1.jpg",
-        VideoLink: "https://drive.google.com/file/d/1DwnRW_D0-IWc8r4AYwoLiPSL71XFkqf7/view",
+        VideoLink: "https://drive.google.com/file/d/1DwnRW_D0-IWc8r4AYwoLiPSL71XFkqf7/preview",
         DatePass: "January 20, 2024 @ 08:12 PM"
     },
     {
