@@ -18,7 +18,7 @@ const ICT_CLASS =
         Title: "TULONG KO PAALAGAHAN MO",
         Name: "Batta, Randy Milo",
         Thumbnail: "./students/Batta, Randy Milo/video/1.png",
-        VideoLink: "https://drive.google.com/file/d/1ZdlWjWMz5abrbUBkKIeN-FtPYc7rM7UV/preview",
+        VideoLink: "https://drive.google.com/file/d/1nN5y0wA80-gRP0fTVSuy3O8g60MFDWue/preview",
         DatePass: "January 20, 2024 @ 10:45 PM"
     },
     {
@@ -47,7 +47,7 @@ const ICT_CLASS =
         Name: "Cruz, Hayden Kyle De Vries",
         Thumbnail: "./students/Cruz, Hayden Kyle De Vries/video/1.png",
         VideoLink: "https://drive.google.com/file/d/1W-Fjjd2HNFpMQEG4s1b2T976AycO8ZTd/preview",
-        DatePass: "January 20, 2024 @ 3:08 PM"
+        DatePass: "January 20, 2024 @ 03:08 PM"
     },
     {
         Title: "feed-a-child",
@@ -71,11 +71,11 @@ const ICT_CLASS =
         DatePass: "January 20, 2024 @ 08:00 PM"
     },
     {
-        Title: "",
+        Title: "Paggaling Mo, Kasiyahan Ko",
         Name: "Espinosa, Christian Subere",
-        Thumbnail: "",
-        VideoLink: "",
-        DatePass: "January 20, 2024 @ 00:00 NA"
+        Thumbnail: "./students/Espinosa, Christian Subere/video/1.png",
+        VideoLink: "https://drive.google.com/file/d/11ronOczncSP_1U3LOA_1AvCIb63MLqhi/view",
+        DatePass: "January 21, 2024 @ 12:53 AM"
     },
     {
         Title: "",
@@ -103,7 +103,7 @@ const ICT_CLASS =
         Name: "Javier, Mark Augustine Pagente",
         Thumbnail: "./students/Javier, Mark Augustine Pagente/video/1.png",
         VideoLink: "https://drive.google.com/file/d/1smBjYy__jrrxev0doQRc1u-ENBe4DP8M/preview",
-        DatePass: "January 20, 2024 @ 00:00 NA"
+        DatePass: "January 20, 2024 @ 07:34 PM"
     },
     {
         Title: "",
@@ -113,7 +113,7 @@ const ICT_CLASS =
         DatePass: "January 20, 2024 @ 00:00 NA"
     },
     {
-        Title: "UCSP FINALS-PETA",
+        Title: "Diyos ang Ating Daan, Para sa Masarap ng Pagsasamahan",
         Name: "Magat, Aldrian Cedrick Olipano",
         Thumbnail: "./students/Magat, Aldrian Cedrick Olipano/video/1.jpg",
         VideoLink: "https://drive.google.com/file/d/1mx5FT5iHbR2HR5EipgoNZ73t29PBi39a/preview",
@@ -197,11 +197,11 @@ const ICT_CLASS =
         DatePass: "January 20, 2024 @ 07:47 PM"
     },
     {
-        Title: "",
+        Title: "LIBRE KO ARAL MO",
         Name: "Tangaro, Jeric Maximo",
-        Thumbnail: "",
-        VideoLink: "",
-        DatePass: "January 20, 2024 @ 00:00 NA"
+        Thumbnail: "./students/Tangaro, Jeric Maximo/video/1.jpg",
+        VideoLink: "https://drive.google.com/file/d/1nN5y0wA80-gRP0fTVSuy3O8g60MFDWue/preview",
+        DatePass: "January 20, 2024 @ 07:43 PM"
     },
     {
         Title: "Sagot koBuhay mo",
@@ -221,7 +221,7 @@ const ICT_CLASS =
         Title: "IMPLUWENSYA KO, INSPIRASYON MO.",
         Name: "Ventura, Richie Rich Erquiza",
         Thumbnail: "./students/Ventura, Richie Rich Erquiza/video/1.png",
-        VideoLink: "",
+        VideoLink: "https://drive.google.com/file/d/1HEvd6uZc0PUVdy3pHapDQNR45zh3Ooa9/preview",
         DatePass: "January 20, 2024 @ 08:10 PM"
     },
     {
