@@ -37,27 +37,21 @@
 
         <!-- main -->
         <meta name="owner" content="GRADE-11 ICT" />
-        <meta name="title" content="ICT | UNDERSTANDING CULTURE SOCIETY AND POLITICS" />
-        <meta name="description" content="Grade-11 ICT UCSP Peta." />
-        <meta property="image" content="https://upload.wikimedia.org/wikipedia/en/thumb/3/39/Holy_Trinity_Academy_seal.svg/1200px-Holy_Trinity_Academy_seal.svg.png" />
+        <meta meta-title name="title" content="ICT | UNDERSTANDING CULTURE SOCIETY AND POLITICS" />
+        <meta meta-desc name="description" content="Grade-11 ICT UCSP Peta." />
+        <meta meta-image property="image" content="https://upload.wikimedia.org/wikipedia/en/thumb/3/39/Holy_Trinity_Academy_seal.svg/1200px-Holy_Trinity_Academy_seal.svg.png" />
         <!-- fb -->
         <meta property="og:url" content="https://ichimakikasura.github.io/" />
         <meta property="og:type" content="website">
-        <meta property="og:title" content="ICT | UNDERSTANDING CULTURE SOCIETY AND POLITICS" />
-        <meta property="og:description" content="Grade-11 ICT UCSP Peta." />
-        <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/en/thumb/3/39/Holy_Trinity_Academy_seal.svg/1200px-Holy_Trinity_Academy_seal.svg.png" />
+        <meta meta-title property="og:title" content="ICT | UNDERSTANDING CULTURE SOCIETY AND POLITICS" />
+        <meta meta-desc property="og:description" content="Grade-11 ICT UCSP Peta." />
+        <meta meta-image property="og:image" content="https://upload.wikimedia.org/wikipedia/en/thumb/3/39/Holy_Trinity_Academy_seal.svg/1200px-Holy_Trinity_Academy_seal.svg.png" />
         <!-- twitter -->
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:creator" content="GRADE-11 ICT" />
-        <meta name="twitter:title" content="ICT | UNDERSTANDING CULTURE SOCIETY AND POLITICS" />
-        <meta name="twitter:description" content="Grade-11 ICT UCSP Peta." />
-        <meta name="twitter:image" content="https://upload.wikimedia.org/wikipedia/en/thumb/3/39/Holy_Trinity_Academy_seal.svg/1200px-Holy_Trinity_Academy_seal.svg.png" />
-
-        <script>
-            let url = window.location.search.replace("?watch=", "");
-
-            
-        </script>
+        <meta meta-title name="twitter:title" content="ICT | UNDERSTANDING CULTURE SOCIETY AND POLITICS" />
+        <meta meta-desc name="twitter:description" content="Grade-11 ICT UCSP Peta." />
+        <meta meta-image name="twitter:image" content="https://upload.wikimedia.org/wikipedia/en/thumb/3/39/Holy_Trinity_Academy_seal.svg/1200px-Holy_Trinity_Academy_seal.svg.png" />
 
         <link rel="stylesheet/less" href="./bin/main.less" type="text/css">
         <link rel="stylesheet/less" href="./bin/videoSelection.less" type="text/css">
@@ -68,6 +62,14 @@
         <script src="https://rawcdn.githack.com/IchimakiKasura/ichimakikasura.github.io/990dfa042563af01e8b2f54388838a78c37023dc/Old2/Old/js/kasu-beta-2.0.oc.mini.js"></script>
         <script src="bin/videoStudents.js"></script>
                 
+        <script>
+            let url = window.location.search.replace("?watch=", "");
+
+            document.querySelectorAll("[meta-title]").forEach(el=>el.setAttribute("content", ICT_CLASS[url].Title))
+            document.querySelectorAll("[meta-desc]").forEach(el=>el.setAttribute("content", ICT_CLASS[url].Name))
+            document.querySelectorAll("[meta-image]").forEach(el=>el.setAttribute("content", ICT_CLASS[url].Thumbnail))
+        </script>
+
         <script>
             document.addEventListener("DOMContentLoaded", ()=>{
                 document.querySelector("body").style.overflow = "auto";
