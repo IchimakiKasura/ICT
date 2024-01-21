@@ -117,7 +117,7 @@
         <main class="mainBody">
             <section class="topSection">
                 <h1>List of students videos</h1>
-                <hr style="margin-top:10px;background-color:black;height: 2px; border-radius: 50px; border-style: none;"/>
+                <hr style="margin-top:10px;background-color:white;height: 2px; border-radius: 50px; border-style: none;"/>
             </section>
 
             <div class="selectionHolder" style="display: flex">
@@ -126,8 +126,8 @@
                         <iframe id="player" allow="autoplay; fullscreen"></iframe>
                         <div video_detail>
                             <h1 video_title></h1>
-                            <h2 video_creator style="font-size: 2vw; color: rgb(98, 98, 98)"></h2>
-                            <h3 video_passed style="font-size: 1.5vw; color: rgb(113, 113, 113)"></h3>
+                            <h2 video_creator style="font-size: 2vw; color: rgb(188, 188, 188);"></h2>
+                            <h3 video_passed style="font-size: 1.5vw; color: rgb(150, 150, 150);"></h3>
                         </div>
                     </div>
                     <div articles>
@@ -174,7 +174,9 @@
         <script src="bin/scripts.js"></script>
         <script>
             let url = window.location.search.replace("?watch=", "");
-            changevid(url);
+
+            if(url != "")
+                changevid(url);
         </script>
     </body>
 

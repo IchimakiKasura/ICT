@@ -31,7 +31,10 @@ let showVideo = false;
         <article class="selectableSection" onclick="changevid(${i})">
             <div class="selectableImage" current-watch="0">
                 <img src="${thumbnail}">
-                <div>Now Playing</div>
+                <div play-text>Now Playing</div>
+                <div play-time>
+                    <span>${ICT_CLASS[i].Duration}</span>
+                </div>
             </div>
             <div class="sectionHeader">
                 <h1>${title}</h1>
