@@ -175,7 +175,7 @@ const ICT_CLASS =
         // Thumbnail: "./students/Pepito, Kean James Delapa/video/1.png",
         VideoLink: "",
         DatePass: "January 00, 0000 @ 00:00 NA",
-        Duration: "999:99:99"
+        Duration: "00:00"
     },
     {
         Title: "",
