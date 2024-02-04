@@ -169,13 +169,13 @@ const ICT_CLASS =
         Duration: "00:00"
     },
     {
-        Title: "",
+        Title: "Technology is the Future",
         Name: "Pepito, Kean James Delapa",
         Thumbnail: "",
         // Thumbnail: "./students/Pepito, Kean James Delapa/video/1.png",
-        VideoLink: "",
-        DatePass: "January 00, 0000 @ 00:00 NA",
-        Duration: "00:00"
+        VideoLink: "https://drive.google.com/file/d/1fC35sDmaqBeTXIUONRSkYi5NDcQg4y0I/preview",
+        DatePass: "Febuary 5, 2024 @ 2:00 AM",
+        Duration: "2:43"
     },
     {
         Title: "",
@@ -242,12 +242,12 @@ const ICT_CLASS =
         Duration: "5:31"
     },
     {
-        Title: "",
+        Title: "utak mayaman",
         Name: "Tapan, Curt Jeremy Gimena",
-        Thumbnail: "",
-        VideoLink: "",
-        DatePass: "January 21, 2024 @ 00:00 NA",
-        Duration: "00:00"
+        Thumbnail: "./students/Tapan, Curt Jeremy Gimena/video/1.png",
+        VideoLink: "https://drive.google.com/file/d/1fhh5wasfLKcKXqmRo5H28vuMBJYjaQEh/preview",
+        DatePass: "Febuary 4, 2024 @ 10:26 PM",
+        Duration: "3:12"
     },
     {
         Title: "IMPLUWENSYA KO, INSPIRASYON MO.",
