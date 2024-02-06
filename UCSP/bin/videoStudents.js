@@ -171,8 +171,8 @@ const ICT_CLASS =
     {
         Title: "Technology is the Future",
         Name: "Pepito, Kean James Delapa",
-        Thumbnail: "",
         // Thumbnail: "./students/Pepito, Kean James Delapa/video/1.png",
+        Thumbnail: "./students/Pepito, Kean James Delapa/video/2.png",
         VideoLink: "https://drive.google.com/file/d/1fC35sDmaqBeTXIUONRSkYi5NDcQg4y0I/preview",
         DatePass: "Febuary 5, 2024 @ 2:00 AM",
         Duration: "2:43"
@@ -266,12 +266,12 @@ const ICT_CLASS =
         Duration: "3:43"
     },
     {
-        Title: "",
+        Title: "Health",
         Name: "Villanueva, John Ace Durante",
-        Thumbnail: "",
-        VideoLink: "",
-        DatePass: "January 21, 2024 @ 00:00 NA",
-        Duration: "00:00"
+        Thumbnail: "./students/Villanueva, John Ace Durante/video/1.jpg",
+        VideoLink: "https://drive.google.com/file/d/19d3MbIVhjV3UnY8-AdmwHENryRAdQyFJ/preview",
+        DatePass: "Febuary 6, 2024 @ 6:07 PM",
+        Duration: "2:25"
     },
     {
         Title: "Negosyo niyo, Susuportahan ko",
