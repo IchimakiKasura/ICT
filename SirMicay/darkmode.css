@@ -1,0 +1,105 @@
+@font-face {
+    font-family: fnt;
+    src: url('Olde English Regular.ttf');
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    background: linear-gradient(rgb(71, 71, 71), rgb(0, 24, 36)) no-repeat;
+    height: 100vh;
+    width: 100vw;
+    position:sticky;
+}
+
+nav {
+    position: relative;
+    background-color: rgba(120, 120, 150, 1);
+    box-shadow: 0 0 1vw 0.9vw rgba(100, 100, 150, 0.7);
+    font-size: 3vw;
+    color: black;
+    padding-right: 2vw;
+    height: 5.8vw;
+    top: -250px;
+    opacity: 0;
+    transition: top 1.5s ease-out, opacity 1.5s ease-out;
+    user-select: none;
+}
+
+li {
+    display:inline;
+    float: left;
+    margin-top: 1vw !important;
+    pointer-events: none;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: inline;
+    font-family: 'fnt';
+}
+
+li img {
+    margin: 0vw 1vw 0 1vw;
+    height: 4vw;
+}
+
+[np] { padding: 0 !important; }
+
+[fl] {
+    float: right;
+    margin: 0 25px 0 25px;
+}
+
+li input {
+    margin-top: -5vw !important;
+    height: 2vw;
+    font-size: 1vw;
+    width: 10vw;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+    color: black;
+    outline: none;
+    pointer-events: all;
+}
+li input::placeholder {
+    font-family: 'fnt';
+    text-align: center;
+    font-size: 3vw;
+    color: rgba(0, 0, 0, 0.479);
+}
+
+[hnb] {
+    transition: color 0.5s, text-shadow 0.5s;
+    cursor: pointer;
+    pointer-events: all;
+}
+
+[hnb]:hover {
+    color: white;
+    text-shadow: 0 0 1vw  black;
+}
+
+[ft]
+{ font-family: "fnt"; font-size: 5vw; }
+
+.mainbody
+{
+    opacity: 0;
+    color: black;
+    position: relative;
+    top: 100px;
+    margin: 0 10% 0 10%;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 2vw 0.01vw white;
+    padding: 1vw;
+    border-radius: 1vw;
+    top: 10px;
+    transition: opacity 4s ease, top 2s ease;
+}
