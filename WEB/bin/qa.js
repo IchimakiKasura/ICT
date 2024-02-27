@@ -4,7 +4,7 @@ try {
     document.querySelector("#eml").textContent = GetURLParameter("emlForm");
 } catch {
     console.log(window.location.href);
-    // window.location.href += "FORMS"
+    window.location.href += "FORMS"
 }
 
 // gets the information from the url parameters from the form after being submitted
