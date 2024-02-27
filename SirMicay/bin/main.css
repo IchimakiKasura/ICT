@@ -74,6 +74,7 @@
     box-shadow: 0 0 0.5vw 0.1vw black;
     margin: 0 1vw 0 1vw;
     cursor: pointer;
+    user-select: none;
     transition: background-color 0.1s;
 }
 #Other button:hover {

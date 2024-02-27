@@ -17,3 +17,8 @@ body {
     background: rgb(224, 231, 255);
     overflow-x: hidden;
 }
+
+body::-webkit-scrollbar
+{
+    display: none;
+}
