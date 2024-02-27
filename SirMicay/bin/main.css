@@ -144,9 +144,9 @@
     transition: border 0.2s;
     outline: none;
 }
-.baseContact textarea:hover, .baseContact input:hover {
+.baseContact :where(textarea, input):hover {
     border: 1px solid royalblue;
 }
-.baseContact textarea:focus, .baseContact input:focus {
+.baseContact :where(textarea, input):focus {
     border: 1px solid yellow;
 }
