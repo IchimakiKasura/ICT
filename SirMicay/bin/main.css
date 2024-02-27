@@ -1,4 +1,4 @@
-#Home, #Hymn, #Contact {
+#Home, #Other, #Contact {
     height: 100vh;
     width: 100vw;
     font-family: mgtg;
@@ -34,23 +34,53 @@
     animation: imageStart 3s ease-in-out;
 }
 
-#Hymn {
+#Other {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: rgb(253, 255, 197);
+    padding-top: 2vw;
 }
-#Hymn h1 {
+#Other h1 {
     font-size: 450%;
     font-family: fnt;
     margin-bottom: 20px;
 }
-#Hymn p {
+#Other p {
     font-style: italic;
     background-color: rgba(0, 0, 0, 0.3);
+    font-size: 130%;
     padding: 3rem;
     border-radius: 1rem;
+    text-align: justify;
+    margin: 0 35vw 0 35vw;
+    height: 55vh;
+    overflow: scroll;
 }
+#Other p::-webkit-scrollbar { display: none; }
+
+@media screen and (max-width: 1000px) {
+    #Other p {
+        margin: 0 15vw 0 15vw !important;
+    }
+}
+
+#Other button {
+    font-size: 2vw;
+    width: 100px;
+    background-color: royalblue;
+    border: 0px;
+    border-radius: 1vw;
+    color: white;
+    box-shadow: 0 0 0.5vw 0.1vw black;
+    margin: 0 1vw 0 1vw;
+    cursor: pointer;
+    transition: background-color 0.1s;
+}
+#Other button:hover {
+    background-color: rgb(44, 72, 155);
+}
+
 
 #Contact {
     display: flex;
@@ -66,4 +96,58 @@
     z-index: -2;
     opacity: 0.3;
     animation: bg 5s ease-in-out;
+}
+
+.baseContact {
+    background-color: white;
+    width: 45vw;
+    overflow: hidden;
+    border-radius: 1vw;
+    box-shadow: 0 0 1vw 0.1vw black;
+}
+.baseContact img {
+    float: left;
+    height: 30vw;
+}
+
+.baseContact input {
+    background-color: rgb(233, 233, 233);
+    font-size: 1vw;
+    padding: 0.3vw;
+    margin: 0.2vw;
+    border: 1px solid transparent;
+    border-radius: 0.3vw;
+    width: 13vw;
+    font-family: Tahoma;
+    transition: border 0.2s;
+    outline: none;
+}
+.baseContact input[type=submit] {
+    background-color: royalblue;
+    color: white;
+    transition: background-color 0.2s;
+    cursor: pointer;
+}
+.baseContact input[type=submit]:hover {
+    background-color: rgb(27, 45, 98);
+    color: white;
+}
+.baseContact textarea {
+    background-color: rgb(233, 233, 233);
+    font-family: Tahoma;
+    border-radius: 0.3vw;
+    font-size: 1vw;
+    border: 1px solid transparent;
+    min-width: 13.2vw;
+    max-width: 13.2vw;
+    min-height: 8vw;
+    max-height: 10vw;
+    transition: border 0.2s;
+    outline: none;
+}
+.baseContact textarea:hover, .baseContact input:hover {
+    border: 1px solid royalblue;
+}
+.baseContact textarea:focus, .baseContact input:focus {
+    border: 1px solid yellow;
 }

@@ -16,9 +16,9 @@
         <nav class="navigationPanel">
             <ul>
                 <li>Holy Trinity Academy</li>
-                <li ft onclick="location.href='#Contact'">Contact</li>
-                <li ft onclick="location.href='#Hymn'">Hymn</li>
-                <li ft onclick="location.href='#Home'">Home</li>
+                <li ft onclick="ChangeSection('#Contact', this)">Contact</li>
+                <li ft onclick="ChangeSection('#Other', this)">Other</li>
+                <li ft onclick="ChangeSection('#Home', this)">Home</li>
             </ul>
         </nav>
 
@@ -32,36 +32,36 @@
                     <p style="position: relative; font-size: 2vw;">Holy Trinity Academy Unofficial Page</p>
                 </div>
             </section>
-            <section id="Hymn">
+            <section id="Other">
                 <div style="text-align: center;">
-                    <h1>HTA Hymn</h1>
-                    <p>
-Let us sing the glorious song<br>
-Of truth that brings eternal light<br>
-And wave proudly our banner high<br>
-Of purest blue and white.<br>
-<br>
-With love as our inspiration<br>
-And God our guide by day and night<br>
-Our noble aim we will achieve<br>
-For truth will give us might.<br>
-<br>
-Holy Trinity Academy<br>
-In you, wisdom we will always find<br>
-The truth with which you<br>
-Light the world<br>
-Will always light our mind.<br>
-                    </p>
+                    <h1 id="otherTitle"></h1>
+                    <p id="otherParagraph"></p>
+                    <br>
+                    <button onclick="otherChange(false)">&lt;</button>
+                    <button onclick="otherChange(true)">&gt;</button>
                 </div>
             </section>
             <section id="Contact">
                 <div style="text-align: center;">
-                    <form action="">
-                        <input type="text" placeholder="Name" required><br>
-                        <input type="email" placeholder="Email"><br>
-                        <input type="submit" value="SUBMIT" >
-                    </form>
-                    <!-- <input type="text" placeholder="message..." required><br> -->
+                    <br><br>
+                    <br><br>
+                    <br>
+                    <div class="baseContact">
+                        <img src="images/htaChurch.jpg">
+                        <br><br>
+                        <h1>Get in touch</h1>
+                        <br>
+                        <form action="">
+                            <input type="text" placeholder="First Name" required><br>
+                            <input type="text" placeholder="Last Name" required><br>
+                            <input type="email" placeholder="Email"><br><br>
+                            <textarea placeholder="Message..."></textarea><br><br>
+                            <input type="submit" value="Send">
+                        </form>
+                    </div>
+                    <br>
+                    <br>
+                    Created by Kean James D. Pepito of ICT-11.
                 </div>
             </section>
         </main>
