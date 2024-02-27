@@ -1,0 +1,30 @@
+.navigationPanel 
+{
+    position: fixed;
+    background: royalblue;
+    color: white;
+    height: 4.8vw;
+    width: 100vw;
+
+    font-family: "fnt";
+    font-size: 3.2vw;
+
+    box-shadow: 0 0 0.5vw 0.3vw black;
+    text-shadow: 0 0 0.5vw black;
+
+    animation: navStart 1s ease-in-out;
+
+    z-index: 1;
+}
+
+.navigationPanel ul
+{
+    list-style-type: none;
+    margin: 0 1vw 0 0;
+    padding: 0;
+    user-select: none;
+}
+.navigationPanel li {
+    padding: 0.5vw 1.5vw 0.5vw 1.5vw;
+    display: inline-flex;
+}

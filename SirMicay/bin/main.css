@@ -1,0 +1,69 @@
+#Home, #Hymn, #Contact {
+    height: 100vh;
+    width: 100vw;
+    font-family: mgtg;
+    overflow: hidden;
+}
+
+#Home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vw;
+    text-shadow: 0 0 1vw white;
+    user-select: none;
+}
+
+#Home div h1 {
+    animation: htaTitle 2s ease-in-out;
+}#Home div hr {
+    animation: htaHR 3s ease-in-out;
+}#Home div p {
+    animation: htaText 2s ease-in-out;    
+}
+
+.htaImage {
+    position: absolute;
+    z-index: -1;
+    opacity: 0.2;
+    height: 60%;
+    text-shadow: 0 0 1vw black;
+    filter: drop-shadow(0 0 50px black);
+    -webkit-filter: drop-shadow(0 0 50px black);
+    animation: logoColor alternate 10s infinite ease;
+    animation: imageStart 3s ease-in-out;
+}
+
+#Hymn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(253, 255, 197);
+}
+#Hymn h1 {
+    font-size: 450%;
+    font-family: fnt;
+    margin-bottom: 20px;
+}
+#Hymn p {
+    font-style: italic;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 3rem;
+    border-radius: 1rem;
+}
+
+#Contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -2;
+    opacity: 0.3;
+    animation: bg 5s ease-in-out;
+}

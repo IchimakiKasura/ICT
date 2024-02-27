@@ -1,0 +1,19 @@
+@font-face {
+    font-family: fnt;
+    src: url('Olde English Regular.ttf');
+}
+@font-face {
+    font-family: mgtg;
+    src: url('mgtg.otf');
+}
+
+
+* {
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: rgb(224, 231, 255);
+    overflow-x: hidden;
+}

@@ -1,0 +1,9 @@
+[ft] {
+    float: right;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+[ft]:hover {
+    color: black;
+}

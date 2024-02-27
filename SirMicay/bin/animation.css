@@ -1,0 +1,73 @@
+@keyframes logoColor {
+    0%
+    {
+        filter: drop-shadow(0 0 100px black);
+        -webkit-filter: drop-shadow(0 0 50px black);
+    }
+    50%
+    {
+        filter: drop-shadow(0 0 300px royalblue);
+        -webkit-filter: drop-shadow(0 0 100px yellow);
+    }
+    100%
+    {
+        filter: drop-shadow(0 0 100px yellow);
+        -webkit-filter: drop-shadow(0 0 50px royalblue);
+    }
+}
+
+@keyframes imageStart {
+    from {
+        height: 150%;
+        opacity: 0;
+    }
+    to {
+        height: 60%;
+        opacity: 0.2;
+    }
+}
+
+@keyframes navStart {
+    from {
+        top: -5rem;
+        opacity: 0;
+    }
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes htaTitle {
+    from {
+        top: 20px;
+        opacity: 0;
+    }
+    to {
+        top: 0;
+    }
+}
+@keyframes htaHR {
+    from {
+        opacity: 0;
+        width: 0;
+    }
+    to {
+
+    } 
+}
+@keyframes htaText {
+    from {
+        top: -20px;
+        opacity: 0;
+    }
+    to {
+        top: 0;
+    }
+}
+
+@keyframes bg {
+    from {
+        opacity: 0;
+    }
+}

@@ -5,43 +5,67 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Holy Trinity Academy</title>
         <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/en/thumb/3/39/Holy_Trinity_Academy_seal.svg/1024px-Holy_Trinity_Academy_seal.svg.png" type="image/x-icon">
-        <link css rel="stylesheet" href="style.css">
+        <link css rel="stylesheet" href="bin/root.css">
+        <link css rel="stylesheet" href="bin/main.css">
+        <link css rel="stylesheet" href="bin/navigation.css">
+        <link css rel="stylesheet" href="bin/attributes.css">
+        <link css rel="stylesheet" href="bin/animation.css">
     </head>
 
     <body>
-        <nav>
+        <nav class="navigationPanel">
             <ul>
-                <li><img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/39/Holy_Trinity_Academy_seal.svg/1024px-Holy_Trinity_Academy_seal.svg.png" alt="Holy trinity Logo"></li>
-                <li >Holy Trinity Academy</li>
-                <li fl np><input type="text" placeholder="search"></li>
-                <li hnb fl onclick="darkmode(this)">Dark Mode</li>
-                <li hnb fl aboutme>About</li>
-                <li hnb fl home>Home</li>
+                <li>Holy Trinity Academy</li>
+                <li ft onclick="location.href='#Contact'">Contact</li>
+                <li ft onclick="location.href='#Hymn'">Hymn</li>
+                <li ft onclick="location.href='#Home'">Home</li>
             </ul>
         </nav>
-        
-        <div class="mainbody" m1>
-            <h1 ft> Home</h1>
-            <br>
-            <p style="font-size: 1.4vw;">
-                Holy Trinity Academy (HTA), also referred to as the Most Holy Trinity Academy, or colloquially as Holy, is a private parochial co-educational school in Sampaloc, Manila, Philippines. The school was established in June 1947 by Rev. Fr. Bernardo Torres. The school accepted both male and female students, but in separate departments, until it became fully co-educational in 1976.
-                <br><br>
-                The school currently maintains a Level 2 accreditation from the Philippine Accrediting Association of Schools, Colleges, and Universities (PAASCU) since its approval in December 2015. The school is part of the Roman Catholic Archdiocese of Manila Educational System (RCAMES), an educational system and a group of catholic and parochial schools governed by Roman Catholic Archdiocese of Manila, where the school is under the fourth cluster, headed by the school's director, Rev. Fr. Marion C. Munda.
-                <br><br>
-                Holy Trinity Academy offers the K–12 curriculum program. In the Senior High School Department, the school offers five academic tracks, which prepares students for college and their chosen undergraduate program. In the school year 2019–2020, the school served a population of around 3,000 enrollees annually in its preparatory, elementary, and high school departments.
-                <br><br>
-                Some of the HTA alumni have been recognized for their works in arts, media, filmmaking, and science, including, Lexi Gonzales, Mon Gualvez, and Kyxz Mendiola.
-            </p>
-        </div>
 
-        <div class="mainbody" m2 style="display: none">
-            <h1 ft> About</h1>
-            <br>
-            <p style="font-size: 1.4vw;">
-                So this is the About Section. Nothing....
-            </p>
-        </div>        
+        <main>
+            <section id="Home">
+                <img class="bg" src="images/hta.jpg" alt="bg">
+                <img class="htaImage" src="https://upload.wikimedia.org/wikipedia/en/thumb/3/39/Holy_Trinity_Academy_seal.svg/1024px-Holy_Trinity_Academy_seal.svg.png" alt="logo">
+                <div style="text-align: center;">
+                    <h1 style="position: relative">Home of Tomorrow's Achievers</h1>
+                    <hr style="margin: auto; border: 3px solid black; border-radius: 1vw; width: 50vw;">
+                    <p style="position: relative; font-size: 2vw;">Holy Trinity Academy Unofficial Page</p>
+                </div>
+            </section>
+            <section id="Hymn">
+                <div style="text-align: center;">
+                    <h1>HTA Hymn</h1>
+                    <p>
+Let us sing the glorious song<br>
+Of truth that brings eternal light<br>
+And wave proudly our banner high<br>
+Of purest blue and white.<br>
+<br>
+With love as our inspiration<br>
+And God our guide by day and night<br>
+Our noble aim we will achieve<br>
+For truth will give us might.<br>
+<br>
+Holy Trinity Academy<br>
+In you, wisdom we will always find<br>
+The truth with which you<br>
+Light the world<br>
+Will always light our mind.<br>
+                    </p>
+                </div>
+            </section>
+            <section id="Contact">
+                <div style="text-align: center;">
+                    <form action="">
+                        <input type="text" placeholder="Name" required><br>
+                        <input type="email" placeholder="Email"><br>
+                        <input type="submit" value="SUBMIT" >
+                    </form>
+                    <!-- <input type="text" placeholder="message..." required><br> -->
+                </div>
+            </section>
+        </main>
 
-        <script src="script.js"></script>
+        <script src="bin/script.js"></script>
     </body>
 </html>
