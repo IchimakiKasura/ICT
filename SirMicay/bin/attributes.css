@@ -1,9 +1,10 @@
 [ft] {
     float: right;
     cursor: pointer;
-    transition: color 0.2s ease;
+    transition: color 0.2s ease, text-shadow 1s ease;
 }
 
 [ft]:hover {
     color: black;
+    text-shadow: 0 0 0.5vw yellow;
 }

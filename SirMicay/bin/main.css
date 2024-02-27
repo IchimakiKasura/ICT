@@ -1,3 +1,9 @@
+@media screen and (max-width: 1000px) {
+    #Other p {
+        margin: 0 15vw 0 15vw !important;
+    }
+}
+
 #Home, #Other, #Contact {
     height: 100vh;
     width: 100vw;
@@ -30,8 +36,7 @@
     text-shadow: 0 0 1vw black;
     filter: drop-shadow(0 0 50px black);
     -webkit-filter: drop-shadow(0 0 50px black);
-    animation: logoColor alternate 10s infinite ease;
-    animation: imageStart 3s ease-in-out;
+    animation: imageStart 3s ease-in-out, logoColor alternate 5s infinite ease;
 }
 
 #Other {
@@ -58,12 +63,6 @@
     overflow: scroll;
 }
 #Other p::-webkit-scrollbar { display: none; }
-
-@media screen and (max-width: 1000px) {
-    #Other p {
-        margin: 0 15vw 0 15vw !important;
-    }
-}
 
 #Other button {
     font-size: 2vw;
