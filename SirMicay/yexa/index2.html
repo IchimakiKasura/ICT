@@ -16,6 +16,11 @@ body {
     display: grid;
     place-items: center;
     margin-top: 20px;
+    font-family: Arial;
+    background-image: url('https://upload-os-bbs.hoyolab.com/upload/2022/07/21/175387813/cee97336375c1cae8ebfededaf59d5c5_8635166122707983656.png?x-oss-process=image%2Fauto-orient%2C0%2Finterlace%2C1%2Fformat%2Cwebp%2Fquality%2Cq_80');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
 }
 .header {
     text-align: center;
@@ -66,14 +71,38 @@ footer {
     color: #fff;
     text-align: center;
 }
+
+  #myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color:#F8F8FF;
+  color: black;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #A7C7E7;
+  color: white;
+}
+
+
+
 </style>
 </head>
 <body>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 <div class="main">
     <marquee class="marq" bgcolor="#6495ED" direction="left" loop="">
         <div class="header">
             <img src="https://upload.wikimedia.org/wikipedia/en/thumb/7/71/Holy_Trinity_Academy_logotype.svg/1920px-Holy_Trinity_Academy_logotype.svg.png" width="400" height="60"><br>
-            <h1>UCSP & ICT</h1>
             <p>Castro, Princess Yexa Raiven R. | 11-ICT</p>
             <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/39/Holy_Trinity_Academy_seal.svg/1200px-Holy_Trinity_Academy_seal.svg.png" width="80" height="80"><br>
         </div>
@@ -83,16 +112,22 @@ footer {
     <button class="tablink" onclick="openPage('Contact', this, '#6495ED')">Contact</button>
     <button class="tablink" onclick="openPage('About', this, '#6495ED')">About</button>
     <div id="Home" class="tabcontent">
-        <h3>DEFINE THE FOLLOWING</h3><br>
-        <ul style="list-style-type:circle;">
-            <li>Politics</li>
-            <li>Society</li>
-            <li>Culture</li>
-        </ul>
+        <p id="eh"> 8 + 16 </p>
+		<button type="button" onclick='document.getElementById("eh").innerHTML = sum'>CLICK ME!!</button><br><br>
+		            <button type="button" onclick="document.getElementById('myId').innerHTML = Date()">Click me!!</button>
+					<p id="myId"></p>
+
+		
+	
     </div>
+	
     <div id="News" class="tabcontent">
         <h3>News</h3>
-        <p>Some news this fine day!</p>
+        <h1>Some news this fine day!</h1>
+		<p> GIVE ME YOUR PRIMOS </p>
+		<button onclick="document.getElementById('myImage').src='https://c.tenor.com/tmQvB14yS0EAAAAC/tenor.gif'">YES!!</button>
+        <img id="myImage" src="https://media1.tenor.com/m/PPBt_2OGIJgAAAAC/genshin-impact-raiden-shogun.gif" style="width:500px">
+        <button onclick="document.getElementById('myImage').src='https://media.tenor.com/6zEI57zE9z8AAAAM/kys-raiden-shogun.gif'">NO!!</button>
     </div>
     <div id="Contact" class="tabcontent">
         <h3>Contact</h3>
@@ -106,6 +141,17 @@ footer {
         <p>&copy; 2024 My Web Page. All rights reserved.</p>
     </footer>
 </div>
+<script>
+
+ var pi = 3.14;
+ var person = "sppoderman";
+ var answer = 'I Dont Know';
+ var x = 8,  y = 16;
+ var sum = x+y;
+ var e = x/y;
+ 
+ </script>
+
 <script>
 function openPage(pageName, elmnt, color) {
     var i, tabcontent, tablinks;
@@ -123,5 +169,27 @@ function openPage(pageName, elmnt, color) {
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
 </script>
+
+  <script>
+let mybutton = document.getElementById("myBtn");
+
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
 </body>
 </html>
