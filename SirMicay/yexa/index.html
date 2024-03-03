@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            text-align: center;
+            background-image: url('https://e1.pxfuel.com/desktop-wallpaper/309/333/desktop-wallpaper-twisted-wonderland-twisted.jpg');
+            background-size: cover;
+            color: white;
+            margin: 0; /* Remove default margin to avoid spacing issues */
+        }
+
+        .form {
+            background-image: url('https://i.pinimg.com/564x/c2/25/5e/c2255e26e5e24fbe82e7cb15ac6207f3.jpg');
+            background-position: center top;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border: 5px solid gold;
+            padding: 50px;
+            max-width: 900px;
+            margin: 20px auto; /* Add margin for better spacing */
+        }
+
+        @keyframes marquee {
+            0% {
+                transform: translateX(100%);
+                color: gold; /* Use lowercase for color names */
+                font-size: 20px;
+            }
+            100% {
+                transform: translateX(-100%);
+                font-size: 40px;
+                color: whitesmoke; /* Use lowercase for color names */
+            }
+        }
+
+        h2, h3 {
+            margin: 10px 0; 
+        }
+
+       
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+    </style>
+    <title>ICT Students Form</title>
+</head>
+
+<body>
+    <div style="overflow: hidden;">
+        <p style="animation: marquee 10s linear infinite;">You should do everything you can to preserve your beauty</p>
+    </div>
+
+    <h2>Welcome ICT students</h2>
+    <h3>Please fill out this form</h3>
+
+    <form action="./index2.html" class="form">
+
+        <input type="date" name="date" placeholder="Date" required> <br><br>
+
+        <input type="text" name="first_name" placeholder="First Name" required> <br><br>
+
+        <input type="text" name="last_name" placeholder="Last Name" required> <br><br>
+
+        <input type="number" name="age" placeholder="Age" required> <br><br>
+
+        <input type="email" name="email" placeholder="Email" required> <br><br>
+
+        <input type="password" name="password" placeholder="Password" required> <br><br>
+
+        <p>Are you a robot?</p>
+
+        <input type="radio" id="no" name="robot" value="no" required> 
+        <label for="no">No</label>
+
+        <input type="radio" id="yes" name="robot" value="yes" required>
+        <label for="yes">Yes</label><br><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+
+</body>
+
+</html>

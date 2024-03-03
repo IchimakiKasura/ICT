@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Javascript</title>
+
+    <style>
+    .main {
+        text-align: center;
+    }
+    .marq {
+        padding-top: 15px ;
+        padding-bottom: 15px ;
+    }
+    .geek1 {
+        font-size: 35px;
+        font-weight:Georgia;
+        color: whitesmoke;
+        padding-bottom: 5px;
+        text-align: center;
+
+    }
+    .geek2 {
+        font-size: 15px;
+        font-weight:Georgia;
+        color: whitesmoke;
+        padding-bottom: 5px;
+        text-align: center;
+    }
+
+    body {
+        background-image:url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/e6b44614-3be2-44bb-af8b-ae8449bf1690/dg4x6da-292bf848-91b9-4d08-90c8-5a81267fb550.jpg);
+        background-repeat: no-repeat;
+        background-size:cover;
+        padding-left: 10vw;
+        padding-right: 10vw;
+        text-align: center;
+    }
+	#demo{  font-size: 2vw;
+        font-family:impact;
+        color: whitesmoke;}
+	#fuck{border:none; padding:20px; border:5px solid grey; background-color:orange; border-radius:15px;}	
+	#demo2{font-size: 2vw; font-family:impact; color: whitesmoke;}
+	#fuck2{border:none; padding:20px; border:5px solid grey; background-color:orange; border-radius:15px;}
+      
+    </style>
+</head>
+
+<body>
+    <div class="main">
+    <marquee class="marq" bgcolor ="orange" direction="down" loop="" scrollamount="3">
+        <div class="geek1"> Javascript! </div>
+        <div class="geek2"> By Rafael Dimayuga from ICT-11</div>
+    </marquee>
+    </div>
+    <h1 style="font-size:40px; font-family:georgia; color:whitesmoke ;text-shadow:0 0 5px black">Learn Javascript with me!</h1>
+    <button type="button" id="fuck" onclick="document.getElementById('demo').innerHTML = Date()"> click me to display Date and time! </button>
+	
+	<p id="demo"></p>
+	 
+    <h2 style="font-size:40px; font-family:georgia; color:whitesmoke ; text-shadow:0 0 5px black"> What can Javascript can do?!</h2>
+	 
+	<p id="demo2"> Javascript can change HTML content!!! </p>
+	<button type="button" id="fuck2" onclick="change('demo2','Common uses for JavaScript are image manipulation, form validation, and dynamic changes of content!')">click me!!!</button>
+	
+	<h3 style="font-size:40px; font-family:georgia; color:whitesmoke ;text-shadow:0 0 5px black"> In this case javascript changes the value of the src (sources) attribute of an image</h2>
+	 
+	<button onclick="document.getElementById('myImage').src='images/ put something here'"> name of something here </button>
+	
+	<button onclick="document.getElementById('myImage').src='images/ put something here'"> name of something here </button>
+	
+	
+   <script> let template = ""
+let boolean = true;
+
+function change(id, text)
+{
+    if(template =="") template = document.querySelector(#${id}).innerHTML
+    if(boolean = !boolean)
+    {
+        document.querySelector(#${id}).innerHTML = text
+    }
+    else
+    {
+        document.querySelector(#${id}).innerHTML = template
+    }
+}</script>
+
+
+</body>
+</html>

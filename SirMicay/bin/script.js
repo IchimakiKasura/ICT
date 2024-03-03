@@ -77,3 +77,9 @@ function otherChange(bool, a)
 
     console.log(currentOtherPage)
 }
+
+var ichimakiAge = 20
+var ichimakiBirthMonth = "May"
+var ichimakiName = "Ichimaki Kasura"
+var ichimakiHobby = "Playing Guitar"
+var ichimakiFavortieNumber = 46

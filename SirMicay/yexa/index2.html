@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.main {   
+    border: 2px solid black;
+    width: 50rem;
+}
+.marq {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+body {
+    background: floralwhite;
+    display: grid;
+    place-items: center;
+    margin-top: 20px;
+}
+.header {
+    text-align: center;
+    background-color: #6495ED;
+    padding: 10px;
+    border-bottom: 2px solid black;
+}
+* {box-sizing: border-box}
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial;
+}
+/* Style tab links */
+.tablink {
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+}
+.tablink:hover {
+    background-color: #777;
+}
+.tabcontent {
+    color: white;
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+}
+body {
+    background-image: url('https://upload-os-bbs.hoyolab.com/upload/2022/07/21/175387813/cee97336375c1cae8ebfededaf59d5c5_8635166122707983656.png?x-oss-process=image%2Fauto-orient%2C0%2Finterlace%2C1%2Fformat%2Cwebp%2Fquality%2Cq_80');
+    background-repeat: no-repeat, repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    text-align: center;
+}
+#Home {background-color: #6495ED;}
+#News {background-color: #6495ED;}
+#Contact {background-color: #6495ED;}
+#About {background-color: #6495ED;}
+footer {
+    background-color: #6495ED;
+    color: #fff;
+    text-align: center;
+}
+</style>
+</head>
+<body>
+<div class="main">
+    <marquee class="marq" bgcolor="#6495ED" direction="left" loop="">
+        <div class="header">
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/7/71/Holy_Trinity_Academy_logotype.svg/1920px-Holy_Trinity_Academy_logotype.svg.png" width="400" height="60"><br>
+            <h1>UCSP & ICT</h1>
+            <p>Castro, Princess Yexa Raiven R. | 11-ICT</p>
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/39/Holy_Trinity_Academy_seal.svg/1200px-Holy_Trinity_Academy_seal.svg.png" width="80" height="80"><br>
+        </div>
+    </marquee>
+    <button class="tablink" onclick="openPage('Home', this, '#6495ED')">Home</button>
+    <button class="tablink" onclick="openPage('News', this, '#6495ED')" id="defaultOpen">News</button>
+    <button class="tablink" onclick="openPage('Contact', this, '#6495ED')">Contact</button>
+    <button class="tablink" onclick="openPage('About', this, '#6495ED')">About</button>
+    <div id="Home" class="tabcontent">
+        <h3>DEFINE THE FOLLOWING</h3><br>
+        <ul style="list-style-type:circle;">
+            <li>Politics</li>
+            <li>Society</li>
+            <li>Culture</li>
+        </ul>
+    </div>
+    <div id="News" class="tabcontent">
+        <h3>News</h3>
+        <p>Some news this fine day!</p>
+    </div>
+    <div id="Contact" class="tabcontent">
+        <h3>Contact</h3>
+        <p>Get in touch, or swing by for a cup of coffee.</p>
+    </div>
+    <div id="About" class="tabcontent">
+        <h3>About</h3>
+        <p>Who we are and what we do.</p>
+    </div>
+    <footer>
+        <p>&copy; 2024 My Web Page. All rights reserved.</p>
+    </footer>
+</div>
+<script>
+function openPage(pageName, elmnt, color) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+    }
+    document.getElementById(pageName).style.display = "block";
+    elmnt.style.backgroundColor = color;
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+</body>
+</html>
