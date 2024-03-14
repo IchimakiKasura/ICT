@@ -7,13 +7,12 @@ const list = [
 ];
 
 list.forEach(el => {
-  el.addEventListener("focus", ()=>{
+  el.addEventListener("focus", () => {
     el.style.borderColor = "rgba(206, 206, 206, 0.3)"
   })
 });
 
-function validateForm()
-{
+function validateForm() {
   let isValid = true;
   const hf = "htaForm"
 
@@ -37,15 +36,30 @@ function validateForm()
   ]
 
   Formlist.forEach(form => {
-    if(form.value == "")
-    {
+    if (form.value == "") {
       form.style.borderColor = "rgba(255,0,0,0.5)"
       isValid = false
     }
   });
 
-  if(isValid)
-    document.forms["htaForm"]["pswForm"].value = btoa(document.forms["htaForm"]["pswForm"].value)
+  if (!isValid) return false
+  
+  // console.log(Formlist[0].value.toLowerCase())
 
-  return isValid
+  // peta?
+  switch (Formlist[0].value.toLowerCase()) {
+    case "ichimaki":
+      switch(Formlist[2].value)
+      {
+        case "ichi123":
+          document.forms["htaForm"]["pswForm"].value = btoa(document.forms["htaForm"]["pswForm"].value)
+          return true
+        default:
+            alert("Incorrect Password!")
+          return false
+      }
+    default:
+      alert("No user found!")
+      return false
+  }
 }
