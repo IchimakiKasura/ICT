@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Webpage</title>
+    <style>
+        /* CSS Styles */
+        body {
+            padding: 0;
+            margin: 0;
+            background-color: #fff; /* Light mode background color */
+            transition: background-color 0.5s ease;
+        }
+
+        #nav {
+            width: 100%;
+            background-color: #333; /* Dark mode nav background color */
+            padding: 10px 20px;
+            height: 50px;
+            transition: background-color 0.5s ease;
+            text-align: center;
+        }
+
+        #nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        #nav ul li {
+            display: inline;
+            margin-right: 25px;
+            text-transform: uppercase;
+        }
+
+        #nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            text-shadow: #FC0 1px 0 10px;
+        }
+
+        #nav ul li a:hover {
+            color: #eaff00;
+        }
+
+        #rightb {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        #drkmod {
+            border-radius: 50%;
+            border: 1px solid #333;
+            background-color: #333;
+            color: #fff;
+            width: 50px;
+            height: 50px;
+            font-size: 24px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        #drkmod:hover {
+            background-color: #000;
+        }
+
+        .section {
+            height: 500px; /* Adjust the height as needed */
+            width: 50%; /* Adjust the width as needed */
+            background-color: #333; /* Default section background color */
+            position: fixed;
+            top: -100%;
+            left: 25%; /* Adjust the left position as needed */
+            text-align: center;
+            font-size: 25px; /* Adjust the font size as needed */
+            font-family: Arial;
+            border: 3px solid black;
+            transition: top 0.5s ease;
+        }
+    </style>
+</head>
+<body>
+
+<div id="nav">
+    <ul>
+        <li><a href="#abtme" onclick="toggleSection('abtme')">About Me</a></li>
+        <li><a href="#contact" onclick="toggleSection('contact')">Contact Me</a></li>
+        <li><a href="#abtpg" onclick="toggleSection('abtpg')">About Page</a></li>
+    </ul>
+</div>
+
+<div id="rightb">
+    <button id="drkmod" onclick="toggleDarkMode()">☾</button>
+</div>
+
+<div id="abtme" class="section">About Me 
+
+<BR>
+<BR>
+<BR>
+	<p id="Intro"> </p>
+	<p id="demo"> </p>
+
+</div>
+<div id="contact" class="section"><BR><BR>Suggestions for future innovations<BR><BR>
+  <form id="contact-form">
+            <label for="name">First Name:</label><br>
+            <input type="text" id="name" name="name" required><br>
+			 <label for="name">Last Name:</label><br>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br>
+            <button type="submit">Submit</button>
+        </form></div>
+<div id="abtpg" class="section">About Page 
+
+	
+
+</div>
+
+<script>
+
+
+
+
+
+
+
+document.getElementById("demo").innerHTML =
+"Occupation: Gamer " ;
+const age = 17;
+let person = "Kyle John AShley E. Dimaano";
+let answer = 'TVL - ICT';
+document.getElementById("Intro").innerHTML =
+person + "<br>" + answer + "<br>" + age;
+
+// functions belong to dark mode you get???
+
+function toggleDarkMode() {
+    var nav = document.getElementById("nav");
+    var abtme = document.getElementById("abtme");
+    var contact = document.getElementById("contact");
+    var abtpg = document.getElementById("abtpg");
+
+    if (nav.classList.contains("yes")) {
+
+        document.body.style.backgroundColor = "#fff";
+        nav.style.backgroundColor = "#333";
+        abtme.style.backgroundColor = "#333";
+        contact.style.backgroundColor = "#333";
+        abtpg.style.backgroundColor = "#333";
+        nav.classList.remove("yes");
+    } else {
+
+        document.body.style.backgroundColor = "#333";
+        nav.style.backgroundColor = "#333";
+        abtme.style.backgroundColor = "#333";
+        contact.style.backgroundColor = "#333";
+        abtpg.style.backgroundColor = "#333";
+        nav.classList.add("yes");
+    }
+}
+
+function toggleSection(sectionId) {
+    var section = document.getElementById(sectionId);
+    var sections = document.getElementsByClassName("section");
+
+
+    for (var i = 0; i < sections.length; i++) {
+        sections[i].style.top = "-100%";
+    }
+    if (section.style.top === "-100%") {
+        section.style.top = "20%";
+    } else {
+
+        section.style.top = "-100%";
+    }
+}
+
+
+</script>
+
+</body>
+</html>

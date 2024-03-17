@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Art Gallery</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  #gallery-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  #artwork {
+    position: relative;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  .artpiece {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    display: none; 
+    z-index: 1; 
+  }
+  .artpiece img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  .description {
+    font-size: 16px;
+    color: #666;
+  }
+  #login-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2; 
+  }
+  #login-form {
+    max-width: 300px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  #login-form input[type="text"],
+  #login-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  #login-form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+  }
+  #artSelector {
+    position: relative;
+    z-index: 3; 
+  }
+</style>
+</head>
+<body>
+
+<div id="login-overlay">
+  <div id="login-form">
+    <h2>Login</h2>
+    <form onsubmit="login(event)">
+      <input type="text" id="username" placeholder="Username" required><br>
+      <input type="password" id="password" placeholder="Password" required><br>
+      <input type="submit" value="Login">
+    </form>
+    <p id="error-message"></p>
+  </div>
+</div>
+
+<h1 id="gallery-title">Art Gallery</h1>
+
+<div id="artwork">
+  <div class="artpiece">
+    <img src="https://uploads1.wikiart.org/00242/images/alexandre-cabanel/fallen-angel-alexandre-cabanel.jpg" alt="Art Piece 1">
+    <div class="description">
+      <h3>The Fallen Angel</h3>
+      <p>The Fallen Angel (1847) painting by Alexandre Cabanel depicts the Devil when he was cast out of Heaven. The painting was inspired by John Milton's poem Paradise Lost (1667) about the Devil's defiance of God. It also references the War in Heaven found in the Book of Revelation in the Bible.</p>
+    </div>
+  </div>
+
+  <div class="artpiece">
+    <img src="https://www.arthistoryproject.com/site/assets/files/11782/william-adolphe_bouguereau-pieta-1876-obelisk-art-history.jpg" alt="Art Piece 2">
+    <div class="description">
+      <h3>Pieta</h3>
+      <p>The Pietà was a popular subject among northern european artists. It means Pity or Compassion, and represents Mary sorrowfully contemplating the dead body of her son which she holds on her lap.</p>
+    </div>
+  </div>
+
+  <div class="artpiece">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/%C3%9Altima_Cena_-_Da_Vinci_5.jpg/350px-%C3%9Altima_Cena_-_Da_Vinci_5.jpg" alt="Art Piece 3">
+    <div class="description">
+      <h3>The Last Supper</h3>
+      <p>The Last Supper was an intricate work completed by Leonardo da Vinci. This painting depicts the shock and horror of the twelve disciples upon learning that one amongst them was going to betray Jesus Christ.</p>
+    </div>
+  </div>
+</div>
+
+<select id="artSelector" onchange="changeArt()">
+  <option value="1">Art Piece 1</option>
+  <option value="2">Art Piece 2</option>
+  <option value="3">Art Piece 3</option>
+</select>
+
+<script>
+function changeArt() {
+  var select = document.getElementById("artSelector");
+  var artworks = document.getElementsByClassName("artpiece");
+
+  for (var i = 0; i < artworks.length; i++) {
+    artworks[i].style.display = "none";
+  }
+
+  switch (select.value) {
+    case "1":
+      artworks[0].style.display = "block";
+      break;
+    case "2":
+      artworks[1].style.display = "block";
+      break;
+    case "3":
+      artworks[2].style.display = "block";
+      break;
+    default:
+      artworks[0].style.display = "block";
+  }
+}
+
+function login(event) {
+  event.preventDefault(); 
+  var username = document.getElementById("username").value;
+  var password = document.getElementById("password").value;
+  var errorMessage = document.getElementById("error-message");
+
+  
+  if (username === "user" && password === "password") {
+   
+    document.getElementById("login-overlay").style.display = "none";
+  } else {
+    errorMessage.textContent = "Invalid username or password. Please try again.";
+  }
+}
+</script>
+
+</body>
+</html>

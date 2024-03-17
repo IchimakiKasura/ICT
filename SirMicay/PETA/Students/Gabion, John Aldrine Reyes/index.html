@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Log in</title>
+</head>
+<body style="background: url('https://p325k7wa.twic.pics/high/jujutsu-kaisen/jujutsu-kaisen-cursed-clash/00-page-setup/JJK-header-mobile2.jpg?twic=v1/resize=760/step=10/quality=80') no-repeat; background-size: cover;">
+<div style="color:White" class="bg-form">
+    
+    <form id="myForm" onsubmit="return validate()" action="home.html">
+    <img src="https://static.vecteezy.com/system/resources/previews/020/070/394/original/jjk-creative-initials-letter-logo-jjk-abstract-technology-circle-setting-logo-design-on-black-background-jjk-creative-initials-letter-logo-vector.jpg" height="100" alt="LOGO" class="logo">
+    <h3></h3>
+
+    <label class="labelName" for="name">Name:</label>
+    <input class="Name" type="text" id="name" name="name" placeholder="Name" required >
+
+    <label class="labelPassword" for="password">Password:</label>
+    <input  class="password" type="password" id="password" name="password" placeholder="Password" required >    
+   
+   <input type="submit" value="Submit" style="color:black">
+
+  </form></div>
+  
+  
+  
+<style>
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  /* Full height */
+  height: 50%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Position text in the middle of the page/image */
+.bg-form {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: transparent;
+  font-weight: bold;
+  font-size: 45px;
+  border: 10px solid transparent;
+  position: fixed; /* Stay fixed */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 500px;
+  padding: 20px;
+  text-align: center;
+}
+
+</style>
+
+<script>
+    function validate()
+    {
+        var username = document.getElementById("name").value
+        var password = document.getElementById("password").value
+
+        switch(username)
+        {
+            case "gabion":
+                switch(password)
+                {
+                    case "gabion123":
+                        return true
+                    default:
+                        alert("Incorrect Password")
+                        return false
+                }
+            break;
+            default:
+                alert("No User found!")
+                return false
+        }
+    }
+</script>
+
+</body>
+</html>

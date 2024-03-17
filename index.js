@@ -11,7 +11,8 @@ switch(username)
         switch(password)
         {
             case "123":
-                return true;
+                window.location.href = "home.html"
+                return false;
             default:
                 alert("incorrect");
                 return false;

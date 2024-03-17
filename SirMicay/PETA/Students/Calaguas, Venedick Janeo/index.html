@@ -1,0 +1,108 @@
+<html>
+    <head>
+        <title>Login Form</title>
+        <style>
+* {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+}
+body {
+        font-family: Arial, sans-serif;
+        background: #181818;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+div {
+        width: 300px;
+        margin: 0 auto;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 12px 12px 14px black;
+        color: green;
+    }
+h2 {
+    text-align: center;
+    letter-spacing: 5px;
+    text-shadow: 5px 2px 2px black;
+}
+.r {
+    letter-spacing: 3px;
+}
+input[type="text"], input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        letter-spacing: 2px;
+        box-shadow: 12px 12px 14px black;
+    }
+input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+        border: none;
+        border-radius: 3px;
+        background-color: #4CAF50;
+        color: white;
+        cursor: pointer;
+        box-shadow: 9px 10px 14px black;
+    }
+input[type="submit"]:hover {
+        background-color: transparent;
+        color: green;
+    }
+        </style>
+    </head>
+<body>
+    <div>
+        <h2>Login Form</h2>
+        <br>
+            <form id="loginForm" onsubmit="validateLogin()">
+                <label for="username" class="r">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password" class="r">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <br>
+                <br>
+               
+                <input type="submit" value="Login">
+            </form>
+    </div>
+</body>
+    <script>
+        function validateLogin() {
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+
+    switch(username) {
+        case "TVL_ICT":
+            switch(password) {
+                case "TVL123":
+                    window.location.href ="https://m.facebook.com/profile.php/?id=100080309112664";
+                    return false;
+                default:
+                    alert ("Invalid Username");
+                    return false;
+            }
+            break;
+        case "Venedick":
+            switch(password) {
+                case "Calaguas456":
+                    alert ("Successful LogIn")
+                    return false;
+                default:
+                    alert ("Invalid Username");
+                    return false;
+            }
+            break;
+        default:
+            alert ("Invalid Username");
+            return false;
+    }
+}
+    </script>
+</html>

@@ -1,0 +1,92 @@
+<html>
+<head>
+</head>
+<title></title>
+ <style>
+ 
+   body {
+   opacity: 1;
+   background-image: url("428038111_845601063986126_8576910809242957532_n.jpg");
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+   background-attachment: fixed;
+   }
+   
+   .lj {
+    justify-content: center;
+	display: flex;
+	align-items: center;
+	border: 15px solid white;
+	padding: 5px 15px 5px 15px;
+	margin: 5% 40%;
+	opacity: 1;
+	width: 25%;
+	background-color: lightblue;
+   }
+   
+   .jl {
+     text-align: center;
+	 justify-content: center;
+	 display: flex;
+	 align-items: center;
+	 width: 100%;
+	 padding: 12px 20px;
+	 margin: 9px 0;
+	 box-sizzing: border-box;
+	 background-color: #FFCCE5;
+	 color: crimson;
+	 font-family: fantasy;
+   }
+   
+   .pass {
+     text-align: center;
+	 justify-content: center;
+	 display: flex;
+	 align-items: center;
+	 width: 100%;
+	 padding: 12px 2px;
+	 margin: 8px 0;
+	 box-sizzing: border-box;
+	 background-color: #FFCCE5;
+	 color: crimson;
+	 font-family: serif;
+   }
+   
+   
+ </style>
+<body>
+ <div class="lj">
+  <form action="layout.html" target="layout.html">
+    Last Name: <input type="text" class="jl" placeholder="Last Name" pattern="[A-Z]*" title="CAPITAL LETTER" required> <br>
+	First Name: <input type="text" class="jl" placeholder="First Name" pattern="[A-Z]*" title="CAPITAL LETTER"  required> <br>
+	Middle Name: <input type="text" class="jl" placeholder="Middle Name" pattern="[A-Z]*" title="CAPITAL LETTER"  required> <br>
+	<label for="usrname">Username</label>
+    <input type="text"  placeholder="Username" class="jl" id="usrname" name="username" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+	title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required><br>
+	Age: <input type="number" class="jl" placeholder="Age" required> <br> 
+	Birthday: <input type="date" class="jl" placeholder="Birthday" required> <br> <br>
+	Gender: 
+	<div class="pass">
+	     <input type="radio" name="Sex">
+         <label for="Male">Male</label>
+         <input type="radio" name="Sex">
+		 <label for="Female">Female</label>
+         <input type="radio" name="Sex">
+         <label for="Other">Other</label> <br>
+	<br>
+	</div>
+	E-mail: <input type="email" class="jl" placeholder="E-mail" pattern="[^ @]*@[^ @]*" title="/@gmail.com" required> <br>
+	Password: <input type="password" class="jl" password="Password" placeholder="Password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+	title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>  <br>
+	<br>
+	<br>
+	<form action="ljj.html">
+	<a href="layout.html"><button class="jl">Submit</button></a> 
+
+
+
+	
+  </form>
+ </div>
+</body>
+</html>

@@ -1,0 +1,100 @@
+html>
+<title>Peta PROG2</title>
+<head></head>
+<body class="lp">
+
+<style>
+ 
+    .lp {
+	background-image: url("432934312_741827451387970_6293168412117208304_n.jpg  ");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-attachment: fixed;
+	} 
+    
+	.lip {
+    justify-content: center;
+	display: flex;
+	align-items: center;
+	border: 15px double #009999;
+	padding: 5px 15px 5px 15px;
+	margin: 5% 40%;
+	opacity: 2;
+	width: 25%;
+	background-color: #66FFB2;
+   }
+   
+    .lup {
+     text-align: center;
+	 justify-content: center;
+	 display: flex;
+	 align-items: center;
+	 width: 100%;
+	 padding: 12px 20px;
+	 margin: 9px 0;
+	 box-sizzing: border-box;
+	 background-color: khaki;
+	 color: crimson;
+	 font-family: fantasy;
+   }
+   
+   .lop {
+     text-align: center;
+	 justify-content: center;
+	 display: flex;
+	 align-items: center;
+	 width: 50%;
+	 padding: 12px 20px;
+	 margin: 9px 0;
+	 box-sizzing: border-box;
+	 background-color: #66FFB2;
+	 color:  #3399FF;
+	 font-family: fantasy;
+	 float: center;
+   }
+   
+   .lep {
+     text-align: center;
+	 justify-content: center;
+	 display: flex;
+	 align-items: center;
+	 width: 50%;
+	 padding: 12px 20px;
+	 margin: 9px 0;
+	 box-sizzing: border-box;
+	 background-color:  #3399FF;
+	 color:  #66FFB2;
+	 font-family: fantasy;
+	 float: center;
+	 
+   }
+
+</style>
+
+<div id="lop" class="lip">
+  <form action="/action_page.php">
+  Name: <input type="text" placeholder="Name" class="lup" required><br>
+  <label for="usrname">Username</label>
+  <input type="text"  placeholder="Username" class="lup" id="username" name="username" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+  title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required><br>
+  Password: <input type="password" class="lup" password="password" id="Password" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+  title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>  <br>
+  Birthday: <input type="date" class="lup" placeholder="Birthday" required><br>
+  Age: <input type="number" class="lup" placeholder="Age" required><br>
+  E-mail: <input type="email" placeholder="E-mail" class="lup" pattern="[^ @]*@[^ @]*" required >
+   
+	<input type="submit">
+	
+  </form>
+   <br>
+    <div>
+     <button class="lop" onclick="document.getElementById('lop').style='background-color: #66FFB2;'">1</button>
+     <button class="lep" onclick="document.getElementById('lop').style='background-color: #3399FF;'">2</button>
+   </div>
+   <br>
+ </div>
+ 
+ 
+
+</body>
+</html>

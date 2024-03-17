@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Home</title>
+<style>
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+
+}
+
+header{
+    margin-top: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo img{
+    margin-right: 40em;
+    display: inline-block;
+    width: 4em;
+}
+
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+ul li a{
+    font-size: 1.2em;
+    position: relative;
+    color: white;
+    margin: 0px 50px 0px 0px;
+}
+
+.hero{
+    position: absolute;
+    background-image: url("https://p325k7wa.twic.pics/high/jujutsu-kaisen/jujutsu-kaisen-cursed-clash/00-page-setup/JJK-header-mobile2.jpg?twic=v1/resize=760/step=10/quality=80");  
+    background-size: cover;
+    background-position: center;
+    height: 2235px;
+    width: 1200px;
+    position: absolute;
+}
+
+ul li a::before{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px; 
+    bottom: -2px; 
+    background-color: #ff5733; 
+    transition: width 0.3s ease-in-out;
+}
+
+ul li a:hover::before {
+    width: 100%;
+}
+
+.info{
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    margin: 5em 0em 5em 5em;
+    width: 87%;   
+}
+
+.boxes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+.box{
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #fff;
+    margin: 5em 0em 5em 5em;
+    width: 25%;
+    color:black;
+}
+
+.box h3{
+    text-align: center;
+}
+
+.box:hover{
+    box-shadow: black 1px 0px 9px 2px;
+}
+</style>
+</head>
+    <body>
+        <div class="hero">
+            
+        <header>
+            <div class="logo">
+                <img src="https://static.vecteezy.com/system/resources/previews/020/070/394/original/jjk-creative-initials-letter-logo-jjk-abstract-technology-circle-setting-logo-design-on-black-background-jjk-creative-initials-letter-logo-vector.jpg" alt="Logo">
+            </div>
+            <ul>
+                <li><a href="login.html">Log in</a></li>
+                <li><a href="service.html">Service</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        
+        <div class="info">
+
+            <h1>Information</h1> <br>
+
+            <p style="font-size:25px;color:white;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem, recusandae explicabo ut natus alias unde fuga debitis minima hic, enim amet incidunt et cumque voluptas nesciunt iste illo. Hic, quisquam.
+            Dicta odit adipisci similique enim quam consectetur atque veritatis, quaerat nulla velit deleniti maiores voluptatum eos magnam sed ullam, qui minus, quisquam optio. Consequatur voluptas aut sequi non et. Magnam.
+            Minima blanditiis quas amet nisi liquam neque minus consequuntur animi odio quasi, corporis quae facilis exercitationem sapiente maagnam debitis ipsam fugit? Assumenda molestias suscipit architecto repellat libero nobis, accusamus accusantium.
+            Hic, vero molestiae. Doloribus architecto quae quibusdam, placeat aut alias maxime magnam harum, deleniti, sapiente quod cumque ducimus laudantium accusantium ullam eaque fugiat obcaecati dolorum odit. Sunt quibusdam nostrum est?
+            Qui ratione dolor nam alias similique fuga consequuntur, numquam doloribus illum nihil, magni eum sequi vitae optio totam soluta pariatur ad earum veritatis quam assumenda ab blanditiis vel quaerat? Soluta! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus aut iusto nemo nesciunt, aperiam at commodi in inventore culpa expedita natus cumque magni id! Quasi at odio delectus cupiditate dignissimos.</p>
+
+        </div>
+
+        <div class="boxes">
+            <div class="box">
+                <h3>title</h3><br>
+
+                <p style="font-size:25px;color:white;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum dignissimos facilis, pariatur vitae repellendus exercitationem? Iure quis sed odio, rerum tenetur temporibus harum illo eligendi, accusantium alias ut atque? Maxime.
+                Assumenda ad optio hic corporis dolore officia fuga. Laudantium inventore culpa quam totam. Totam et asperiores autem magnam sint nostrum, quasi doloremque, quia, quos quod amet adipisci veritatis eum perferendis.</p>
+            </div>
+            <div class="box">
+                <h3>title</h3><br>
+
+                <p style="font-size:25px;color:white;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum dignissimos facilis, pariatur vitae repellendus exercitationem? Iure quis sed odio, rerum tenetur temporibus harum illo eligendi, accusantium alias ut atque? Maxime.
+                    Assumenda ad optio hic corporis dolore officia fuga. Laudantium inventore culpa quam totam. Totam et asperiores autem magnam sin</p>
+            </div>
+        </div>
+    </body>
+</html>

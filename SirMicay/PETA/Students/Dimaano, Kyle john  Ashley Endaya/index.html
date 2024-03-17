@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <title> bruh </title> 
+	<style>
+	.hussle {padding :150px; border:3px solid #000;  text-align:center; width : 33%; background-color:#262323; margin-left: 440px; margin-top: 50px;font-family:serif;}
+	.bruh {color: #fff; text-decoration: none;text-shadow: #FC0 1px 0 10px; text-align : center; font-family : impact; font-size :50px}
+	</style>
+</head>
+<body style="background-color:#333">
+<br><br><br>
+<div class="bruh"> 
+LOGIN PAGE 
+</div>
+     <div class="hussle">     
+            <input type="text" id="username" name="username" required placeholder="username"><br><br>
+            <input type="password" id="password" name="password" required placeholder="password"><br><br>
+			<button onclick="validate()"> login </button>
+<p style="color: #fff;
+            text-decoration: none;
+            text-shadow: #FC0 1px 0 10px; font-size:20px">
+acc 1 <br> 
+username : kajo <br>
+password : 123 <br><br>
+
+acc 2 <br>
+username : john <br>
+password : 456 <br><br>
+
+acc 3 <br>
+username : ashley<br>
+password : 789 <br><br>
+
+</p>
+</div>
+<script>
+function validate() {
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+
+    switch(username) {
+        case "kajo":
+            switch(password) {
+                case "123":
+                    alert("Login Successful!");
+                    location.href = "java.html"; 
+                    break;
+                default:
+                    alert("Incorrect Password. Please try again.");
+                    break;
+            }
+            break;
+        case "john":
+            switch(password) {
+                case "456":
+                    alert("Login Successful!");
+                    location.href = "java.html"; 
+                    break;
+                default:
+                    alert("Incorrect Password. Please try again.");
+                    break;
+            }
+            break;
+        case "jane":
+            switch(password) {
+                case "789":
+                    alert("Login Successful!");
+                    location.href = "java.html";
+                    break;
+                default:
+                    alert("Incorrect Password. Please try again.");
+                    break;
+            }
+            break;
+        default:
+            alert("Incorrect Username. Please try again.");
+            break;
+    }
+}
+</script>
+</body>
+</html> 

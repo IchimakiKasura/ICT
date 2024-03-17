@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: Tahoma;
+}
+
+body {
+    background: rgb(24, 38, 83);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+}
+
+.mbody {
+    background: royalblue;
+    margin: 5% 0 5% 0;
+    padding: 2%;
+    text-align: center;
+    font-size: 1vw;
+    border-radius: 1vw;
+    box-shadow: 0 0 1vw 0.1vw white;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+#studentList {
+    background: rgb(36, 58, 122);
+    border-radius: 1vw;
+    overflow: scroll;
+    height: 80%;
+}
+#studentList::-webkit-scrollbar {
+    display: none;
+}
+
+.studentListing {
+    cursor: pointer;
+    user-select: none;
+    padding: 1.5vw;
+    font-size: 1.5vw;
+    transition: background 0.1s;
+}
+.studentListing:hover {
+    background: rgba(65, 105, 225, 0.3)
+}
+
+[ISPASSED="true"] {
+    background: rgba(0, 128, 0, 0.7);
+}
+[ISPASSED="false"] {
+    background: rgba(128, 0, 0, 0.7);
+}
