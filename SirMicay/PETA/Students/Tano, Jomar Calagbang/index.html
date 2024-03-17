@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Programming Form</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: gray;
+        }
+
+        form {
+            background-color: teal;
+            border: 10px double;
+            display: inline-block;
+            padding: 20px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: green;
+        }
+
+        input[type="reset"]:hover {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>"My First Javascript"</h1>
+    <h2>Sign to Join</h2>
+
+    <form id="loginForm" onsubmit="return validateLogin()">
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" required name="username"><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" required name="password"><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+
+    <script>
+        function validateLogin() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            switch (username) {
+                case "jomar":
+                    if (password === "tano") {
+                        alert("Welcome, Jomar!");
+                    } else {
+                        alert("Invalid username or password.");
+                    }
+                    break;
+                case "tano":
+                    if (password === "jomar") {
+                        alert("Welcome, tano!");
+                    } else {
+                        alert("Invalid username or password.");
+                    }
+                    break;
+                default:
+                    alert("Invalid username or password.");
+                    break;
+            }
+            return false;
+        }
+    </script>
+</body>
+</html> 

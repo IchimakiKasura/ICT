@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+
+<html>
+<body>
+<head>
+
+   <div class="main">
+   
+               <marquee class="marq" bgcolor="lightblue" direction="left" loop="" >
+             <div class="header">
+             <img src="    https://upload.wikimedia.org/wikipedia/en/thumb/7/71/Holy_Trinity_Academy_logotype.svg/1920px-Holy_Trinity_Academy_logotype.svg.png?fbclid=IwAR2u5RtWgd4zgqWLOq4RTkocTXmtxQjLPdAB197asuzbXyKhxt3sx6ZsA9c" width="200 height="70"<br>
+             <h1 Style="color:Gold; font-family:copperplate; font-size:40px;">Performance Task In Computer Programming</h1>
+             <p style="color:Gold; font-family:copperplate;"> Marco P. Sorio 11-ICT<p>
+             <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/39/Holy_Trinity_Academy_seal.svg/1200px-Holy_Trinity_Academy_seal.svg.png?fbclid=IwAR3azT5555L73bXMIhbv-0AdisQGqQr4u-Hc7bWSSfpx9yG5l35DxsR8n-Y" width="50 height="70"<br>
+          </div>
+           </marquee>
+                 
+<p click the button</p>
+  
+  <button onlick="myFunction()"> Click Me!</button>
+  
+  <p id="demo"></p>
+  
+  <script>
+  function myFunction() {
+  var person=prompt("Please enter your name",Marco");
+  if (person !=null) {
+  document.getElementById("demo").innerHTML=
+  "Hello," + person +"! Hi?";
+}
+}
+ 
+    
+    function validateLogin() {
+    var username = document.getElementById("username") .value;
+    var password = document.getElementById("password") .value;
+    
+    switch (username) {
+    case "admin":
+    switch (password) {
+    case "admin123":
+    window.location.href="js.html";
+    return false;
+    default:
+    alert ("Incorrect password!");
+    return false;
+    
+  }
+   break;
+   case "user":
+    switch (password) {
+    case "user123":
+    alert ("Login Successful!");
+    return true;
+    default:
+    alert ("Incorrect Password!");
+    return false;
+  }
+   break;
+    
+    
+   </script>
+    
+    </body>
+    </html>
+
+<title> PETA </title>
+</head>
+<body>
+
+
+ <form>
+ 
+<div>
+  <label for="fname">First Name: </label><br>
+  <input type="text" id="fname" name="fname" placeholder="enter"required>
+  
+  </div>
+  
+  <br>
+  
+<div>
+  <label for="fname">Last Name: </label><br>
+  <input type="text" id="lname" name="lname" placeholder="enter"required>
+  
+  </div>
+  
+  <br>
+  
+  <div>
+  <label for="fname">Password: </label><br>
+  <input type="text" id="Password" name="Password" placeholder="enter"required>
+  
+  </div>
+  
+  <br>
+  
+  <div>
+  <label for="fname">Date of birth: </label><br>
+  <input type="date" id="bdate" name="bdate">
+  
+  </div>
+  
+  <br>
+  
+  <div>
+  <label for="fname">Email: </label><br>
+  <input type="text" id="Email" name="Email" placeholder="enter"required>
+  
+  </div>
+  
+  <br>
+  
+  <div>
+  <label for="fname">Address: </label><br>
+  <input type="text" id="Address" name="Address" placeholder="enter"required>
+  
+  </div>
+  
+  <br>
+  
+  <div>
+    <input type="reset">
+    </div>
+    
+    <br>
+    
+  <div>
+    <input type="submit">
+    </div>
+    
+   
+  
+  </form>
+  
+</body>
+</html>

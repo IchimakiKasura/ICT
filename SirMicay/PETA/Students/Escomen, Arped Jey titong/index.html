@@ -1,0 +1,343 @@
+<DOCTYPE! html>
+<html>
+    <head>
+        <title>Webpage</title>
+        <style>
+            body{
+    padding:0px;
+    margin:0px;
+}
+
+#nav{
+    width:100%;
+    height:13%;
+    background-color: rgb(101, 255, 255);
+    border-bottom: 1px solid black;
+    animation-name: nav;
+    animation-duration: 1s;
+}
+
+#nav.yes{
+    background-color: rgb(32, 32, 32); 
+}
+
+#nav.yes ul li{
+    color:white;
+}
+
+#nav ul li{
+    list-style-type: none;
+    display:inline;
+    margin:0 1rem;
+    position:relative;
+    top:1.4rem;
+    left:65%;
+    font-family:Verdana;
+    font-size:1.1rem;
+    border-bottom: 1px solid transparent;
+    cursor:pointer;
+    transition:0.5s;
+    animation-name: text;
+    animation-duration: 3s;
+}
+
+#nav ul li:hover{
+    border-bottom: 1px solid black;
+}
+
+#nav.yes ul li:hover{
+    border-bottom: 1px solid white;
+}
+
+#rightb{
+    background-color:white;
+    border:1px solid black;
+    height:70%;
+    width:40%;
+    position:relative;
+    left:59%;
+    top:5%;
+    box-shadow:0px 0px 10px 1px black;
+    animation-name: rghtb;
+    animation-duration: 2s;
+    animation-play-state: paused;
+}
+
+#drkmod{
+    height:10%;
+    border-radius: 2em;
+    border:1px solid black;
+    position:absolute;
+    right:5%;
+    top:5%;
+    width:20%;
+    cursor:pointer;
+    transition:0.5s;
+}
+
+#circ{
+    height:100%;
+    width:45%;
+    position:relative;
+    left:-6%;
+    background-color:black;
+    border-radius: 100em;
+    color:white;
+    line-height: 145%;
+    font-size:2em;
+    transition:0.5s;
+}
+
+#abtme{
+    height:60%;
+    width:50%;
+    background-color:rgb(30, 144, 255);
+    position:absolute;
+    top:-100%;
+    left:20%;
+    text-align:center;
+    font-size:150%;
+    font-family:Verdana;
+    border:1px solid black;
+    transition:0.5s;
+}
+
+#cntcme{
+    height:60%;
+    width:50%;
+    background-color:rgb(30, 144, 255);
+    position:absolute;
+    top:-100%;
+    left:20%;
+    text-align:center;
+    font-size:150%;
+    font-family:Verdana;
+    border:1px solid black;
+    transition:0.5s;
+}
+
+#abtpg{
+    height:60%;
+    width:50%;
+    background-color:rgb(30, 144, 255);
+    position:absolute;
+    top:-100%;
+    left:20%;
+    text-align:center;
+    font-size:150%;
+    font-family:Verdana;
+    border:1px solid black;
+    transition:0.5s;
+}
+
+#rightb input{
+    margin:2%;
+    height:10%;
+    border:1px solid black;
+    color:black;
+}
+
+#log{
+    margin:2%;
+    height:7%;
+    width:10%;
+    border:1px solid black;
+    color:black;
+    cursor:pointer;
+}
+
+ @keyframes text{
+    0%{
+        left:-120%;
+    }
+
+    100%{
+        left:65%;
+    }
+}
+
+@keyframes nav{
+    0%{
+        height:0%;
+    }
+
+    100%{
+        height:13%;
+    }
+}
+
+@keyframes rghtb{
+    0%{
+        left:-100%;
+    }
+
+    100%{
+        left:59%;
+    }
+} 
+        </style>
+
+    </head>
+    <body>
+        <div id="nav">
+            <ul>
+                <li class="in f1" onclick="abt()">About Me</li>
+                <li class="in f2" onclick="con()">Contact Me</li>
+                <li class="in f3" onclick="about()">About Page</li>
+            </ul>
+        </div>
+        <div id="rightb">
+            <button id="drkmod" onclick="drk()">
+                <div id="circ">D</div>
+            </button>
+            <input type="text" placeholder="username" id="user"><br>
+            <input type="password" placeholder="password" id="pass"><br>
+            <button id="log" onclick="login()">Login</button>
+        </div>
+        <div id="abtme"> About Me </div>
+        <div id="cntcme">Contact Me</div>
+        <div id="abtpg">About Page</div>
+
+        <script>
+            let rghtb = document.getElementById("rightb")
+let circ = document.getElementById("circ")
+let i = 0;
+let a = 0;
+let c = 0;
+let p = 0;
+let nav = document.getElementById("nav")
+let mod = document.getElementById("drkmod")
+let abtme = document.getElementById("abtme")
+let contact = document.getElementById("cntcme")
+let page = document.getElementById("abtpg")
+let user = document.getElementById("user")
+let pass = document.getElementById("pass")
+let log = document.getElementById("log")
+
+setTimeout(() => {
+    rghtb.style.animationPlayState = "running";
+}, 1000);
+
+if(localStorage.getItem("key", 1) == 1){
+    circ.style.left = "60%";
+    circ.innerHTML = "L";
+    nav.classList.add("yes");
+    document.body.style.backgroundColor = "rgb(41,41,41)";
+    rghtb.style.backgroundColor = "rgb(80,80,80)";
+    mod.style.backgroundColor = "rgb(32, 32, 32)";
+    abtme.style.backgroundColor = "rgb(60,60,60)";
+    contact.style.backgroundColor = "rgb(60,60,60)";
+    page.style.backgroundColor = "rgb(60,60,60)";
+    user.style.border = "1px solid white"
+    pass.style.border = "1px solid white"
+    user.style.backgroundColor = "rgb(60,60,60)";
+    pass.style.backgroundColor = "rgb(60,60,60)";
+    pass.style.color = "white";
+    user.style.color = "white";
+    i++;
+}else{
+    //do nothing
+}
+
+function drk(){
+    if(i == 0){
+        localStorage.setItem("key",1)
+        circ.style.left = "60%";
+        circ.innerHTML = "L";
+        nav.classList.add("yes");
+        document.body.style.backgroundColor = "rgb(41,41,41)";
+        rghtb.style.backgroundColor = "rgb(80,80,80)";
+        mod.style.backgroundColor = "rgb(32, 32, 32)";
+        abtme.style.backgroundColor = "rgb(60,60,60)";
+        contact.style.backgroundColor = "rgb(60,60,60)";
+        page.style.backgroundColor = "rgb(60,60,60)";
+        user.style.border = "1px solid white"
+        pass.style.border = "1px solid white"
+        user.style.backgroundColor = "rgb(60,60,60)";
+        pass.style.backgroundColor = "rgb(60,60,60)";
+        pass.style.color = "white";
+        user.style.color = "white";
+        i++;
+    }else{
+        localStorage.setItem("key",0)
+        circ.style.left = "-6%";
+        circ.innerHTML = "D";
+        nav.classList.remove("yes");
+        document.body.style.backgroundColor = "white";
+        rghtb.style.backgroundColor = "white"
+        mod.style.backgroundColor = "white"
+        abtme.style.backgroundColor = "rgb(30, 144, 255)";
+        contact.style.backgroundColor = "rgb(30, 144, 255)";
+        page.style.backgroundColor = "rgb(30, 144, 255)";
+        user.style.border = "1px solid black"
+        pass.style.border = "1px solid black"
+        user.style.backgroundColor = "white";
+        pass.style.backgroundColor = "white";
+        pass.style.color = "black";
+        user.style.color = "black";
+        i = 0;
+    }
+}
+
+function abt(){
+    contact.style.top = "-100%";
+    c = 0;
+    page.style.top = "-100%"
+    p = 0;
+    if(a == 0){
+        abtme.style.top = "20%";
+        a++;
+    }else{
+        abtme.style.top = "-100%"
+        a = 0;
+    }
+}
+
+function con(){
+    abtme.style.top = "-100%";
+    a = 0;
+    page.style.top = "-100%"
+    p = 0;
+    if(c == 0){
+        contact.style.top = "20%";
+        c++;
+    }else{
+        contact.style.top = "-100%"
+        c = 0;
+    }
+}
+
+function about(){
+    contact.style.top = "-100%";
+    c = 0;
+    abtme.style.top = "-100%";
+    a = 0;
+    if(p == 0){
+        page.style.top = "20%";
+        p++;
+    }else{
+        page.style.top = "-100%"
+        p = 0;
+    }
+}
+
+function login(){
+    switch(user.value){
+        case "arped":
+            switch(pass.value){
+                case "escomen":
+                    alert("Correct password")
+                break;
+                default:
+                    alert("Wrong Password")
+                    return false;
+            }
+        break;
+        default:
+            alert("No usernames found")
+            return false;
+    }
+}
+        </script>
+    </body>
+</html>
