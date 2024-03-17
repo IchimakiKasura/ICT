@@ -77,5 +77,5 @@ function redirect(href)
         return
     })  
 
-    window.open(`students/${href}`);
+    window.open(`Students/${href}`);
 }
