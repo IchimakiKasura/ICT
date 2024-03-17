@@ -1,0 +1,54 @@
+<html>
+<head> 
+	<meta charset="UTF-8">
+	<meta name="viewpoint"
+	content="width=device-width, initial-scale=1.0">
+	<title>Taylor Swift</title>
+	<link rel="stylesheet" href="ts.css">
+</head>
+<body>
+	<div class="swift">
+		<form id="loginForm" onsubmit="return validateLogin()">
+		<h1>Log In</h1>
+	<div class="input-box">
+		<input type="text" placeholder="Username" required>
+		<i class='bx bxs-lock-user'></i>
+	</div>
+	
+	<div class="input-box">
+		<input type="password" placeholder="Password" required>
+		<i class='bx bxs-lock-user'></i>
+	</div>
+	
+	<div>
+		<button type="submit" class="btn">Login</button>
+	</div>
+	</form>
+<script>
+
+function validateLogin() { 
+	var username = document.getElementById("username").value;
+	var username = document.getElementById("password").value;
+	
+	switch (username) {
+		case "Taylor":
+			switch (password) {
+				case "Swift13";
+					window.location.href = "TS13.html";
+					return false;
+				default:
+					alert("Incorrect password!");
+					return false;
+			}
+			break;
+		case "Allison":
+			switch (password) {
+				case "taytay13":
+				alert("Login successful!");
+				return true;
+				alert("incorrect password!");
+				return false;
+			}
+</script>
+</body>
+</html>

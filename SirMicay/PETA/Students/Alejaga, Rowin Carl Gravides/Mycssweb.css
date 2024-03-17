@@ -1,0 +1,149 @@
+.main {
+    text-align:center;
+}
+.c1 {
+    padding-bottom:25px;
+	padding-top:25px;
+	font-size:36px;
+	font-weight:bold;
+	color:black;
+	position:absolute;
+	font-size:100%;
+	width:250px;
+	left:27%;
+	top:5.8%;
+}
+.c2 {
+    padding-bottom:25px;
+	padding-top:25px;
+	font-size:36px;
+	font-weight:bold;
+	color:black;
+	position:absolute;
+	font-size:100%;
+	width:250px;
+	left:57%;
+    top:5.8%;
+}
+.c3 {
+    padding-bottom:25px;
+	padding-top:25px;
+	font-size:36px;
+	font-weight:bold;
+	color:black;
+	position:absolute;
+	font-size:100%;
+	width:250px;
+	left:27%;
+	top:45%;
+}
+.c4 {
+    padding-bottom:25px;
+	padding-top:25px;
+	font-size:36px;
+	font-weight:bold;
+	color:black;
+	position:absolute;
+	font-size:100%;
+	width:250px;
+	left:57%;
+	top:39.5%;	
+}
+.c5 {
+    padding-bottom:25px;
+	padding-top:25px;
+	font-size:36px;
+	font-weight:bold;
+	color:black;
+	position:absolute;
+	font-size:100%;
+	width:250px;
+	left:27%;
+	top:103%;
+}
+.c6 {
+    padding-bottom:25px;
+	padding-top:25px;
+	font-size:36px;
+	font-weight:bold;
+	color:black;
+	position:absolute;
+	font-size:100%;
+	width:250px;
+	left:57%;
+	top:103%;
+}
+.c7 {
+    padding-bottom:25px;
+	padding-top:25px;
+	font-size:36px;
+	font-weight:bold;
+	color:black;
+	position:absolute;
+	font-size:100%;
+	width:250px;
+	left:27%;
+	top:138.5%;
+}
+.c8 {
+    padding-bottom:25px;
+	padding-top:25px;
+	font-size:36px;
+	font-weight:bold;
+	color:black;
+	position:absolute;
+	font-size:100%;
+	width:250px;
+	left:57%;
+	top:138.5%;
+}
+.c9 {
+    padding-bottom:25px;
+	padding-top:25px;
+	font-size:36px;
+	font-weight:bold;
+	color:black;
+	position:absolute;
+	background-color:white;
+	border:solid;
+	border-radius:5px;
+	left:20%;
+	top:65%;
+}
+.c10 {
+    padding-bottom:25px;
+	padding-top:25px;
+	font-size:36px;
+	font-weight:bold;
+	color:black;
+	position:absolute;
+	background-color:white;
+	border:solid;
+	font-size:100%;
+	height:100px;
+	width:1275px;
+	left:15%;
+	top:79%;
+	
+}
+.c11 {
+    padding-bottom:25px;
+	padding-top:25px;
+	font-size:36px;
+	font-weight:bold;
+	color:black;
+	position:absolute;
+	background-color:white;
+	border:solid;
+}
+.P1 {
+    top:200%;
+	left:20%;
+	position:absolute;
+}
+.table1 {
+    position:absolute;
+	top:180%;
+	left:23%;
+	font-size:30px;
+}

@@ -1,0 +1,171 @@
+* {
+    padding: o;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+body {
+    background: url(https://www.questadventure.ph/wp-content/uploads/2017/06/Pavilion-2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+.wrapper {
+    margin: 30px 20px;
+    width: 88%;
+    display: inline-block;
+}
+
+.head {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.head img {
+    width: 100px;
+}
+
+.title {
+    margin-top: 10px;
+    background: url(https://www.questadventure.ph/wp-content/uploads/2017/05/GV4a.jpg);
+    font-family: Impact;
+    font-size: 30px;
+    padding: 40px;
+    border: 2px solid;
+    border-radius: 5px;
+}
+
+.qac {
+    font-size: 40px;
+}
+
+h2 {
+    margin: -5px;
+    font-size: 30px;
+    font-family: cambria;
+    border: 2px solid black;
+    border-radius: 8px;
+    background: rgb(99, 204, 186);
+} 
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h2:hover {
+    background-color: rgb(71, 148, 135);
+    transition: 0.5s;
+}
+
+.ex1 {
+    float: left;
+    width: 33%;
+    height: 500px;
+    background: white;
+    padding: 20px;
+    border: 2px solid;
+    background: url(https://www.questadventure.ph/wp-content/uploads/2017/06/Open-Areas-2.jpg);
+    background-size: cover;
+}
+
+.ex1 img {
+    margin-top: 50px;
+    width: 300px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .8);
+}
+
+.ex1 img:hover {
+    margin-top: 10px;
+    height: 430px;
+    width: 350px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .8);
+    transition: 0.3s;
+}
+
+.ex2 {
+    list-style-type: none;
+    padding: 0;
+    border: 2px solid;
+}
+
+.ex2 {
+    float: left;
+    padding: 20px;
+    width: 33%;
+    background: url(https://www.questadventure.ph/wp-content/uploads/2017/06/Pool-2.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    border: 2px solid;
+}
+
+.ex2 img {
+    margin-top: 20px;
+    width: 200px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .8);
+}
+
+.ex2 .img1:hover {
+    height: 150px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .8);
+    transition: 0.5s;
+}
+
+.ex2 .img2:hover {
+    height: 150px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .8);
+    transition: 0.8s;
+}
+
+.ex2 .img3:hover {
+    height: 150px;
+    width: 300px;
+    margin-bottom: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .8);
+    transition: 0.5s;
+}
+
+.ex2 p {
+    font-size: 20px;
+    font-family: tahoma;
+    margin-top: 10px;
+}
+
+.ex3 {
+    float: left;
+    padding: 20px;
+    width: 34%;
+    background:url(https://lh3.googleusercontent.com/p/AF1QipONziuxK1ZCjs7eVJF0a7xSMFv42rG5VJqLe2mx=s680-w680-h510);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    border: 2px solid;
+}
+
+.ex3 video {
+    margin-top: 40px;
+    width: 350px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .8);
+}
+
+.footer {
+    background: url(https://www.questadventure.ph/wp-content/uploads/2017/06/DSCF4727a.jpg);
+    background-size: cover;
+    text-align: center;
+    padding: 50px;
+    border: 2px solid;
+    border-radius: 5px;
+}
+
+.footer p {
+    margin-bottom: -10px;
+    font-size: 20px;
+    font-family: tahoma;
+}

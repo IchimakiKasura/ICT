@@ -61,9 +61,35 @@ const REDIRECTOR = [
     }
 ]
 
+const DI_NAKAPASA = [
+    "Alejandro, Jade Maglaya",
+    "Espinosa, Christian Subere",
+    "Batta, Randy Milo",
+    "Canonoy, Klyde Dogelio",
+    "Francisco, Lance Anthony Manglili",
+    "Dimayuga, Rafael Leonardo Barredo",
+    "Orbiso, Samoa Flores",
+    "Herradura, Julian Richmond San Juan",
+    "San Pedro, Krishna Juachim Ibarra",
+    "Villanueva, Christian Jr. Peruelo",
+    "Villanueva, John Ace Durante",
+    "Villanueva, Kiel Anthony Cinense",
+    
+    "Gusto, Donnalyn Joy Reyllo",
+    "Sto. Domingo, Ma. Raine Conception",
+]
+
 ICT_CLASS.forEach(names=>{
+
+    let isPassed = "na"
+
+    DI_NAKAPASA.forEach(lmao=>{
+        if(lmao == names)
+            isPassed = false
+    })
+
     document.querySelector("#studentList").innerHTML += `
-    <div class="studentListing" ISPASSED="na" onclick="redirect('${names}')">
+    <div class="studentListing" ISPASSED="${isPassed}" onclick="redirect('${names}')">
         ${names}
     </div>
 `
@@ -75,7 +101,7 @@ function redirect(href)
         if(name.name == href)
             window.open(name.redirect);
         return
-    })  
+    })
 
     window.open(`Students/${href}`);
 }

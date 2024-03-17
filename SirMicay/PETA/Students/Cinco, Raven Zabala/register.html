@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="register.css">
+    <title>Register</title>
+</head>
+<body>
+
+    <form action="login.html" POST>
+
+        <div class="wrapper">
+
+            <h1>Register</h1>
+
+            <div class="input-box">
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname" placeholder="First Name">
+            </div>
+
+            <div class="input-box">
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lname"  placeholder="Last Name">
+            </div>
+
+            <div class="input-box">
+                <label for="bday">Birthday</label>
+                <input type="date" id="bday" name="bday">
+            </div>
+
+            <div class="input-box-gen">
+                <label for="sex">Gender:</label>
+
+                <input type="radio" name="sex">
+                <label>Male</label>
+               
+                <input type="radio" name="sex">
+                <label>Female</label>
+            </div>
+
+            <div class="input-box">
+                <label for="section">Section:</label>
+                <select id="section" name="Section">
+                    <option>Select</option>
+                    <option>STEM-A</option>
+                    <option>STEM-B</option>
+                    <option>STEM-C</option>
+                    <option>STEM-D</option>
+                    <option>STEM-E</option>
+                    <option>ABM-A</option>
+                    <option>ABM-B</option>
+                    <option>ABM-C</option>
+                    <option>HUMSS-A</option>
+                    <option>HUMSS-B</option>
+                    <option>HUMSS-C</option>
+                    <option>TVL-F&B</option>
+                    <option>TVL-ICT</option>
+                </select>
+            </div>
+
+            <div class="input-box">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="E-mail">
+            </div>
+
+            <div class="input-box">
+                <label for="uname">Userame:</label>
+                <input type="text" id="uname" name="uname" placeholder="Username">
+            </div>
+
+            <div class="input-box">
+                <label for="pass">Password:</label>
+                <input type="password" id="pass" name="pass" placeholder="Password">
+            </div>
+
+            <div class="sub-reset">
+                <button type="reset" class="btn">Reset</button>
+                <button type="submit" class="btn">Submit</button>
+            </div>
+
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+background-image: url("https://wallpapercave.com/wp/wp2757954.gif");
+
+background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+ 
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.sen {
+border:dotted;
+  position: absolute;
+  right: 0;
+  margin: 20px;
+  max-width: 300px;
+  padding: 16px;
+  background-color:white;
+  right: 500;
+  bottom: 200;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background:skyblue;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+input[type=submit]{
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+input[type=submit]:hover{
+  opacity: 1;
+}
+button:hover{
+	 background-color:green;
+	
+	}
+button {
+	background-color:#1640D6;
+		border: none;
+		color:white;
+		padding: 2px 15px;
+		text-align: right;
+		text-decoration: none;
+		display: inline-block;
+		font-size:9px;
+		margin: 4px 2px;
+		cursor: pointer;
+		box-shadow: 0 4px 8px 0 rgb(0, 0, 255)
+
+}
+.button:hover{
+		box-shadow: 0 8px 16px 0 rgb(0, 0, 255)
+  
+</style>
+</head>
+<body>
+
+</br>
+
+<div class="sen">
+  <form id="me" onsubmit="return ValidateLogin()">
+    <h1>Login</h1>
+    <input type="text" id="Username" placeholder="Username"  required>
+     <input type="password" id="Password" placeholder="Password"  required>
+   <input type="submit" value="Login">
+   
+    
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button><a href="sen2.html"style="color:white;">REGISTER</button>
+</form>	
+</div>
+	<script>
+	function ValidateLogin() {
+	var username = document.getElementById("Username").value;
+  var password = document.getElementById("Password").value;
+  
+  switch (username) {
+   case "sen":
+   switch(password)   {
+   case "12345" :
+   alert("Login Successfully");
+	return false;
+	default:
+	alert("Incorrect password!");
+	return false;
+	}
+	break;
+	case "secret":
+	switch(password) {
+	case "password":
+	window.location.href = "sen3.html";
+	return false;
+	default:
+	alert("Incorrect password!");
+	return false;
+	}
+	break;
+	default:
+	alert("User not found!");
+	return false;
+	}
+}
+</script>
+
+</body>
+</html>

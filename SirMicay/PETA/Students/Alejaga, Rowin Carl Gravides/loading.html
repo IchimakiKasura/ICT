@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<head>
+<title>Reirecting.....</title>
+<style>
+
+*{
+  padding:0;
+  margin:0;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+.loading-container {
+  display: flex;
+  width: 100%;
+  min-height: 100%;
+  align-items: center;
+  vertical-align: middle;
+}
+
+.loading-container:nth-of-type(0n+1) {
+  background: Gray;
+}
+
+.loading-container:nth-of-type(0n+2) {
+  background: #A2395D;
+}
+
+.loading-container:nth-of-type(0n+3) {
+  background: #25A893;
+}
+
+.loading-container:nth-of-type(0n+4) {
+  background: #31B85F;
+}
+
+.loading-container:nth-of-type(0n+5) {
+  background: #BDBDBD;
+}
+
+.loading-container:nth-of-type(0n+6) {
+  background: #A2A178;
+}
+
+.loading-container:nth-of-type(0n+7) {
+  background: #ddb89a;
+}
+
+.loader {
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+  min-height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  opacity: 0.4;
+}
+
+.loader * {
+  animation-play-state: paused;
+}
+
+.loader:hover {
+  opacity: 1;
+}
+
+.loader:hover * {
+  animation-play-state: running;
+}
+
+/** Settings */
+.loading-bubbles {
+  margin: auto;
+}
+
+.loading-bubbles .bubble-container {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+}
+
+.loading-bubbles .bubble-container .bubble {
+  border-radius: 50%;
+  background-color: #FFF;
+  width: 100%;
+  height: 100%;
+  transform-origin: 50% 50%;
+  animation: bubble 1.2s -0.6s infinite ease-out;
+}
+
+.loading-bubbles .bubble-container:nth-of-type(2n) .bubble {
+  animation-delay: -0.3s;
+}
+
+.loading-bubbles .bubble-container:nth-of-type(3n) .bubble {
+  animation-delay: 0s;
+}
+
+.loading-spinning-bubbles {
+  position: relative;
+  margin: auto;
+}
+
+.loading-spinning-bubbles .bubble-container {
+  position: absolute;
+  top: calc(50% - 10px/2);
+  left: calc(50% - 10px/2);
+  transform-origin: -150% 50%;
+}
+
+.loading-spinning-bubbles .bubble-container .bubble {
+  background: #FFF;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  animation: bubble 1s infinite;
+  animation-delay: inherit;
+}
+
+.loading-spinning-bubbles .bubble-container:nth-of-type(0n+1) {
+  transform: translateX(200%) rotate(-90deg);
+  animation-delay: -1.5s;
+}
+
+.loading-spinning-bubbles .bubble-container:nth-of-type(0n+2) {
+  transform: translateX(200%) rotate(-45deg);
+  animation-delay: -1.375s;
+}
+
+.loading-spinning-bubbles .bubble-container:nth-of-type(0n+3) {
+  transform: translateX(200%);
+  animation-delay: -1.25s;
+}
+
+.loading-spinning-bubbles .bubble-container:nth-of-type(0n+4) {
+  transform: translateX(200%) rotate(45deg);
+  animation-delay: -1.125s;
+}
+
+.loading-spinning-bubbles .bubble-container:nth-of-type(0n+5) {
+  transform: translateX(200%) rotate(90deg);
+  animation-delay: -1s;
+}
+
+.loading-spinning-bubbles .bubble-container:nth-of-type(0n+6) {
+  transform: translateX(200%) rotate(135deg);
+  animation-delay: -0.875s;
+}
+
+.loading-spinning-bubbles .bubble-container:nth-of-type(0n+7) {
+  transform: translateX(200%) rotate(180deg);
+  animation-delay: -0.75s;
+}
+
+.loading-spinning-bubbles .bubble-container:nth-of-type(0n+8) {
+  transform: translateX(200%) rotate(225deg);
+  animation-delay: -0.625s;
+}
+
+.loading-spokes {
+  position: relative;
+  margin: auto;
+  height: 45px;
+}
+
+.loading-spokes .spoke-container {
+  position: absolute;
+  top: 100%;
+  left: calc(50% - 10px*1.5);
+  transform-origin: 50% -100%;
+}
+
+.loading-spokes .spoke-container .spoke {
+  background: #FFF;
+  width: 10px;
+  height: 20px;
+  animation: spoke 1s infinite;
+  animation-delay: inherit;
+}
+
+.loading-spokes .spoke-container:nth-of-type(0n+1) {
+  transform: translateX(100%) rotate(-90deg);
+  animation-delay: -0.875s;
+}
+
+.loading-spokes .spoke-container:nth-of-type(0n+2) {
+  transform: translateX(100%) rotate(-45deg);
+  animation-delay: -0.75s;
+}
+
+.loading-spokes .spoke-container:nth-of-type(0n+3) {
+  transform: translateX(100%);
+  animation-delay: -0.625s;
+}
+
+.loading-spokes .spoke-container:nth-of-type(0n+4) {
+  transform: translateX(100%) rotate(45deg);
+  animation-delay: -0.5s;
+}
+
+.loading-spokes .spoke-container:nth-of-type(0n+5) {
+  transform: translateX(100%) rotate(90deg);
+  animation-delay: -0.375s;
+}
+
+.loading-spokes .spoke-container:nth-of-type(0n+6) {
+  transform: translateX(100%) rotate(135deg);
+  animation-delay: -0.25s;
+}
+
+.loading-spokes .spoke-container:nth-of-type(0n+7) {
+  transform: translateX(100%) rotate(180deg);
+  animation-delay: -0.125s;
+}
+
+.loading-spokes .spoke-container:nth-of-type(0n+8) {
+  transform: translateX(100%) rotate(225deg);
+  animation-delay: 0;
+}
+
+.loading-bars {
+  text-align: center;
+}
+
+.loading-bars .bar {
+  height: 20px;
+  width: 10px;
+  background: #FFF;
+  display: inline-block;
+  animation: pulse 1.2s infinite ease-out;
+}
+
+.loading-bars .bar:nth-of-type(0n+1) {
+  animation-delay: 0s;
+}
+
+.loading-bars .bar:nth-of-type(0n+2) {
+  animation-delay: 0.2s;
+}
+
+.loading-bars .bar:nth-of-type(0n+3) {
+  animation-delay: 0.4s;
+}
+
+.loading-bars .bar:nth-of-type(0n+4) {
+  animation-delay: 0.6s;
+}
+
+.loading-bars .bar:nth-of-type(0n+5) {
+  animation-delay: 0.8s;
+}
+
+.loading-slide {
+  position: relative;
+  width: 25%;
+  margin: 0 auto;
+}
+
+.loading-slide .slide {
+  position: absolute;
+  width: 25%;
+  height: 5px;
+  background: #FF2824;
+  animation: slide 2s infinite;
+}
+
+.loading-slide .slide:nth-of-type(0n+1) {
+  opacity: 0.2;
+  transform: scale(1.8, 1);
+  animation-delay: 0.2s;
+}
+
+.loading-slide .slide:nth-of-type(0n+2) {
+  opacity: 0.4;
+  transform: scale(1.4, 1);
+  animation-delay: 0.1s;
+}
+
+.loading-slide .slide:nth-of-type(0n+3) {
+  opacity: 0.8;
+}
+
+.loading-circle {
+  margin: 0 auto;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 4px solid #BEB69D;
+  position: relative;
+  animation: spin 1s infinite linear;
+}
+
+.loading-circle:before {
+  content: "";
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  left: -4px;
+  top: -4px;
+  border-right: 4px solid #BEB69D;
+  border-top: 4px solid #BEB69D;
+  border-left: 4px solid #FFF;
+  border-bottom: 4px solid #BEB69D;
+}
+
+.loading-quarter-circle {
+  margin: 0 auto;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 4px solid transparent;
+  position: relative;
+  animation: spin 1.2s infinite linear;
+}
+
+.loading-quarter-circle:before {
+  content: "";
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  left: -4px;
+  top: -4px;
+  border-right: 4px solid transparent;
+  border-top: 4px solid transparent;
+  border-left: 4px solid #FFF;
+  border-bottom: 4px solid transparent;
+}
+
+.loading-flip {
+  width: 20px;
+  height: 20px;
+  background: #2267A8;
+  margin: 0 auto;
+  animation: flip 8s infinite;
+}
+
+@keyframes bubble {
+  0%, 100% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+}
+
+@keyframes spoke {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
+
+@keyframes pulse {
+  0%, 75% {
+    transform: scale(1, 1);
+  }
+  25% {
+    transform: scale(1, 3);
+  }
+}
+
+@keyframes slide {
+  0%, 100% {
+    left: 0;
+  }
+  50% {
+    left: 100%;
+  }
+}
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes flip {
+  0% {
+    transform: rotateX(0) rotateY(0);
+  }
+  20%, 25% {
+    transform: rotateX(0) rotateY(720deg);
+  }
+  45%, 50% {
+    transform: rotateX(720deg) rotateY(720deg);
+  }
+  70%, 75% {
+    transform: rotateX(720deg) rotateY(0);
+  }
+  95%, 100% {
+    transform: rotateX(0) rotateY(0);
+  }
+}
+
+</style>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!-- Bubbles -->
+<a href="NewWeb.html">
+<div class="loading-container">
+  <div class="loader">
+    <div class="loading-bubbles">
+      <div class="bubble-container">
+        <div class="bubble"></div>
+      </div>
+      <div class="bubble-container">
+        <div class="bubble"></div>
+      </div>
+      <div class="bubble-container">
+        <div class="bubble"></div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

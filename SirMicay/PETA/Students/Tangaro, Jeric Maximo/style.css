@@ -1,0 +1,61 @@
+* {
+    margin: 0px;
+    font-family: Arial;
+    color:white;
+}
+body{
+    background-image: url("https://img.wattpad.com/e6f5afda107892a57eafa2a52da9aa1e35615bba/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f6f6d683039774f3362676a4842673d3d2d313038343833353131342e313638383430333635333666356462643536343233343430303234362e676966");
+    position: absolute;
+    background-size: 1950px 860px;
+    background-repeat: no-repeat;
+    width: auto;
+    height: auto;
+    object-fit: fill;
+}
+h1{
+    font-size:45px;
+    margin:20px;
+    padding:20;
+}
+.mainHead {
+    background-color: rgba(6, 46, 85, 0.859);
+    padding:11px;
+    font-size: 2vw;
+    box-shadow: 0 0 5px 1px black;
+}
+.mainNav
+{
+    height: 5vw;
+    width: 100vw;
+    display: flex;
+}
+.navButtons
+{
+    position: absolute;
+    right: 0;
+    margin:5px;
+    padding-top: 0.8vw;
+    padding-right:7vw;
+    float:right;
+}
+.navButtons a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: text-shadow 0.7s;
+    text-align:center;
+    margin:25px;
+}
+.navButtons a:hover {
+    text-shadow: 3px 4px 10px rgb(9, 236, 236);
+}
+.content{
+    text-align: center;
+    margin:200px;
+}
+h2{
+    font-size:42px;
+}
+p{
+    font-size:33px;
+}

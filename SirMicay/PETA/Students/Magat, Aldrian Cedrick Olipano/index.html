@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Password Input Control</title>
+   </head>
+<body style="background-image:url(https://wallpapers.com/images/hd/man-looks-out-over-techno-city-9ttjpqp3j5zbb7b8.jpg);">
+<form id="loginForm" onsubmit="return validateLogin()">
+	 <input type = "text" id = "username" placeholder = "Username" required><br>
+	 <input type = "password" id = "password" placeholder = "Password" required><br>
+	 <input type = "radio" name = "Gender" value = "Male"> Male
+	<input type = "radio" name = "Gender" value = "Female"> Female <br>
+	Choose Colors:<br>
+         <li><input type="checkbox" name="color" value="red" />Red</li>
+         <li><input type="checkbox" name="color" value="blue" />Blue</li>
+         <li><input type="checkbox" name="color" value="green" />Green</li>
+	 <input type="submit" value="Login">
+</form>
+
+<script>							
+function validateLogin() {
+	 var username = document.getElementById("username").value;
+	 var password = document.getElementById("password").value;
+	 
+	 switch (username) {
+			case "Admin":
+				switch (password) {
+					case "MrMeh2000":
+						window.location.href = "MrMeh.html";
+						return false;
+					default:
+						alert("Incorrect Password!");
+						return false;
+				}
+				break;
+			case "user":
+				switch (password) {
+					case "AdrianRaftbc":
+						alert("Login Succesfu!");
+						return true;
+					default:
+						alert("Incorrect Password!");
+						return false;
+				}
+				break;
+			default:
+				alert("User not found!");
+				return false;
+		}
+}
+</script>
+
+<style>
+
+#loginForm {
+	background-color:blue;
+	width: 300px;
+	border: 15px solid white;
+	padding: 50px;
+	margin: 20px;
+	text-align: center;
+	font-size: 18px;
+}
+
+
+</style>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTA Registration Form </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+			background-image: url('https://www.hireacamp.com/api/external/image?name=uploads/474df1ee4ba5470a96128dc17a4aba77.jpeg&size=3840x3840&q=75');
+			background-repeat:no-repeat;
+			background-position:center;
+	        background-attachment:fixed;
+	        background-size:cover;
+			
+        }
+        .nora{
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 40px;
+            background-color: #C27417;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+			border: solid black 3px;
+           
+		}
+        
+        h1 {
+            text-align: center;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        
+        input[type=text], input[type=password] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        
+     
+input[type=submit]:hover {
+            background-color:green;
+			
+			}
+		input[type=submit] {
+		background-color:#1640D6;
+		border: none;
+		color:white;
+		padding: 15px 32px;
+		text-align:center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 16px
+		margin: 4px 2px;
+		cursor: pointer;
+		box-shadow: 0 4px 8px 0 rgb(0, 0, 255)
+          
+		}
+		
+		.button:hover {
+		          box-shadow: 0 8px 16px 0 rgb(0, 0, 255)
+    </style>
+</head>
+<body>
+   <div class="nora">
+  <form id="me" onsubmit="return ValidateLogin()">
+    <h1>Login</h1>
+    <input type="text" id="Username" placeholder="Username"  required>
+     <input type="password" id="Password" placeholder="Password"  required>
+    <input type="submit" value="Login">
+</form>	
+</div>
+
+
+<script>
+	function ValidateLogin() {
+	var username = document.getElementById("Username").value;
+  var password = document.getElementById("Password").value;
+  
+  switch (username) {
+   case "nora":
+   switch(password)   {
+   case "12345" :
+    window.location.href = "nora1.html";
+	return false;
+	default:
+	alert("Incorrect password!");
+	return false;
+	}
+	break;
+	case "prince":
+	switch(password) {
+	case "nora":
+	alert("Login Successfully");
+	return false;
+	default:
+	alert("Incorrect password!");
+	return false;
+	}
+	break;
+	default:
+	alert("User not found!");
+	return false;
+	}
+}
+</script>
+</body>
+</html>
