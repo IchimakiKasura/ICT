@@ -1,38 +1,38 @@
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="bin/qa_style.css">
-    <link rel="stylesheet" href="bin/qa_style_responsiveness.css">
-    <link rel="shortcut icon" href="bin/logo.png" type="image/x-icon">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quest Adventure Camp</title>
-</head>
-<body>
-    <img class="faintBG" src="bin/logo.png" unselect>
-    <div class="centerMe">
-        <div id="form1">
-            <p unselect>Welcome To</p><br unselect/>
-            <img src="bin/logo.png" alt="Quest_Adventure_Camp" unselect/>
-            <p class="f" unselect>Quest Adventure Camp</p>
+    <head>
+        <link rel="stylesheet" href="bin/qa_style.css">
+        <link rel="stylesheet" href="bin/qa_style_responsiveness.css">
+        <link rel="shortcut icon" href="bin/logo.png" type="image/x-icon">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="bin/kasu.js"></script>
+        <title>Quest Adventure Camp</title>
+    </head>
+    <body>
+        <img class="faintBG" src="bin/logo.png" alt="logo" unselect>
+        <div class="centerMe">
+            <div id="form1">
+                <p unselect>Welcome To</p><br/><br/>
+                <img src="bin/logo.png" alt="Quest_Adventure_Camp" unselect/>
+                <p class="f" unselect>Quest Adventure Camp</p>
 
-            <form name="htaForm" action="../index.html" onsubmit="return validateForm()" class="actualForm">
-                <input id="usr" name="usrForm" type="text" placeholder="Username" title="Username"/>
-                <input id="eml" name="emlForm" type="email" placeholder="Email" title="Email"/>
-                <input id="psw" name="pswForm" type="password" placeholder="Password" title="Password"/>
-                <input id="dt" name="dtForm" type="date" placeholder="Birthday" title="Birthday"/>
-                <input name="usr" type="submit" value="ENTER" Inputbutton/>
-            </form>
-            
-            <p style="margin-top: 2%;font-size: 0.2vw; cursor: default; text-decoration:underline; color: green"
-            title="
-DISCLAIMER: &#013;&#013;
-Not an official website of &quot;QUEST ADVENTURE CAMP&quot;&#013;
-This is only a project for school purposes.
-">DISCLAIMER</p>
-            <br>
-            <br>
+                <form name="htaForm" action="../index.html" onsubmit="return validateForm()" class="actualForm">
+                    <input id="usr" name="usrForm" type="text" placeholder="Username" title="Username"/><br/>
+                    <!-- <input id="eml" name="emlForm" type="email" placeholder="Email" title="Email"/><br/> -->
+                    <input id="psw" name="pswForm" type="password" placeholder="Password" title="Password"/><br/>
+                    <!-- <input id="dt" name="dtForm" type="date" placeholder="Birthday" title="Birthday"/><br/> -->
+                    <input name="usr" type="submit" value="LOGIN" Inputbutton/>
+                </form>
+
+                <p style="color: red;" id="error_placeholder"></p>
+                
+                <p style="margin-top: 2%;font-size: 0.2vw; cursor: default; text-decoration:underline; color: green" title="DISCLAIMER: &#013;Not an official website of &quot;QUEST ADVENTURE CAMP&quot;&#013;This is only a project for school purposes.">DISCLAIMER</p>
+
+                <br>
+                <br>
+            </div>
         </div>
-    </div>
-</body>
-<script src="qa_form.js"></script>
+    </body>
+    <script src="qa_form.js"></script>
 </html>

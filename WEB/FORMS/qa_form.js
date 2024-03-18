@@ -1,40 +1,46 @@
-
+"use strict";
+const hf = "htaForm"
 const list = [
-  document.querySelector("#usr"),
-  document.querySelector("#eml"),
-  document.querySelector("#psw"),
-  document.querySelector("#dt")
+  か("#usr").gt,
+  // document.querySelector("#eml"),
+  か("#psw").gt,
+  // document.querySelector("#dt")
 ];
 
 list.forEach(el => {
-  el.addEventListener("focus", () => {
-    el.style.borderColor = "rgba(206, 206, 206, 0.3)"
+  か(el).evt("focus", () => {
+    el.style.borderColor = "rgba(255, 206, 206, 0.3)"
   })
 });
 
 function validateForm() {
-  let isValid = true;
-  const hf = "htaForm"
+
+  let errorPlaceholder = か("#error_placeholder")
+  errorPlaceholder.text("")
+
+  let isValid = true
 
   let Formlist = [
     {
+      // value: list[0].value, haha lmao
       value: document.forms[hf]["usrForm"].value,
       style: list[0].style
     },
-    {
-      value: document.forms[hf]["emlForm"].value,
-      style: list[1].style
-    },
+    // {
+    //   value: document.forms[hf]["emlForm"].value,
+    //   style: list[1].style
+    // },
     {
       value: document.forms[hf]["pswForm"].value,
-      style: list[2].style
+      style: list[1].style
     },
-    {
-      value: document.forms[hf]["dtForm"].value,
-      style: list[3].style
-    }
+    // {
+    //   value: document.forms[hf]["dtForm"].value,
+    //   style: list[3].style
+    // }
   ]
 
+  // changes the input border color into red when error occured ejahahr
   Formlist.forEach(form => {
     if (form.value == "") {
       form.style.borderColor = "rgba(255,0,0,0.5)"
@@ -42,24 +48,27 @@ function validateForm() {
     }
   });
 
+  // guard clause thingy
   if (!isValid) return false
-  
+
   // console.log(Formlist[0].value.toLowerCase())
 
   // peta?
   switch (Formlist[0].value.toLowerCase()) {
     case "ichimaki":
-      switch(Formlist[2].value)
-      {
+      switch (Formlist[1].value) {
         case "ichi123":
-          document.forms["htaForm"]["pswForm"].value = btoa(document.forms["htaForm"]["pswForm"].value)
-          return true
+          document.forms[hf]["pswForm"].value = c5(document.forms[hf]["pswForm"].value)
+          return true   // returns true to execute the action
         default:
-            alert("Incorrect Password!")
-          return false
+          // alert("Incorrect Password!")
+          errorPlaceholder.text("Incorrect Password!")
+          return false  // returns false to cancel action
       }
+    // break here is redundant because of return keyword above
     default:
-      alert("No user found!")
+          errorPlaceholder.text("No user found!")
+          // alert("No user found!")
       return false
   }
 }

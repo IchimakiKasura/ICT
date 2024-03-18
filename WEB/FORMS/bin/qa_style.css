@@ -70,22 +70,16 @@ body{
     font-size: 25px;
 }
 
-#form1 img{
-    position: inherit;
-    top: 30px;
-    height: 20vh;
-}
-
 #form1 input{
     outline: none;
     text-align: inherit;
     position: inherit;
-    top: 7vh;
+    top: 70px;
     padding: 10px;
     border-width: 1px;
     border-color: rgba(206, 206, 206, 0.3);
     border-radius: 10px;
-    width: 35vh;
+    width: 17vw;
     font-family: Calibri;
     transition: border-color 0.2s;
     margin: 1vh;
@@ -104,7 +98,6 @@ body{
     outline: none;
     position: inherit;
     padding: 12px;
-    width: 35vh;
     top: 70px;
     background-color: rgb(59, 157, 60);
     border: none;

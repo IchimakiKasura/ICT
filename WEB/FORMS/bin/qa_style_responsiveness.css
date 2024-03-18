@@ -1,4 +1,4 @@
-@media only screen and (max-width:1200px),(max-height: 500px) {
+@media only screen and (max-width:1200px),(max-height: 700px) {
     body {
         margin: 0 !important;
         background-image: none !important;
@@ -7,19 +7,17 @@
         background-color: transparent !important;
         white-space: pre-wrap;
         margin: 0 !important;
-        height: 100% !important;
-        width: 100% !important;
+        height: 100vh !important;
+        width: 100vw !important;
         border-radius: 0 !important;
         box-shadow: 0 0 0 0 none !important;
-    }
-    #form1 p:nth-child(1) {
-        left: -5px;
     }
     .div1 {
         display: inline !important;
     }
     .actualForm, #form1 img {
-        left: -25px;
+        position: relative;
+        left: -35px;
     }
     .f {
         padding: 0 !important;
@@ -27,5 +25,9 @@
     }
     .faintBG {
         display: none;
+    }
+    #form1 input{
+        width: 25vw !important;
+        /* left: -20px !important; */
     }
 }
