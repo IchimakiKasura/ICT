@@ -1,4 +1,5 @@
 "use strict";
+
 const hf = "htaForm"
 const list = [
   か("#usr").gt,
@@ -51,9 +52,27 @@ function validateForm() {
   // guard clause thingy
   if (!isValid) return false
 
-  // console.log(Formlist[0].value.toLowerCase())
+  // Cleaner one | easy to maintenance and using hashmap/dictionary and guard clause
+  // let accounts = {
+  //   "ichimaki": "ichi123",
+  //   "admin": "admin123",
+  //   "user": "user123"
+  // }, 
+  // user = Formlist[0].value.toLowerCase() 
+  // if(user in accounts)
+  // {
+  //   if(accounts[user] !== Formlist[1].value)
+  //   {
+  //     errorPlaceholder.text("Incorrect Password!")
+  //     return false
+  //   }
+  //   document.forms[hf]["pswForm"].value = c5(document.forms[hf]["pswForm"].value)
+  //   return true
+  // }
+  // errorPlaceholder.text("No user found!")
+  // return false
 
-  // peta?
+  // peta? | sir chris intended way
   switch (Formlist[0].value.toLowerCase()) {
     case "ichimaki":
       switch (Formlist[1].value) {
@@ -69,6 +88,6 @@ function validateForm() {
     default:
           errorPlaceholder.text("No user found!")
           // alert("No user found!")
-      return false
+      return 
   }
 }

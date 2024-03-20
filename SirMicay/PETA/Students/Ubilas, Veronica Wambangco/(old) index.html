@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <a href="marquee.html"/>
+	 <meta charset="UTF-8">
+	 <meta name="viewport" content="width=device-width; initial-scale=1.0">
+	 <title>G-IDLE</title>
+	 <!-- Link to Font Awesome CSS (you can get this link from the Font Awesome website) -->
+	 <link rel="stylesheet" href=
+	 "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+	 
+	 
+	
+	 <!-- Favicon -->
+	 <link rel="icon" type="image/x-icon" href="couple.jpg"> 
+	 <link rel="stylesheet" href="nbstyle1.css">
+	<style>
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .animated-text {
+            animation: fadeIn 2s ease-in-out; /* Adjust the duration and timing function as needed */
+        }
+    </style>
+</head>
+<body>
+
+
+
+
+
+
+<style>
+        @keyframes slide {
+            0% {
+                transform: translateX(0);
+            }
+            50% {
+                transform: translateX(200px); /* Adjust the distance the image moves */
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        .animated-image {
+            animation: slide 4s ease-in-out infinite; /* Adjust the duration and timing function as needed */
+        }
+    </style>
+	
+<body>
+
+<nav>
+    <a href="nb.html"><img src="couple.jpg" alt="Logo"></a> <!-- Replace with your actual logo URL 
+	-->
+	<h1>G-IDLE INTRODUCTORY & CAFE</h1>
+	<ul>
+	    <li><a href="home.html">Home</a></li>
+		<li><a href="Lay-out.html">About</a></li>
+		<li>
+	       <a href="#">Menu<i class="fas fa-caret-down"></i></a>
+		   <ul>
+		      <li><a href="#">"about.html"</a>About</li>
+              <li><a href="#">"service2.html"</a>Fanbase</li>
+		      <li><a href="#">"shop.html"</a>Shop</li>
+		  </ul>
+		</li>
+		<li class="search-bar">
+		    <input type="text" placeholder="Search">
+			<button><i class="fas fa-search"></i>Search</button>
+		</li>
+    </ul>
+</nav>
+
+<body>
+
+<style>
+/* Style all input fields */
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+
+/* Style the submit button */
+input[type=submit] {
+  background-color: pink;
+  color: black;
+}
+
+/* Style the container for inputs */
+.container {
+  background-color: pink;
+  padding: 20px;
+}
+
+/* The message box is shown when the user clicks on the password field */
+#message {
+  display:none;
+  background: pink;
+  color: black;
+  position: relative;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+#message p {
+  padding: 10px 35px;
+  font-size: 18px;
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+  color: green;
+}
+
+.valid:before {
+  position: relative;
+  left: -35px;
+  content: "✔";
+}
+
+/* Add a red text color and an "x" when the requirements are wrong */
+.invalid {
+  color: red;
+}
+
+.invalid:before {
+  position: relative;
+  left: -35px;
+  content: "✖";
+}
+article {
+   background-color: lightpink;
+   color: black;
+   font-size:12px;
+   text-align:center;
+}
+</style>
+</head>
+<body>
+
+
+<article>
+<h3>Fill out this Form</h3>
+</article>
+
+<div class="container">
+  <form action="/action_page.php">
+    <label for="usrname">Username</label>
+    <input type="text" id="usrname" name="usrname" required>
+
+    <label for="psw">Password</label>
+    <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+    
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+<div id="message">
+  <h3>Password must contain the following:</h3>
+  <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+  <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+  <p id="length" class="invalid">Minimum <b>10 characters</b></p>
+</div>
+				
+<script>
+var myInput = document.getElementById("psw");
+var letter = document.getElementById("letter");
+var capital = document.getElementById("capital");
+var number = document.getElementById("number");
+var length = document.getElementById("length");
+
+// When the user clicks on the password field, show the message box
+myInput.onfocus = function() {
+  document.getElementById("message").style.display = "block";
+}
+
+// When the user clicks outside of the password field, hide the message box
+myInput.onblur = function() {
+  document.getElementById("message").style.display = "none";
+}
+
+// When the user starts to type something inside the password field
+myInput.onkeyup = function() {
+  // Validate lowercase letters
+  var lowerCaseLetters = /[a-z]/g;
+  if(myInput.value.match(lowerCaseLetters)) {  
+    letter.classList.remove("invalid");
+    letter.classList.add("valid");
+  } else {
+    letter.classList.remove("valid");
+    letter.classList.add("invalid");
+  }
+  
+  // Validate capital letters
+  var upperCaseLetters = /[A-Z]/g;
+  if(myInput.value.match(upperCaseLetters)) {  
+    capital.classList.remove("invalid");
+    capital.classList.add("valid");
+  } else {
+    capital.classList.remove("valid");
+    capital.classList.add("invalid");
+  }
+
+  // Validate numbers
+  var numbers = /[0-9]/g;
+  if(myInput.value.match(numbers)) {  
+    number.classList.remove("invalid");
+    number.classList.add("valid");
+  } else {
+    number.classList.remove("valid");
+    number.classList.add("invalid");
+  }
+  
+  // Validate length
+  if(myInput.value.length >= 8) {
+    length.classList.remove("invalid");
+    length.classList.add("valid");
+  } else {
+    length.classList.remove("valid");
+    length.classList.add("invalid");
+  }
+}
+</script>
+
+<!-- G-IDLE TRIVIA -->
+
+<div class="regform">
+     <h1>Trivia about G-IDLE</h1>
+	 <p>The meaning of the group's name: "(G)" (여자) is for "girl" and "Idle" (아이들) for "children".</p>
+<p>The "I" in "I-DLE" is for individuality and "DLE" is plural, so the girls each have the individual personalities but they are related.</p>
+<p>The name was given after Soyeon's single, "Idle Song".</p>
+	 </div>
+	 
+	 <article>
+<img src="cupcakes.jpg" width="200px" height="100px">
+<img src="cupcakes.jpg" width="200px" height="100px">
+<img src="cupcakes.jpg" width="200px" height="100px">
+<img src="cupcakes.jpg" width="200px" height="100px">
+<img src="cupcakes.jpg" width="200px" height="100px">
+<img src="cupcakes.jpg" width="200px" height="100px">
+</article>
+	 <br>
+	 <style>
+	 article {
+   color: white;
+   padding: 15px;
+   background-size: 30px;
+   background-color: violet;
+   font-size: 45px;
+   }
+	 </style>
+	
+    <style>
+        body {
+            transition: background-color 0.5s;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+<div id="myDiv" style="width: 100%; height: 200px; background-color: pink;">
+    <img id="myImage" src="black.jpg" alt="Image 1">
+</div>
+
+<button onclick="changeBackgroundColor()">Change Background Color</button>
+<button onclick="changeImage()">Change Image</button>
+
+<script>
+    var colors = ["pink", "purple", "black", "white"]; 
+    var colorIndex = 0; 
+
+    function changeBackgroundColor() {
+        
+        document.body.style.backgroundColor = colors[colorIndex];
+
+       
+        colorIndex = (colorIndex + 1) % colors.length;
+    }
+
+    var imageIndex = 1; // 
+
+    function changeImage() {
+        var images = ["black.jpg", "white.jpg", "pink.jpg"]; // 
+        var totalImages = images.length;
+
+      
+        document.getElementById("myImage").src = images[imageIndex];
+
+        
+        imageIndex = (imageIndex + 1) % totalImages;
+    }
+
+</script>
+<style>
+body {
+padding-top: 1em;
+}	
+</style> <div class="container-fluid">
+		
+      <img class="d-block w-100" src="soy.jpg" alt="First slide" width="100px">
+      
+        <h3>Soyeon</h3>
+        <p>Leader</p>
+  
+      <img class="d-block w-100" src="minnie.jpg" alt="Second slide" width="100px">
+   
+        <h3>Minnie</h3>
+        <p>Lead Vocalist</p>
+		
+    
+      <img class="d-block w-100" src="yuqi.jpg" alt="Second slide" width="100px">
+      
+        <h3>Yuqi</h3>
+        <p>Main Vocalist</div>
+
+      <img class="d-block w-100" src="miy.jpg" alt="Fourth slide" width="100px">
+      
+        <h3>Miyeon</h3>
+        <p>Main Vocalist</p>
+		
+		
+	  
+		 
+	  <img class="d-block w-100" src="Soo.gif" alt="Fourth slide" width="100px">
+
+       
+	   <h3>Soojin</h3>
+	   <p>Former Member</p>
+
+</script>
+
+
+</body>
+</html>
+
+</body>
+</html>
