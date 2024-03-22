@@ -88,6 +88,6 @@ function validateForm() {
     default:
           errorPlaceholder.text("No user found!")
           // alert("No user found!")
-      return 
+      return false
   }
 }

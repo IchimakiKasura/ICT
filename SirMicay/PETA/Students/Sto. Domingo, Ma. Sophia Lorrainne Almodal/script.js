@@ -1,10 +1,3 @@
-document.getElementById("loginForm").addEventListener("submit", function(event) {
-    event.preventDefault(); 
-
-   
-    validateLogin();
-});
-
 function validateLogin() {
     var username = document.getElementById('username').value;
     var password = document.getElementById('password').value;
@@ -13,7 +6,6 @@ function validateLogin() {
         case "pia":
             switch (password) {
                 case "pia123":
-                   
                     window.location.href = "Dashboard.html";
                     return false;
                 default:
@@ -24,6 +16,13 @@ function validateLogin() {
             switch (password) {
                 case "admin123":
                     alert("Login Successfully");
+                    return false;
+                default:
+                    alert("Incorrect password");
+                    return false;
             }
-        }
+        default:
+            alert("No user");
+            return false;
     }
+}
