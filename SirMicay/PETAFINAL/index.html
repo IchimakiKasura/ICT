@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- main -->
+        <meta name="owner" content="GRADE-11 ICT" />
+        <meta name="title" content="ICT | PROGRAMMING 2" />
+        <meta name="description" content="Grade-11 ICT PROGRAMMING 2 Peta" />
+        <meta property="image" content="https://upload.wikimedia.org/wikipedia/en/thumb/3/39/Holy_Trinity_Academy_seal.svg/1200px-Holy_Trinity_Academy_seal.svg.png" />
+        <!-- fb -->
+        <meta property="og:url" content="https://ichimakikasura.github.io/" />
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="ICT | PROGRAMMING 2" />
+        <meta property="og:description" content="Grade-11 ICT PROGRAMMING 2 Peta" />
+        <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/en/thumb/3/39/Holy_Trinity_Academy_seal.svg/1200px-Holy_Trinity_Academy_seal.svg.png" />
+        <!-- twitter -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:creator" content="GRADE-11 ICT" />
+        <meta name="twitter:title" content="ICT | PROGRAMMING 2" />
+        <meta name="twitter:description" content="Grade-11 ICT PROGRAMMING 2 Peta" />
+        <meta name="twitter:image" content="https://upload.wikimedia.org/wikipedia/en/thumb/3/39/Holy_Trinity_Academy_seal.svg/1200px-Holy_Trinity_Academy_seal.svg.png" />
+        
+        <link rel="shortcut icon" href="../../bin/favicon.ico" type="image/x-icon">
+ 
+        <title>COMPROG PETA FINAL</title>
+        <link rel="stylesheet/less" href="bin/st.less">
+        <script src="bin/less.js"></script>
+    </head>
+
+    <body>
+        <main>
+            <nav class="navigation">
+                <div selected="1" onclick="changeArticle('group', this)">SHOW GROUPS</div>
+                <div selected="0" onclick="changeArticle('web', this)">SHOW WEBPAGE</div>
+                <div disabled="1">SHOW CODE</div>
+            </nav>
+            <section class="main_view">
+                <article class="groups_view" data-show="1">
+                    <div onclick="showWeb('https:\/\/ichimakikasura.github.io/pos/')">
+                        <img src="https://static1.squarespace.com/static/5f2046017ef5225ec010babd/t/639cd708bb7ff9461d3552d0/1671223049225/PES+logo+%2B+wordmark+-+RGB+white+background.jpg" alt="">
+                        <h1>GROUP 1</h1>
+                    </div>
+                    <div onclick="showWeb('https:\/\/ichimakikasura.github.io/pos/')">
+                        <img src="https://static1.squarespace.com/static/5f2046017ef5225ec010babd/t/639cd708bb7ff9461d3552d0/1671223049225/PES+logo+%2B+wordmark+-+RGB+white+background.jpg" alt="">
+                        <h1>GROUP 2</h1>
+                    </div>
+                    <div onclick="showWeb('https:\/\/ichimakikasura.github.io/pos/')">
+                        <img src="https://static1.squarespace.com/static/5f2046017ef5225ec010babd/t/639cd708bb7ff9461d3552d0/1671223049225/PES+logo+%2B+wordmark+-+RGB+white+background.jpg" alt="">
+                        <h1>GROUP 3</h1>
+                    </div>
+                    <div onclick="showWeb('https:\/\/ichimakikasura.github.io/pos/')">
+                        <img src="https://static1.squarespace.com/static/5f2046017ef5225ec010babd/t/639cd708bb7ff9461d3552d0/1671223049225/PES+logo+%2B+wordmark+-+RGB+white+background.jpg" alt="">
+                        <h1>GROUP 4</h1>
+                    </div>
+                    <div onclick="showWeb('https:\/\/ichimakikasura.github.io/pos/')">
+                        <img src="https://static1.squarespace.com/static/5f2046017ef5225ec010babd/t/639cd708bb7ff9461d3552d0/1671223049225/PES+logo+%2B+wordmark+-+RGB+white+background.jpg" alt="">
+                        <h1>GROUP 5</h1>
+                    </div>
+                    <div onclick="showWeb('https:\/\/ichimakikasura.github.io/pos/')">
+                        <img src="https://static1.squarespace.com/static/5f2046017ef5225ec010babd/t/639cd708bb7ff9461d3552d0/1671223049225/PES+logo+%2B+wordmark+-+RGB+white+background.jpg" alt="">
+                        <h1>GROUP 6</h1>
+                    </div>
+                    <div onclick="howWeb('https:\/\/ichimakikasura.github.io/pos/')">
+                        <img src="pictures/solo_shopPreview.png" alt="">
+                        <h1>[SOLO] KEAN JAMES D. PEPITO</h1>
+                    </div>
+                </article>
+                <article class="web_view" data-show="0">
+                    <iframe id="source" src="" frameborder="0"></iframe>
+                    <br><br>
+                    <button onclick="show()">CHECK FULL PAGE</button>
+                </article>
+                <article class="code_view" data-show="0"></article>
+            </section>
+        </main>
+
+        <script src="bin/sc.js"></script>
+    </body>
+
+</html>

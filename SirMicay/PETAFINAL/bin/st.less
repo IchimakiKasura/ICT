@@ -1,0 +1,112 @@
+@font-face {
+    font-family: "jenshin";
+    src: url(ja-jp.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-family: "jenshin";
+    
+    
+    body {
+        background: rgb(24, 38, 83);
+        margin: 50px 50px 0px 50px;
+        overflow: hidden;
+        
+        main {
+            position: relative;
+            background: white;
+            border-radius: 10px;
+            margin-top: 100px;
+
+            .navigation {
+                top: -100px;
+                position: absolute;
+                display: flex;
+                padding: 20px;
+                left: 20px;
+                
+                div {
+                    width: 200px;
+                    background: rgba(255, 255, 255, 0.5);
+                    text-align: center;
+                    border-top-left-radius: 10px;
+                    border-top-right-radius: 10px;
+                    margin: 0 5px 0 10px;
+                    padding:30px;
+                    user-select: none;
+                    cursor: pointer;
+
+                    &[selected="1"] {
+                        background-color: white;
+                    }
+                    &[disabled="1"] {
+                        background-color: rgba(255, 0, 0, 0.5);
+                    }
+
+                    &[selected="0"]:hover {
+                        background-color: #ffffffaf;
+                    }
+                }
+            }
+
+            .main_view {
+                padding: 50px;
+
+                .groups_view {
+                    overflow-y: scroll;
+                    height: 76vh;
+
+                    div {
+                        padding: 20px;
+                        display: flex;
+                        align-items: center;
+                        transition: background-color 0.1s;
+                        margin: 10px 0 10px 0;
+                        border-radius: 10px;
+                        cursor: pointer;
+                        user-select: none;
+                        font-size: 30px;
+                        img {
+                            height: 10vw;
+                            width: 10vw;
+                            object-fit: cover;
+                            border-radius: 10px;
+                            margin-right: 50px;
+                        }
+
+                        &:hover {
+                            background-color: rgba(0, 0, 0, 0.2);
+                        }
+                    }
+                }
+                
+                .web_view {
+                    text-align: center;
+                    margin-bottom: -40px;
+                    margin-top: -30px;
+    
+                    button {
+                        padding: 20px;
+    
+                    }
+    
+                    iframe {
+                        box-shadow: 0 0 10px 1px black;
+                        border-radius: 10px;
+                        
+                        margin: auto;
+                        height: 77vh;
+                        width: 89.5vw;
+                    }
+                }
+
+                [data-show="1"] { display: block; }
+                [data-show="0"] { display: none; }
+            }
+
+        }
+    }
+}
