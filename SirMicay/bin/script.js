@@ -67,19 +67,23 @@ function ChangeSection(id, el)
 
 function otherChange(bool, a)
 {
-    if(bool)
-        currentOtherPage < Other.length-1 ? currentOtherPage++ : null
-    else
-        currentOtherPage > 0 ? currentOtherPage-- : null
-
-    OtherTitle.innerHTML = Other[currentOtherPage].title
-    OtherParagraph.innerHTML = Other[currentOtherPage].text
-
-    console.log(currentOtherPage)
+    try {
+        if(bool)
+            currentOtherPage < Other.length-1 ? currentOtherPage++ : null
+        else
+            currentOtherPage > 0 ? currentOtherPage-- : null
+    
+        OtherTitle.innerHTML = Other[currentOtherPage].title
+        OtherParagraph.innerHTML = Other[currentOtherPage].text
+    
+        console.log(currentOtherPage)
+    } catch {}
 }
 
-var ichimakiAge = 20
-var ichimakiBirthMonth = "May"
-var ichimakiName = "Ichimaki Kasura"
-var ichimakiHobby = "Playing Guitar"
-var ichimakiFavortieNumber = 46
+function dropdownBtn(element) {
+    let isOpened = element.childNodes[1];
+    let dropdown = element.childNodes[3];
+    let value = isOpened.getAttribute("opened") == 0 ? "1" : "0";
+    isOpened.setAttribute("opened", value)
+    dropdown.setAttribute("data-show", value)
+}

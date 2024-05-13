@@ -28,3 +28,28 @@
     padding: 0.5vw 1.5vw 0.5vw 1.5vw;
     display: inline-flex;
 }
+.dropdown-content {
+    display: none;
+    position: absolute;
+    text-align: center;
+    top: 5.5vw;
+    width: 20vw;
+    box-shadow: 0 0 5px 0 black;
+    background-color: royalblue;
+    right: 1vw;
+    padding: 10px;
+    border-radius: 10px;
+}
+[data-show="1"] {
+    display: block;
+}
+.dropdown-content a {
+    text-decoration: none;
+    color: white;
+}
+.dropdown-content a:hover {
+    color: black;
+}
+[opened="1"] {
+    color: black !important;
+}

@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Holy Trinity Academy</title>
-        <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/en/thumb/3/39/Holy_Trinity_Academy_seal.svg/1024px-Holy_Trinity_Academy_seal.svg.png" type="image/x-icon">
+        <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
         <link css rel="stylesheet" href="bin/root.css">
         <link css rel="stylesheet" href="bin/main.css">
         <link css rel="stylesheet" href="bin/navigation.css">
@@ -16,7 +16,15 @@
         <nav class="navigationPanel">
             <ul>
                 <li>Holy Trinity Academy</li>
-                <li ft onclick="ChangeSection('#Contact', this)">Contact</li>
+                <li ft onclick="dropdownBtn(this)">
+                    <div opened="0">Activities</div>
+                    <div class="dropdown-content" data-show="0">
+                        <a href="GradeChecker.html">Grade Checker</a>
+                        <a href="OddEven.html">Odd/Even</a><br>
+                        <a href="Mix.html">Mix</a><br>
+                        <a href="Triangle.html">Triangle Gen</a>
+                    </div>
+                </li>
                 <li ft onclick="ChangeSection('#Other', this)">Other</li>
                 <li ft onclick="ChangeSection('#Home', this)">Home</li>
             </ul>
@@ -25,7 +33,7 @@
         <main>
             <section id="Home">
                 <img class="bg" src="images/hta.jpg" alt="bg">
-                <img class="htaImage" src="https://upload.wikimedia.org/wikipedia/en/thumb/3/39/Holy_Trinity_Academy_seal.svg/1024px-Holy_Trinity_Academy_seal.svg.png" alt="logo">
+                <img class="htaImage" src="images/logo.png" alt="logo">
                 <div style="text-align: center;">
                     <h1 style="position: relative">Home of Tomorrow's Achievers</h1>
                     <hr style="margin: auto; border: 3px solid black; border-radius: 1vw; width: 50vw;">
@@ -41,7 +49,7 @@
                     <button onclick="otherChange(true)">&gt;</button>
                 </div>
             </section>
-            <section id="Contact">
+            <!-- <section id="Contact">
                 <div style="text-align: center;">
                     <br><br>
                     <br><br>
@@ -65,7 +73,7 @@
                     <br>
                     Created by Kean James D. Pepito of ICT-11.
                 </div>
-            </section>
+            </section> -->
         </main>
 
         <script src="bin/script.js"></script>

@@ -1,0 +1,71 @@
+@media screen and (max-width: 1000px) {
+    #Other p {
+        margin: 0 15vw 0 15vw !important;
+    }
+}
+
+#Home, #Other, #Contact {
+    height: 100vh;
+    width: 100vw;
+    font-family: mgtg;
+    overflow: hidden;
+}
+
+#Home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vw;
+    text-shadow: 0 0 1vw white;
+    user-select: none;
+}
+
+.htaImage {
+    position: absolute;
+    z-index: -1;
+    opacity: 0.2;
+    height: 60%;
+    text-shadow: 0 0 1vw black;
+    filter: drop-shadow(0 0 50px black);
+}
+
+.bg {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -2;
+    opacity: 0.3;
+}
+
+.PlaceholderText {
+    margin-bottom: -1.5vw;
+}
+.Input {
+    width: 17.8vw;
+    font-size: 1.5vw;
+    text-align: center;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+.buttonSubmit {
+    width: 17.8vw;
+    font-size: 1.5vw;
+    text-align: center;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    pointer-events: all;
+    cursor: pointer;
+}
+.buttonSubmit:hover {
+    background-color: gray;
+    color: white;
+}
+.value {
+    text-align: center;
+}
+.homemain {
+    text-align: center;
+}
