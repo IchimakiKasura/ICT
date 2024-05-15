@@ -49,6 +49,7 @@
 }
 .dropdown-content a:hover {
     color: black;
+    /* opacity: 1; */
 }
 [opened="1"] {
     color: black !important;

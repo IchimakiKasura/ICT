@@ -31,7 +31,7 @@ async function showWeb(link)
     changeArticle("web", document.querySelectorAll("[selected]")[1])
 
     await fetch(link).then((html)=>{
-        console.log(new DOMParser().parseFromString(html, "text/html"))
-        // document.querySelector("#source").srcdoc = 
+        // console.log(new DOMParser().parseFromString(html, "text/html"))
+        document.querySelector("#source").src = link;
     })
 }

@@ -34,16 +34,28 @@
             <section id="Home">
                 <img class="bg" src="images/hta.jpg" alt="bg">
                 <div class="homemain">
-                    <h5 class="PlaceholderText">Odd/Even Checker</h5>
-                    <input class="Input" placeholder="input" type="number"><br>
-                    <button class="buttonSubmit" onclick="submit()">Submit</button>
+                    <h5 class="PlaceholderText">Compound Interest</h5>
+                    <input class="Input" placeholder="Amount" type="number">
+                    <input class="Input" placeholder="Interest %" type="number"><br>
+                    <input class="Input" placeholder="Year(s)" type="number">
+                    <select id="selector" class="Input">
+                        <option value="1">Annually</option>
+                        <option value="2">Semi-Anually</option>
+                        <option value="4">Quarterly</option>
+                        <option value="12">Monthly</option>
+                    </select>
                     <br>
-                    <h4 class="value"></h4>
+                    <button class="buttonSubmit" onclick="submit()">Compute</button>
+                    <br>
+                    <div style="height: 340px; overflow-y: scroll; overflow-x: hidden;">
+                        <h4 class="value1"></h4>
+                        <h4 class="value2"></h4>
+                    </div>
                 </div>
             </section>
         </main>
 
         <script src="bin/script.js"></script>
-        <script src="bin/scripts/OddEven.js"></script>
+        <script src="bin/scripts/CompoundRate.js"></script>
     </body>
 </html>

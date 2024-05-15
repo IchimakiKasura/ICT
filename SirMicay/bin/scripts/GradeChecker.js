@@ -1,18 +1,12 @@
 function submit() {
-    let temp = "Grade: "
     let grade = document.querySelector(".Input").value;
 
-    if(grade > 100)
-        temp += "Error"
-    else if (grade >= 95)
-        temp += "A"
-    else if (grade >= 85)
-        temp += "B"
-    else if (grade >= 80)
-        temp += "C"
-    else if (grade >= 75)
-        temp += "D"
-    else temp += "F"
-
-    document.querySelector(".value").innerText = temp
+    // try debugging this copy&pasters :>
+    document.querySelector(".value").innerText = `Grade: ${
+        grade > 100 ? "Error" :
+        grade >= 95 ? "A" :
+        grade >= 85 ? "B" :
+        grade >= 80 ? "C" :
+        grade >= 75 ? "D" : "E"
+    }`
 }
