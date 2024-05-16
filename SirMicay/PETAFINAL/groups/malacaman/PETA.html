@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="new 1.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to BINIBINI OFFICIAL WEBSITE</title>
+</head>
+<body>
+    <div class="pos-container">
+        <h1>Welcome to BINI SHOPPING WEBSITE</h1>
+		<p>Good day Blooms, This is the Shopping website of BINI where you can choose a photocards to buy. Have fun!</p>
+		<p>Please enter your full name so that it will be shown on the receipt. Thank you!</p>
+        <label for="customerName">Your Name:</label>
+        <input type="text" id="customerName">
+        <div class="products">
+            <div class="product maloi">
+                <span>MALOI</span>
+                <button onclick="addProduct(1, 'MALOI', 500)">Add</button>
+            </div>
+            <div class="product colette">
+                <span>COLETTE</span>
+                <button onclick="addProduct(2, 'COLETTE', 350)">Add</button>
+            </div>
+            <div class="product jhoanna">
+                <span>JHOANNA</span>
+                <button onclick="addProduct(3, 'JHOANNA', 342)">Add</button>
+            </div>
+        </div>
+        <div class="products">
+            <div class="product aiah">
+                <span>AIAH</span>
+                <button onclick="addProduct(4, 'AIAH', 454)">Add</button>
+            </div>
+            <div class="product gwen">
+                <span>GWEN</span>
+                <button onclick="addProduct(5, 'GWEN', 491)">Add</button>
+            </div>
+            <div class="product stacey">
+                <span>STACEY</span>
+                <button onclick="addProduct(6, 'STACEY', 314)">Add</button>
+            </div>
+        </div>
+        <div class="products">
+            <div class="product mikha">
+                <span>MIKHA</span>
+                <button onclick="addProduct(7, 'MIKHA', 399)">Add</button>
+            </div>
+            <div class="product sheena">
+                <span>SHEENA</span>
+                <button onclick="addProduct(8, 'SHEENA', 489)">Add</button>
+            </div>
+        </div>
+        <div class="cart">
+            <h2>Cart</h2>
+			<p>Bawat araw, mas sumasaya kaya ika'y mag Check Out na~</p>
+            <ul id="cart-items"></ul>
+            <div id="total">Total: ₱0</div>
+            <button onclick="processSale()">Check Out & Print</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

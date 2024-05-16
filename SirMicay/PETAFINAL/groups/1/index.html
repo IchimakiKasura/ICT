@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tarantano Shop</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    </head>
+
+    <body>
+        <nav>
+            <h1>TARANTANO</h1>
+            <img src="logo.jpg" alt="logo">
+            <h1>SHOP</h1>
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+        </nav>
+
+        <main>
+
+            <div class="items">
+                <div class="item" id="item1">
+                    <img src="g1.jpg" alt="item_picture">
+                    <h3 class="taytol">RJ Basic Electrics - Broadcaster</h3>
+                    <h3>₱5,499</h3>
+                    Quantity: <input type="number" value="1" maxlength="99" minlength="1"><br>
+                    <button onclick="addToCart(document.getElementById('item1'))">ADD TO CART</button>
+                </div>
+                <div class="item" id="item2">
+                    <img src="g2.jpg" alt="item_picture">
+                    <h3 class="taytol">RJ Basic Electrics- Skycaster Electric Guitar</h3>
+                    <h3>₱5,999</h3>
+                    Quantity: <input type="number" value="1" maxlength="99" minlength="1"><br>
+                    <button onclick="addToCart(document.getElementById('item2'))">ADD TO CART</button>
+                </div>
+                <div class="item" id="item3">
+                    <img src="g3.jpg" alt="item_picture">
+                    <h3 class="taytol">RJ Guitars - RJ Professional Acoustics Folk</h3>
+                    <h3>₱5,999</h3>
+                    Quantity: <input type="number" value="1" maxlength="99" minlength="1"><br>
+                    <button onclick="addToCart(document.getElementById('item3'))">ADD TO CART</button>
+                </div>
+                <div class="item" id="item4">
+                    <img src="g4.jpg" alt="item_picture">
+                    <h3 class="taytol">RJ Guitars - Solid Series Acoustic Guitar</h3>
+                    <h3>₱8,999</h3>
+                    Quantity: <input type="number" value="1" maxlength="99" minlength="1"><br>
+                    <button onclick="addToCart(document.getElementById('item4'))">ADD TO CART</button>
+                </div>
+                <div class="item" id="item5">
+                    <img src="g5.jpg" alt="item_picture">
+                    <h3 class="taytol">RJ Gitarang Tipid - RJ Les Pu Bass Guitar with Trussrod</h3>
+                    <h3>₱3,499</h3>
+                    Quantity: <input type="number" value="1" maxlength="99" minlength="1"><br>
+                    <button onclick="addToCart(document.getElementById('item5'))">ADD TO CART</button>
+                </div>
+                <div class="item" id="item6">
+                    <img src="g1.jpg" alt="item_picture">
+                    <h3 class="taytol">RJ Basic Electrics - Broadcaster</h3>
+                    <h3>₱5,499</h3>
+                    Quantity: <input type="number" value="1" maxlength="99" minlength="1"><br>
+                    <button onclick="addToCart(document.getElementById('item6'))">ADD TO CART</button>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="down">
+                <div class="cart">
+                    <h1>CART</h1>
+                    <div class="item_cart">
+                    </div>
+                    <div class="total"></div>
+                </div>
+    
+                <div class="receipt">
+                    <iframe src="" frameborder="0"></iframe><br>
+                    Amount to pay: <input type="text" placeholder="amount"><br>
+                    <button>PRINT RECEIPT</button>
+                </div>
+            </div>
+        </main>
+
+        <script src="script.js"></script>
+    </body>
+
+</html>

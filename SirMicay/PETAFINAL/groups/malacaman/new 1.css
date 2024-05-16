@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("biniloves.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center; 
+    height: 100%;
+}
+
+.pos-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px light #ffb6c1;
+    background-color: #F9E1E0;
+    width: 50%;
+}
+
+.products {
+    display: flex;
+    flex-wrap: nowrap; 
+    justify-content: flex-start; 
+    gap: 20px; 
+    overflow-x: auto; 
+    padding-bottom: 20px; 
+}
+
+.product {
+    text-align: right; 
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    background-position: right; 
+    border-radius: 8px; 
+    width: 150px; 
+    height: 150px; 
+    margin-bottom: 20px; 
+}
+
+.maloi {
+    background-image: url("maloi.jpg");
+}
+
+.colette {
+    background-image: url("colet.jpg"); 
+}
+
+.jhoanna {
+    background-image: url("jhoanna.jpg");
+}
+
+.aiah {
+    background-image: url("aiah.jpg");
+}
+
+.gwen {
+    background-image: url("bigwen.jpg"); 
+}
+
+.stacey {
+    background-image: url("stacey.jpg"); 
+}
+
+.mikha {
+    background-image: url("mikha.jpg");
+}
+
+.sheena {
+    background-image: url("sheena.jpg"); 
+}
+
+.cart {
+    margin-top: 20px;
+}
+
+.cart ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.cart button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.cart button:hover {
+    background-color: #0056b3;
+}
+
+.receipt {
+    background-image: url("salamin.jpg"); 
+    background-size: cover; 
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+@media print {
+    .receipt {
+        background-image: url("salamin.jpg");
+        background-size: cover; 
+        padding: 20px;
+        border-radius: 10px;
+        margin-top: 20px;
+    }
+
+    body, .pos-container, .cart, button {
+        display: none;
+    }
+
+ 
+    .receipt {
+        display: block !important;
+    }
+}
