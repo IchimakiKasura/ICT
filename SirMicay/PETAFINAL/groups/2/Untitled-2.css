@@ -1,0 +1,69 @@
+body{
+    margin:0px;
+    padding:0px;
+    background-image:url('p4.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h2{
+    color:white;
+    font-family: verdana;
+}
+
+#acc{
+    height:100%;
+    width:65rem;
+    background:linear-gradient(to right,rgb(19, 0, 81),rgb(19, 0, 81),transparent);
+    display:flex;
+    flex-direction: column;
+    padding:2em;
+    position:relative;
+    left:-100rem;
+    box-sizing: border-box;
+    animation-name: anim;
+    animation-duration: 2s;
+    animation-timing-function:ease-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+}
+
+#acc input{
+    width:15em;
+    margin-top:1rem;
+    padding:0.8rem;
+    border-radius:0.5rem;
+    background-color:white;
+    border:1px solid black;
+    color:rgb(25, 35, 43);
+}
+
+#acc input::placeholder{
+    font-family:verdana;
+    color:rgb(25, 35, 43);
+}
+
+#acc button{
+    width:8em;
+    margin-top:1rem;
+    cursor:pointer;
+    padding:0.7rem;
+    color:black;
+    background-color:rgb(255, 255, 255);
+    box-sizing: border-box;
+    border:1px solid black;
+    transition:0.2s;
+}
+
+#acc button:hover{
+    color:white;
+    background-color:rgb(10, 0, 41) ;
+}
+
+@keyframes anim {
+    0%{
+        left:-100rem;
+    }100%{
+        left:0rem;
+    }
+}

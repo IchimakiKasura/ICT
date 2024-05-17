@@ -14,16 +14,8 @@
             <h1>TARANTANO</h1>
             <img src="logo.jpg" alt="logo">
             <h1>SHOP</h1>
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         </nav>
-
         <main>
 
             <div class="items">
@@ -76,16 +68,32 @@
             <div class="down">
                 <div class="cart">
                     <h1>CART</h1>
-                    <div class="item_cart">
+                    <div id="item_cart">
                     </div>
-                    <div class="total"></div>
+                    <div>Total: <span id="total"></span></div>
+                    <button onclick="remove()">remove item</button>
                 </div>
-    
                 <div class="receipt">
-                    <iframe src="" frameborder="0"></iframe><br>
-                    Amount to pay: <input type="text" placeholder="amount"><br>
-                    <button>PRINT RECEIPT</button>
+                    <iframe id="frm" name="frm" frameborder="0" style="width: 500px"></iframe><br>
+                    Amount to pay: <input id="money" type="number" placeholder="amount"><br>
+                    <button onclick="buy()">PRINT RECEIPT</button>
                 </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div style="margin-left: 50px;">
+                <h3>GROUP 1 MEMBERS:</h3>
+                Paul Jefferson Prado<br>
+                Lira Cassandra Gabriz<br>
+                Sophia Lorraine Sto Domingo<br>
+                Rowin Carl G Alejaga<br>
+                Rafael Dimayuga<br>
+                Curt Jeremy Tapan<br>
+                Jomar Tano<br>
+                John Aldrine Gabion<br>
+                Kyle John Ashley Dimaano
             </div>
         </main>
 

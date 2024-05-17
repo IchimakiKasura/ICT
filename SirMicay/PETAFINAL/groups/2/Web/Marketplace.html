@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title>Marketplace</title>
+        <link rel="stylesheet" href="Marketplace/Untitled-2.css">
+    </head>
+    <body>
+        <img id="pcs" onclick="pics()" src="">
+        <nav id="nav">
+            <ul>
+                <li><a href="">Marketplace</a></li>
+                <li><a href="Calculator.html" target="_blank">Calculator</a></li>
+                <li><a href="Profile.html">Profile</a></li>
+                <li><p id="set" onclick="sett()">⚙</p></li>
+            </ul>
+        </nav>
+        <div id="settings">
+            <p onclick="logs()">Logout</p>
+        </div>
+        <div id="rb">
+            <p>List</p>
+            <div id="rbi"> 
+            </div>
+                <button onclick="undo()">Undo</button>
+                <button onclick="clears()">Clear</button>
+                <button onclick="eval()">Eval</button>
+        </div>
+        <div id="lb">
+            <h3>Products</h3>
+            <div id="product">
+                <div>Umbrella = 2$
+                    <img src="Marketplace/umbrella.avif" onclick="pic('Marketplace/umbrella.avif')">
+                    <button onclick="func(2,'Umbrella')">add to cart</button>
+                </div>
+                <div>Shirt = 4$
+                    <img src="Marketplace/shirt.webp" onclick="pic('Marketplace/shirt.webp')">
+                    <button onclick="func(4,'Shirt')">add to cart</button>
+                </div>
+                <div>Small Kitchen Knife = 8$
+                    <img src="Marketplace/Knife.jpg" onclick="pic('Marketplace/Knife.jpg')">
+                    <button onclick="func(8,'Small Kitchen Knife')">add to cart</button>
+                </div>
+                <div>Mega Crossword Puzzle Book = 14$
+                    <img src="Marketplace/crossword.jpg" onclick="pic('Marketplace/crossword.jpg')">
+                    <button onclick="func(14,'Mega Crossword Puzzle Book')">add to cart</button>
+                </div>
+                <div>Phone Charger = 20$
+                    <img src="Marketplace/charger.jpg" onclick="pic('Marketplace/charger.jpg')">
+                    <button onclick="func(20,'Phone Charger')">add to cart</button>
+                </div>
+                <div>Insulated Stainless Steel Water Bottle = 22$
+                    <img src="Marketplace/bottle.jpg" onclick="pic('Marketplace/bottle.jpg')">
+                    <button onclick="func(22,'Insulated Stainless Steel Water Bottle')">add to cart</button>
+                </div>
+                <div>Gym Bag Duffel Bags = 36$
+                    <img src="Marketplace/Duffel bag.jpg" onclick="pic('Marketplace/Duffel bag.jpg')">
+                    <button onclick="func(36,'Gym Bag Duffel Bags')">add to cart</button>
+                </div>
+                <div>Angel Soft Toilet Paper = 4$
+                    <img src="Marketplace/TP.webp" onclick="pic('Marketplace/TP.webp')">
+                    <button onclick="func(4,'Angel Soft Toilet Paper')">add to cart</button>
+                </div>
+                <div>Converse Men's Low-Top Sneaker = 120$
+                    <img src="Marketplace/Sneakers.jpg" onclick="pic('Marketplace/Sneakers.jpg')">
+                    <button onclick="func(120,'Converse Mens Low-Top Sneaker')">add to cart</button>
+                </div>
+            </div>
+        </div>
+        <footer></footer>
+        <script src="Marketplace/Untitled-3.js"></script>
+    </body>
+</html>
