@@ -26,9 +26,10 @@ function changeArticle(view, element)
 
 }
 
-async function showWeb(link)
+async function showWeb(link, codeLink)
 {
     changeArticle("web", document.querySelectorAll("[selected]")[1])
+    document.getElementById("showcode").setAttribute("onclick", `window.open('${codeLink}')`)
 
     await fetch(link).then((html)=>{
         // console.log(new DOMParser().parseFromString(html, "text/html"))
