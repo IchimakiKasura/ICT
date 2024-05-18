@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+<meta charset ="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> PETA </title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<h3 id="DarkModetext">Dark Mode is OFF</h3>
+    <button onclick="darkMode()">Darkmode</button>
+    <button onclick="lightMode()">LightMode</button>
+ 
+
+<div class="container">
+<header>
+<h1> Apple Store</h1>
+<div class="shopping">
+<img src="data:image/png;base64,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">
+<span class="quantity">0</span>
+</header>
+<div class="list"></div>
+</div>
+<div class="card">
+<h1>Card</h1>
+<ul class="listCard"></ul>
+<div class="checkOut">
+<div class="total">0</div>
+<div class="closeShopping">Close</div>
+</div>
+
+
+
+
+
+         <script src="sen.js"></script>
+ 
+
+</body>
+</html>

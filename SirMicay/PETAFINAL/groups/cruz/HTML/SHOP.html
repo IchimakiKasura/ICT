@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="shortcut icon" type="x-icon" style="border-radius:200%;
+  border:solid skyblue;" href="port.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hayden's PC PARTS</title>
+  <link rel="stylesheet" href="shewapap.css">
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    
+    <img src="port.png" alt="Logo" style="max-width: 100px; height: auto;	 border-radius: 60px;">
+  </div>
+</head>
+<body>
+<div class="container">
+<div class="header">
+</div>
+<div class="navbar">
+<h2>Hayden's PC PARTS</h2>
+</div><br>
+
+<div class="navbar">
+ <a href="Homes.html#">Home</a>
+                    <a href="SHOP.html#">Shop</a>
+                    <a href="CATEGORIES.html#">Categories</a>
+                    <a href="LOGINNN.html#">Login</a>
+</div>
+  
+<div class="content">
+<div class="product-container">
+<div class="product-card">
+<img src="https://www.asus.parts/image/cache/catalog/demo/product/ASUS_ROG_GA402_Battery_C41N2101-200x200.jpg"> 
+<div class="product-card-content">
+<center><h2><b>ASUS ROG Zephyrus G14 GA402 Battery
+ASUS ROG Zephyrus G14 GA402</b> </h2>
+
+<p>Gaming Laptop Battery.Replacement Battery ASUS ROG Zephyrus G14 GA402 Ga..</p>
+<p>$84.00</p>
+<button onclick="addToCart('ASUS ROG Zephyrus G14 GA402 Battery ASUS ROG Zephyrus G14 GA402', 84)">Add to Cart</button></center>
+</div>
+</div>
+<div class="product-card">
+<img src="https://www.asus.parts/image/cache/catalog/demo/product/ASUS-Mini-PC-PB60-CPU-Fan-200x200.jpg">
+<div class="product-card-content">
+<center><h2><b>ASUS Mini PC PB60 PB60S PB60G PB60V CPU Fan</b> </h2>
+<p>ASUS Mini PC PB60 PB60S PB60G PB60V CPU Cooling Fan.</p>
+
+<p>$23.00</p>
+<br><button onclick="addToCart('ASUS Mini PC PB60 PB60S PB60G PB60V CPU Fan', 23)">Add to Cart</button></center>
+</div>
+</div>
+<div class="product-card">
+<img src="https://easypc.com.ph/cdn/shop/products/AMD_Ryzen_5_5600_Socket_Am4_3.5GHz_Processor-a_540x.jpg?v=1703829955">
+<div class="product-card-content">
+<center><h2>AMD Ryzen 5 5600 Socket Am4 3.5GHz Processor with Wraith stealth cooler MPK Processor</h2>
+<p>$5.00</p>
+<button onclick="addToCart('AMD Ryzen 5 5600 Socket Am4 3.5GHz Processor with Wraith stealth cooler MPK Processor', 5)">Add to Cart</button></center>
+</div>
+</div>
+<div class="product-card">
+<img src="https://cdn.shopify.com/s/files/1/0101/4864/2879/products/InPlay_Wind_05_Acrylic_Side_Panel_Micro_ATX_PC_Case_large.jpg?v=1704436178">
+<div class="product-card-content">
+<center><h2>InPlay Wind 05 and Wind 01 Acrylic Side Panel Micro ATX Durable Tempered Glass PC Case</h2>
+<p>₱6,295.00</p>
+<button onclick="addToCart('InPlay Wind 05 and Wind 01 Acrylic Side Panel Micro ATX Durable Tempered Glass PC Case', 6295)">Add to Cart</button></center>
+</div>
+</div>
+<div class="product-card">
+<img src="https://easypc.com.ph/cdn/shop/files/Lexar_Thor_8GB_Dark_Grey-a_540x.png?v=1696383811">
+<div class="product-card-content">
+<center><h2>Lexar Thor 8GB LD4BU008G-R3200GSXG 1x8 3200Mhz DDR4 Memory Dark Grey</h2>
+<p>₱ 300.00</p>
+<button onclick="addToCart('Lexar Thor 8GB LD4BU008G-R3200GSXG 1x8 3200Mhz DDR4 Memory Dark Grey', 300)">add to Cart</button></center>
+</div>
+</div>
+<div class="product-card">
+<img src="https://easypc.com.ph/cdn/shop/products/MSI_A520m_Pro-a_540x.jpg?v=1697179415">
+<div class="product-card-content">
+<center><h2>MSI A520m Pro AMD Am4 Ddr4 Micro-ATX PCB Gaming Motherboard</h2>
+<p>₱ 3,250.00</p>
+<button onclick="addToCart('MSI A520m Pro AMD Am4 Ddr4 Micro-ATX PCB Gaming Motherboard', 3250)">Add to Cart</button></center>
+</div>
+</div>
+
+</div><br>
+<div class="shopping-cart" id="shoppingCart">
+  <h2>Shopping Cart</h2>
+  <ul id="cartItems"></ul>
+  <button class="checkout-button" onclick="checkout()">Checkout</button>
+  <button class="print-button" onclick="printReceipt()">Print Receipt</button>
+</div>
+</div>
+
+ <div class="footer"></div>
+
+    <script>
+
+      function addToCart(itemName, price) {
+     
+        var li = document.createElement("li");
+     
+        li.textContent = itemName + " - $" + price;
+ 
+        document.getElementById("cartItems").appendChild(li);
+      }
+
+
+      function checkout() {
+
+        alert("Checkout functionality is not implemented yet.");
+      }
+
+      function printReceipt() {
+      
+        var cartContent = document.getElementById("cartItems").innerText;
+    
+        var dateTime = new Date().toLocaleString();
+     
+        var printWindow = window.open('', '_blank');
+     
+        printWindow.document.write("<h2>Receipt</h2>");
+        printWindow.document.write("<p>Date: " + dateTime + "</p>");
+        printWindow.document.write("<p>" + cartContent + "</p>");
+      
+        printWindow.print();
+      }
+    </script>
+  </div>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="shortcut icon" type="x-icon" style="border-radius:200%;
+  border:solid skyblue;" href="port.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hayden's PC PARTS</title>
+  <link rel="stylesheet" href="shewapap.css">
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    
+    <img src="port.png" alt="Logo" style="max-width: 100px; height: auto;	 border-radius: 60px;">
+  </div>
+</head>
+<body>
+<div class="container">
+<div class="header">
+</div>
+<div class="navbar">
+<h2>Hayden's PC PARTS</h2>
+</div><br>
+
+<div class="navbar">
+ <a href="Homes.html#">Home</a>
+                    <a href="SHOP.html#">Shop</a>
+                    <a href="CATEGORIES.html#">Categories</a>
+                    <a href="LOGINNN.html#">Login</a>
+</div>
+  
+<div class="content">
+<div class="product-container">
+<div class="product-card">
+<img src="https://www.asus.parts/image/cache/catalog/demo/product/ASUS_ROG_GA402_Battery_C41N2101-200x200.jpg"> 
+<div class="product-card-content">
+<center><h2><b>ASUS ROG Zephyrus G14 GA402 Battery
+ASUS ROG Zephyrus G14 GA402</b> </h2>
+
+<p>Gaming Laptop Battery.Replacement Battery ASUS ROG Zephyrus G14 GA402 Ga..</p>
+<p>$84.00</p>
+<button onclick="addToCart('ASUS ROG Zephyrus G14 GA402 Battery ASUS ROG Zephyrus G14 GA402', 84)">Add to Cart</button></center>
+</div>
+</div>
+<div class="product-card">
+<img src="https://www.asus.parts/image/cache/catalog/demo/product/ASUS-Mini-PC-PB60-CPU-Fan-200x200.jpg">
+<div class="product-card-content">
+<center><h2><b>ASUS Mini PC PB60 PB60S PB60G PB60V CPU Fan</b> </h2>
+<p>ASUS Mini PC PB60 PB60S PB60G PB60V CPU Cooling Fan.</p>
+
+<p>$23.00</p>
+<br><button onclick="addToCart('ASUS Mini PC PB60 PB60S PB60G PB60V CPU Fan', 23)">Add to Cart</button></center>
+</div>
+</div>
+<div class="product-card">
+<img src="https://easypc.com.ph/cdn/shop/products/AMD_Ryzen_5_5600_Socket_Am4_3.5GHz_Processor-a_540x.jpg?v=1703829955">
+<div class="product-card-content">
+<center><h2>AMD Ryzen 5 5600 Socket Am4 3.5GHz Processor with Wraith stealth cooler MPK Processor</h2>
+<p>$5.00</p>
+<button onclick="addToCart('AMD Ryzen 5 5600 Socket Am4 3.5GHz Processor with Wraith stealth cooler MPK Processor', 5)">Add to Cart</button></center>
+</div>
+</div>
+<div class="product-card">
+<img src="https://cdn.shopify.com/s/files/1/0101/4864/2879/products/InPlay_Wind_05_Acrylic_Side_Panel_Micro_ATX_PC_Case_large.jpg?v=1704436178">
+<div class="product-card-content">
+<center><h2>InPlay Wind 05 and Wind 01 Acrylic Side Panel Micro ATX Durable Tempered Glass PC Case</h2>
+<p>₱6,295.00</p>
+<button onclick="addToCart('InPlay Wind 05 and Wind 01 Acrylic Side Panel Micro ATX Durable Tempered Glass PC Case', 6295)">Add to Cart</button></center>
+</div>
+</div>
+<div class="product-card">
+<img src="https://easypc.com.ph/cdn/shop/files/Lexar_Thor_8GB_Dark_Grey-a_540x.png?v=1696383811">
+<div class="product-card-content">
+<center><h2>Lexar Thor 8GB LD4BU008G-R3200GSXG 1x8 3200Mhz DDR4 Memory Dark Grey</h2>
+<p>₱ 300.00</p>
+<button onclick="addToCart('Lexar Thor 8GB LD4BU008G-R3200GSXG 1x8 3200Mhz DDR4 Memory Dark Grey', 300)">add to Cart</button></center>
+</div>
+</div>
+<div class="product-card">
+<img src="https://easypc.com.ph/cdn/shop/products/MSI_A520m_Pro-a_540x.jpg?v=1697179415">
+<div class="product-card-content">
+<center><h2>MSI A520m Pro AMD Am4 Ddr4 Micro-ATX PCB Gaming Motherboard</h2>
+<p>₱ 3,250.00</p>
+<button onclick="addToCart('MSI A520m Pro AMD Am4 Ddr4 Micro-ATX PCB Gaming Motherboard', 3250)">Add to Cart</button></center>
+</div>
+</div>
+
+</div><br>
+<div class="shopping-cart" id="shoppingCart">
+  <h2>Shopping Cart</h2>
+  <ul id="cartItems"></ul>
+  <button class="checkout-button" onclick="checkout()">Checkout</button>
+  <button class="print-button" onclick="printReceipt()">Print Receipt</button>
+</div>
+</div>
+
+ <div class="footer"></div>
+
+    <script>
+
+      function addToCart(itemName, price) {
+     
+        var li = document.createElement("li");
+     
+        li.textContent = itemName + " - $" + price;
+ 
+        document.getElementById("cartItems").appendChild(li);
+      }
+
+
+      function checkout() {
+
+        alert("Checkout functionality is not implemented yet.");
+      }
+
+      function printReceipt() {
+      
+        var cartContent = document.getElementById("cartItems").innerText;
+    
+        var dateTime = new Date().toLocaleString();
+     
+        var printWindow = window.open('', '_blank');
+     
+        printWindow.document.write("<h2>Receipt</h2>");
+        printWindow.document.write("<p>Date: " + dateTime + "</p>");
+        printWindow.document.write("<p>" + cartContent + "</p>");
+      
+        printWindow.print();
+      }
+    </script>
+  </div>
+</body>
+</html>
+
+
