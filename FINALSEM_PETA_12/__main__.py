@@ -1,6 +1,14 @@
-# SUPPORTED FOR PYTHON 3.10+ cuz of the "match" keyword
+#########################################################
+#       STUDENT ENROLLMENT PETA PROJECT (PYTHON)        #
+#                                                       #
+#        created by Kean James Pepito (Ichimaki)        #
+#                      (2024)                           #
+#                                                       #
+#"SUPPORTED FOR PYTHON 3.10+ cuz of the "match" keyword"#
+#########################################################
+
 import os
-import msvcrt # since nasa windows naman tayo at hindi linux-based os 🥰
+import msvcrt # since were on windows not on Linux-based os 🥰
 import datetime
 from time import sleep
 
@@ -29,10 +37,12 @@ def clearConsole():
     elif os.name=='posix': os.system("clear") #Linux based system
     else: print('\n'*120)
 
+
+
 def start():
     clearConsole()
     print("""
-    STUDENT ENROLLMENT APPLICATION
+    STUDENT ENROLLMENT APPLICATION (PYTHON)
 
     1. Enroll Student
     2. Check Enrolled
@@ -59,13 +69,17 @@ def start():
             RemoveEnrolled()
         case 4:
             exit()
+        case _:
+            print("Please select from the options")
+            sleep(1)
+            start()
 
 
 
 def Enrollment():
     clearConsole()
     print("""
-    STUDENT ENROLLMENT APPLICATION
+    STUDENT ENROLLMENT APPLICATION (PYTHON)
 
 ENROLL A STUDENT:
     """)
@@ -111,7 +125,7 @@ def CheckEnrolled():
     
     clearConsole()
     print("""
-    STUDENT ENROLLMENT APPLICATION
+    STUDENT ENROLLMENT APPLICATION (PYTHON)
 
 CHECK ENROLLED STUDENTS
     """)
@@ -124,18 +138,25 @@ CHECK ENROLLED STUDENTS
         keys.append(student)
 
     # believe me, it is very weird its not updating when I just directly
-    # put Iteration+1 on the for loop
+    # put Iteration+1 on the for-loop
     iterations=iterations+1
     print("{}. go back to menu".format(iterations))
 
-    studentNum = input("Pick student number: ")
+    while True:
+        studentNum = input("Pick student number: ")
+        if studentNum.isnumeric() == False:
+            print("input should be numeric!")
+            sleep(0.5)
+            continue
 
-    if studentNum.isnumeric() == False and studentNum < students.__len__():
-        print("Number doesn't exist in the selection!")
-        sleep(2)
-        CheckEnrolled()
+        studentNum = int(studentNum)
 
-    studentNum = int(studentNum)
+        if studentNum == 0 or studentNum > students.__len__()+1:
+            print("Number doesn't exist in the selection!")
+            sleep(0.5)
+            continue
+
+        break
 
     if studentNum == iterations:
         start()
@@ -159,11 +180,15 @@ press any key to continue...""".format(
 
 
 def RemoveEnrolled():
+    if students.__len__()==0:
+        print("No enrolled student yet!")
+        sleep(2)
+        start()
     clearConsole()
     print("""
-    STUDENT ENROLLMENT APPLICATION
+    STUDENT ENROLLMENT APPLICATION (PYTHON)
 
-CHECK ENROLLED STUDENTS
+REMOVE ENROLLED STUDENTS
     """)
 
     iterations = 0
@@ -176,14 +201,29 @@ CHECK ENROLLED STUDENTS
     iterations=iterations+1
     print("{}. go back to menu".format(iterations))
 
-    studentNum = input("Pick student number: ")
+    while True:
+        studentNum = input("Pick student number: ")
+        if studentNum.isnumeric() == False:
+            print("input should be numeric!")
+            sleep(0.5)
+            continue
 
-    if studentNum.isnumeric() == False and studentNum < students.__len__():
-        print("Number doesn't exist in the selection!")
+        studentNum = int(studentNum)
+
+        if studentNum == 0 or studentNum > students.__len__()+1:
+            print("Number doesn't exist in the selection!")
+            sleep(0.5)
+            continue
+
+        break
+    
+    if studentNum == iterations:
+        start()
+    else:
+        del students[keys[studentNum-1]]
+        print("STUDENT REMOVED!")
         sleep(2)
         RemoveEnrolled()
 
-    studentNum = int(studentNum)
-    
 
 start()
