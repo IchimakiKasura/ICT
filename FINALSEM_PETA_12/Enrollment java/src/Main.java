@@ -6,21 +6,15 @@
 //                      (2024)                           //
 //                                                       //
 ///////////////////////////////////////////////////////////
-import java.util.*;
-
 public class Main {
 
-    static Scanner userInput = new Scanner(System.in);
+    public static final String GRADE = "GRADE_LEVEL";
+    public static final String SECTI0N = "SECTION_ASSIGNED";
+    public static final String DATE = "ENROLL_DATE";
 
     public static void main(String[] args) throws Exception {
         start();
     }
-
-    static void clearConsole()
-    {
-        System.out.println("\033[H\033[2J");  
-        System.out.flush();  
-    } 
 
     // heh
     static Boolean numericReceiver(String value)
@@ -35,12 +29,9 @@ public class Main {
 
     static void start() throws Exception
     {
-        clearConsole();
+        TextOutputs.clear();
         TextOutputs.Text_MainMenu();
-
-        System.out.print("input number: ");
-        String answer = userInput.next();
-
+        String answer = TextOutputs.MessageInput("input number: ", false);
         if(!numericReceiver(answer))
         {
             console.log("Given input is not a number!");
@@ -63,17 +54,13 @@ public class Main {
 
     static void Enrollment() throws Exception
     {
-        clearConsole();
+        TextOutputs.clear();
         TextOutputs.Text_EnrollMenu();
 
-        System.out.print("NAME: ");
-        userInput.nextLine(); // weird bug fix
-        String st_name = userInput.nextLine();
-        System.out.print("GRADE LEVEL (1-12): ");
-        String st_grade = userInput.next();
-        System.out.print("ASSIGN SECTION: ");
-        userInput.nextLine(); // weird bug fix
-        String st_section = userInput.nextLine();
+        // there's a weird bug where it needs to have a double input idk
+        String st_name = TextOutputs.MessageInput("NAME: ", true);
+        String st_grade = TextOutputs.MessageInput("GRADE LEVEL (1-12): ", false);
+        String st_section = TextOutputs.MessageInput("ASSIGN SECTION: ", true);
         
         int st_grade_int;
 
@@ -83,19 +70,15 @@ public class Main {
             {
                 console.log("Name is empty!");
                 Thread.sleep(500);
-                System.out.print("RE-ENTER NAME: ");
-                st_name = userInput.nextLine();
+                st_name = TextOutputs.MessageInput("RE-ENTER NAME: ", false);
                 continue;
             }
-            
             // number something
             if(!numericReceiver(st_grade))
             {
                 console.log("Given input is not a number!");
                 Thread.sleep(500);
-                System.out.print("RE-ENTER GRADE LEVEL (1-12): ");
-                userInput.nextLine(); // weird bug fix
-                st_grade = userInput.next();
+                st_grade = TextOutputs.MessageInput("RE-ENTER GRADE LEVEL (1-12): ", false);
                 continue;
             }
 
@@ -105,18 +88,15 @@ public class Main {
             {
                 console.log("Grade level should be 1 to 12");
                 Thread.sleep(500);
-                System.out.print("RE-ENTER GRADE LEVEL (1-12): ");
-                st_grade = userInput.next();
+                st_grade = TextOutputs.MessageInput("RE-ENTER GRADE LEVEL (1-12): ", false);
                 continue;
             }
-            
             // section empty something
             if(st_section.isEmpty())
             {
                 console.log("Section is empty!");
                 Thread.sleep(500);
-                System.out.print("RE-ENTER SECTION: ");
-                st_section = userInput.nextLine();
+                st_section = TextOutputs.MessageInput("RE-ENTER SECTION: ", false);
                 continue;
             }
 
@@ -139,7 +119,7 @@ public class Main {
             start();
         }
 
-        clearConsole();
+        TextOutputs.clear();
         TextOutputs.Text_CheckMenu();
 
         int studentNum_int, i = 1;
@@ -148,8 +128,7 @@ public class Main {
         console.log((i++) + ". go back to menu");
         
         while(true) {
-            System.out.print("Pick student number: ");
-            String studentNum = userInput.next(); 
+            String studentNum = TextOutputs.MessageInput("Pick student number: ", false); 
             if(!numericReceiver(studentNum))
             {
                 console.log("input should be numeric!");
@@ -185,7 +164,7 @@ public class Main {
             start();
         }
 
-        clearConsole();
+        TextOutputs.clear();
         TextOutputs.Text_RemoveMenu();
 
         int studentNum_int, i = 1;
@@ -194,8 +173,7 @@ public class Main {
         console.log((i++) + ". go back to menu");
         
         while(true) {
-            System.out.print("Pick student number: ");
-            String studentNum = userInput.next(); 
+            String studentNum = TextOutputs.MessageInput("Pick student number: ", false); 
             if(!numericReceiver(studentNum))
             {
                 console.log("input should be numeric!");

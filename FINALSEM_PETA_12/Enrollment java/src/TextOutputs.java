@@ -1,7 +1,9 @@
 import java.util.HashMap;
+import java.util.Scanner;
 
 public class TextOutputs {
 
+    static Scanner value = new Scanner(System.in);
     // FIX?:
     // bruh the triple quote/Text block wont work tf
     // it says source level 15 above only??!
@@ -49,9 +51,28 @@ public class TextOutputs {
     {
         HashMap<String, Object> data = Student.Students.get(student);
         console.log("\n\tSTUDENT NAME\t:\t"     +   student                     );
-        console.log("\tGRADE LEVEL\t:\t"        +   data.get(glbStr.GRADE)      );
-        console.log("\tSECTION ASSIGNED:\t"     +   data.get(glbStr.SECTI0N)    );
-        console.log("\tDATE ENROLLED\t:\t"      +   data.get(glbStr.DATE)       + "\n");
+        console.log("\tGRADE LEVEL\t:\t"        +   data.get(Main.GRADE)      );
+        console.log("\tSECTION ASSIGNED:\t"     +   data.get(Main.SECTI0N)    );
+        console.log("\tDATE ENROLLED\t:\t"      +   data.get(Main.DATE)       + "\n");
         console.log("press enter to continue...");
     }
+
+    //wewo
+    public static String MessageInput(String message, boolean bugFix)
+    {
+        if(bugFix)
+        {
+            System.out.print(message);
+            value.nextLine();           // This is the bug fix idk
+            return value.nextLine();
+        }
+        
+        System.out.print(message);
+        return value.next();
+    }
+    public static void clear()
+    {
+        System.out.println("\033[H\033[2J");  
+        System.out.flush();
+    } 
 }

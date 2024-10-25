@@ -19,9 +19,9 @@ public class Student {
     public void Add()
     {
         HashMap<String, Object> StudentValue = new HashMap<String, Object>();
-        StudentValue.put(glbStr.GRADE, Grade);
-        StudentValue.put(glbStr.SECTI0N, Section);
-        StudentValue.put(glbStr.DATE, Year.now());
+        StudentValue.put(Main.GRADE, Grade);
+        StudentValue.put(Main.SECTI0N, Section);
+        StudentValue.put(Main.DATE, Year.now());
 
         Students.put(Name, StudentValue);
     }
