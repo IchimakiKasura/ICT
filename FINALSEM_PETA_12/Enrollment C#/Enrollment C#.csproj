@@ -5,7 +5,17 @@
     <TargetFramework>net8.0</TargetFramework>
     <RootNamespace>Enrollment_C_</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
+    <Nullable>disable</Nullable>
+
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>True</Optimize>
+    <ProduceReferenceAssembly>False</ProduceReferenceAssembly>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <PublishProtocol>FileSystem</PublishProtocol>
+    <SelfContained>False</SelfContained>
+    <PublishSingleFile>True</PublishSingleFile>
+    <PublishReadyToRun>True</PublishReadyToRun>
+    <DebugType>none</DebugType>
   </PropertyGroup>
 
 </Project>

@@ -6,27 +6,24 @@
 //                      (2024)                           //
 //                                                       //
 ///////////////////////////////////////////////////////////
-
 /// USES C#11+ WITH .NET 8
-
-#nullable disable
 namespace Enrollment_C_;
-
 class Program
 {
-    static void Main(String[] args)
-    {
+    public const String
+        GRADE = "GRADE_LEVEL",
+        SECTION = "SECTION_ASSIGNED",
+        DATE = "ENROLL_DATE";
+
+    static void Main(String[] args) =>
         start();
-        Console.WriteLine(Student.Students.Count);
-    }
 
     static void start()
     {
         Console.Clear();
-        TextOutputs.Text_MainMenu();
+        TextIO.Text_MainMenu();
 
-        Console.Write("input number: ");
-        string answer = Console.ReadLine();
+        TextIO.MessageInput("input number: ", out string answer);
 
         if(!int.TryParse(answer, out int answer_int))
         {
@@ -52,11 +49,11 @@ class Program
     static void Enrollment() 
     {
         Console.Clear();
-        TextOutputs.Text_EnrollMenu();
+        TextIO.MainTitle("ENROLL A STUDENT:\n");
 
-        TextOutputs.MessageInput("NAME: ", out string st_name);
-        TextOutputs.MessageInput("GRADE LEVEL (1-12): ", out string st_grade);
-        TextOutputs.MessageInput("ASSIGN SECTION: ", out string st_section);
+        TextIO.MessageInput("NAME: ", out string st_name);
+        TextIO.MessageInput("GRADE LEVEL (1-12): ", out string st_grade);
+        TextIO.MessageInput("ASSIGN SECTION: ", out string st_section);
 
         int st_grade_int;
 
@@ -67,7 +64,7 @@ class Program
             {
                 Console.WriteLine("Name is empty!");
                 Thread.Sleep(500);
-                TextOutputs.ReMessageInput("RE-ENTER NAME: ", ref st_name);
+                TextIO.ReMessageInput("RE-ENTER NAME: ", ref st_name);
                 continue;
             }
 
@@ -76,7 +73,7 @@ class Program
             {
                 Console.WriteLine("Given input is not a number!");
                 Thread.Sleep(500);
-                TextOutputs.ReMessageInput("RE-ENTER GRADE LEVEL (1-12):", ref st_grade);
+                TextIO.ReMessageInput("RE-ENTER GRADE LEVEL (1-12):", ref st_grade);
                 continue;
             }
 
@@ -84,7 +81,7 @@ class Program
             {
                 Console.WriteLine("Grade level should be 1 to 12");
                 Thread.Sleep(500);
-                TextOutputs.ReMessageInput("RE-ENTER GRADE LEVEL (1-12):", ref st_grade);
+                TextIO.ReMessageInput("RE-ENTER GRADE LEVEL (1-12):", ref st_grade);
                 continue;
             }
 
@@ -93,7 +90,7 @@ class Program
             {
                 Console.WriteLine("Section is empty!");
                 Thread.Sleep(500);
-                TextOutputs.ReMessageInput("RE-ENTER SECTION: ", ref st_section);
+                TextIO.ReMessageInput("RE-ENTER SECTION: ", ref st_section);
                 continue;
             }
 
@@ -117,9 +114,8 @@ class Program
         }
 
         Console.Clear();
-        TextOutputs.Text_CheckMenu();
+        TextIO.MainTitle("CHECK ENROLLED STUDENT:\n");
 
-        string studentNum;
         int studentNum_int, i = 1;
         foreach(dynamic student in Student.Students)
             Console.WriteLine($"{i++}. {student.Key}");
@@ -127,7 +123,7 @@ class Program
 
         while(true)
         {
-            TextOutputs.MessageInput("Pick student number: ", out studentNum);
+            TextIO.MessageInput("Pick student number: ", out string studentNum);
             if(!int.TryParse(studentNum, out studentNum_int))
             {
                 Console.WriteLine("input should be numeric!");
@@ -144,7 +140,7 @@ class Program
             break;
         }
         if(studentNum_int.Equals(i)) start();
-        TextOutputs.Text_StudentInfo(Student.Students.Keys.ElementAt(studentNum_int-1));
+        TextIO.Text_StudentInfo(Student.Students.Keys.ElementAt(studentNum_int-1));
         Console.ReadKey();
 
         CheckEnrolled();
@@ -160,7 +156,7 @@ class Program
         }
 
         Console.Clear();
-        TextOutputs.Text_RemoveMenu();
+        TextIO.MainTitle("REMOVE ENROLLED STUDENTS:\n");
 
         string studentNum;
         int studentNum_int, i = 1;
@@ -170,7 +166,7 @@ class Program
 
         while(true)
         {
-            TextOutputs.MessageInput("Pick student number: ", out studentNum);
+            TextIO.MessageInput("Pick student number: ", out studentNum);
             if(!int.TryParse(studentNum, out studentNum_int))
             {
                 Console.WriteLine("input should be numeric!");

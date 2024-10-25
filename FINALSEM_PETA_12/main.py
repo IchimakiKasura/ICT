@@ -5,7 +5,7 @@
 #        created by Kean James Pepito (Ichimaki)        #
 #                      (2024)                           #
 #                                                       #
-######################################################### PYTHON 3.10 ABOVE SUPPORT
+######################################################### PYTHON 3.10 BELOW SUPPORT
 from Students import Student
 from TextOutputs import TextIO
 from time import sleep
@@ -25,16 +25,16 @@ def __init__():
         print("Given input is not a number!")
         sleep(2)
         __init__()
-    
-    match int(answer):      # only works on Python 3.10+
-        case 1: Enrollment()
-        case 2: CheckEnrolled()
-        case 3: RemoveEnrolled()
-        case 4: exit()
-        case _:
-            print("Please select from the options")
-            sleep(1)
-            __init__()
+
+    answer = int(answer)
+    if answer is 1: Enrollment()
+    elif answer is 2: CheckEnrolled()
+    elif answer is 3: RemoveEnrolled()
+    elif answer is 4: exit()
+    else:
+        print("Please select from the options")
+        sleep(1)
+        __init__()
 
 def Enrollment():
     TextIO.clear()
