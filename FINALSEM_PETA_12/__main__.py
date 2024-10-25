@@ -1,35 +1,48 @@
 #########################################################
+#                                                       #
 #       STUDENT ENROLLMENT PETA PROJECT (PYTHON)        #
 #                                                       #
 #        created by Kean James Pepito (Ichimaki)        #
 #                      (2024)                           #
 #                                                       #
-#"SUPPORTED FOR PYTHON 3.10+ cuz of the "match" keyword"#
 #########################################################
+
+# Preferred to be run on windows CMD to avoid weird bugs lmao
 
 import os
 import msvcrt # since were on windows not on Linux-based os 🥰
 import datetime
 from time import sleep
 
-# hashmap or what u call "Dictionary"
-#
-# template:
-#   "student_name":
-#   {
-#       "GRADE_LEVEL": 0
-#       "SECTION_ASSIGNED": na
-#       "ENROLL_DATE": <- auto generated
-#   },
-students = {
-    "sample":
-    {
-        "GRADE_LEVEL": 0,
-        "SECTION_ASSIGNED": "lmao",
-        "ENROLL_DATE": "lmao"
+# Student class
+class Student:
+    students = {
+        # "sample":
+        # {
+        #     "GRADE_LEVEL": 0,
+        #     "SECTION_ASSIGNED": "lmao",
+        #     "ENROLL_DATE": 2024
+        # }
     }
-}
 
+    def __init__(self, name, grade=None, section=None):
+        self.name = name
+        self.grade = grade
+        self.section = section
+
+    def add(self):
+        Student.students[self.name] = {
+            "GRADE_LEVEL": self.grade,
+            "SECTION_ASSIGNED": self.section,
+            "ENROLL_DATE": datetime.date.today().year
+        }
+
+    def remove(self):
+        del Student.students[self.name]
+
+    def totalStudent():
+        return Student.students.__len__()
+    
 # cross-platform console clear cuz I work using bash, so "cls" does not work on me
 # cuz it only works on CMD or windows machines, though I use windows, kinda ironic lmao
 def clearConsole():
@@ -38,12 +51,13 @@ def clearConsole():
     else: print('\n'*120)
 
 
-
-def start():
+def __init__():
     clearConsole()
-    print("""
+    print(f"""
     STUDENT ENROLLMENT APPLICATION (PYTHON)
 
+    Current Students Enrolled: {Student.totalStudent()}
+          
     1. Enroll Student
     2. Check Enrolled
     3. Remove Student
@@ -53,14 +67,13 @@ def start():
     answer = input("input number: ")
 
     # check if its numeric
-    if answer.isnumeric():
-        answer = int(answer)
-    else: 
+    if not answer.isnumeric():
         print("Given input is not a number!")
         sleep(2)
-        start()
+        __init__()
 
-    match answer:
+    # only works on Python 3.10+
+    match int(answer):
         case 1:
             Enrollment()
         case 2:
@@ -72,15 +85,27 @@ def start():
         case _:
             print("Please select from the options")
             sleep(1)
-            start()
+            __init__()
 
+    # uncomment below and comment above if lower than python 3.10
+    # answer = int(answer)
+    # if answer == 1: Enrollment()
+    # elif answer == 2: CheckEnrolled()
+    # elif answer == 3: RemoveEnrolled()
+    # elif answer == 4: exit()
+    # else:
+    #     print("Please select from the options")
+    #     sleep(1)
+    #     __init__()
 
 
 def Enrollment():
     clearConsole()
-    print("""
+    print(f"""
     STUDENT ENROLLMENT APPLICATION (PYTHON)
 
+    Current Students Enrolled: {Student.totalStudent()}
+          
 ENROLL A STUDENT:
     """)
     st_name = input("NAME: ")
@@ -89,57 +114,67 @@ ENROLL A STUDENT:
     
     # check grade level
     while True:
-        if st_grade.isnumeric() == False:
+        # name empty something
+        if not st_name.strip():
+            print("Name is empty!")
+            sleep(0.5)
+            st_name = input("RE-ENTER NAME: ")
+            continue
+
+        # numer something
+        if not st_grade.isnumeric():
             print("Grade level should be numeric")
             sleep(0.5)
             st_grade = input("RE-ENTER GRADE LEVEL (1-12): ")
             continue
 
-        st_grade = int(st_grade)
+        st_grade_int = int(st_grade)
 
-        if st_grade > 12 or st_grade == 0:
+        if st_grade_int > 12 or st_grade_int is 0:
             print("Grade level should be 1 to 12")
             sleep(0.5)
             st_grade = input("RE-ENTER GRADE LEVEL (1-12): ")
             continue
 
+        # section empty something
+        if not st_section.strip():
+            print("Section is empty!")
+            sleep(0.5)
+            st_section = input("RE-ENTER SECTION: ")
+            continue
+
         break
             
     # add student to hashmap
-    students[st_name] = {
-        "GRADE_LEVEL": st_grade,
-        "SECTION_ASSIGNED": st_section,
-        "ENROLL_DATE": datetime.date.today().year
-    }
+    Student(st_name, st_grade, st_section).add()
     print("STUDENT ENROLLED!")
     sleep(1)
-    start()
-
+    __init__()
 
 
 def CheckEnrolled():
-    if students.__len__()==0:
+    if Student.students.__len__() is 0:
         print("No enrolled student yet!")
         sleep(2)
-        start()
+        __init__()
     
     clearConsole()
-    print("""
+    print(f"""
     STUDENT ENROLLMENT APPLICATION (PYTHON)
 
-CHECK ENROLLED STUDENTS
+    Current Students Enrolled: {Student.totalStudent()}
+          
+CHECK ENROLLED STUDENTS:
     """)
 
     iterations = 0
     keys = []
-    for student in students:
-        iterations=iterations+1
+    for student in Student.students:
+        iterations+=1
         print("{}. {}".format(iterations,student))
         keys.append(student)
 
-    # believe me, it is very weird its not updating when I just directly
-    # put Iteration+1 on the for-loop
-    iterations=iterations+1
+    iterations+=1
     print("{}. go back to menu".format(iterations))
 
     while True:
@@ -151,54 +186,55 @@ CHECK ENROLLED STUDENTS
 
         studentNum = int(studentNum)
 
-        if studentNum == 0 or studentNum > students.__len__()+1:
+        if studentNum is 0 or studentNum > Student.totalStudent()+1:
             print("Number doesn't exist in the selection!")
             sleep(0.5)
             continue
 
         break
+        
+    if studentNum is iterations:
+        __init__()
 
-    if studentNum == iterations:
-        start()
-    else:
-        print("""
-    STUDENT NAME: {}
-    GRADE LEVEL: {}
-    SECTION ASSIGNED: {}
-    DATE ENROLLED: {}
+    print("""
+    STUDENT NAME:       {}
+    GRADE LEVEL:        {}
+    SECTION ASSIGNED:   {}
+    DATE ENROLLED:      {}
               
 press any key to continue...""".format(
             keys[studentNum-1],
-            students[keys[studentNum-1]]["GRADE_LEVEL"],
-            students[keys[studentNum-1]]["SECTION_ASSIGNED"],
-            students[keys[studentNum-1]]["ENROLL_DATE"],
+            Student.students[keys[studentNum-1]]["GRADE_LEVEL"],
+            Student.students[keys[studentNum-1]]["SECTION_ASSIGNED"],
+            Student.students[keys[studentNum-1]]["ENROLL_DATE"],
         ))
 
-        msvcrt.getch()
-        CheckEnrolled()
-
+    msvcrt.getch()
+    CheckEnrolled()
 
 
 def RemoveEnrolled():
-    if students.__len__()==0:
+    if Student.totalStudent() is 0:
         print("No enrolled student yet!")
         sleep(2)
-        start()
+        __init__()
     clearConsole()
-    print("""
+    print(f"""
     STUDENT ENROLLMENT APPLICATION (PYTHON)
 
-REMOVE ENROLLED STUDENTS
+    Current Students Enrolled: {Student.totalStudent()}
+          
+REMOVE ENROLLED STUDENTS:
     """)
 
     iterations = 0
     keys = []
-    for student in students:
-        iterations=iterations+1
+    for student in Student.students:
+        iterations+=1
         print("{}. {}".format(iterations,student))
         keys.append(student)
 
-    iterations=iterations+1
+    iterations+=1
     print("{}. go back to menu".format(iterations))
 
     while True:
@@ -210,20 +246,19 @@ REMOVE ENROLLED STUDENTS
 
         studentNum = int(studentNum)
 
-        if studentNum == 0 or studentNum > students.__len__()+1:
+        if studentNum is 0 or studentNum > Student.totalStudent()+1:
             print("Number doesn't exist in the selection!")
             sleep(0.5)
             continue
 
         break
     
-    if studentNum == iterations:
-        start()
-    else:
-        del students[keys[studentNum-1]]
-        print("STUDENT REMOVED!")
-        sleep(2)
-        RemoveEnrolled()
+    if studentNum is iterations:
+        __init__()
+    
+    Student(keys[studentNum-1]).remove()
+    print("STUDENT REMOVED!")
+    sleep(2)
+    RemoveEnrolled()
 
-
-start()
+__init__()
