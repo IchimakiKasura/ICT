@@ -31,7 +31,7 @@ public class Main {
     {
         TextOutputs.clear();
         TextOutputs.Text_MainMenu();
-        String answer = TextOutputs.MessageInput("input number: ", false);
+        String answer = TextOutputs.MessageInput("input number: ");
         if(!numericReceiver(answer))
         {
             console.log("Given input is not a number!");
@@ -58,19 +58,19 @@ public class Main {
         TextOutputs.Text_EnrollMenu();
 
         // there's a weird bug where it needs to have a double input idk
-        String st_name = TextOutputs.MessageInput("NAME: ", true);
-        String st_grade = TextOutputs.MessageInput("GRADE LEVEL (1-12): ", false);
-        String st_section = TextOutputs.MessageInput("ASSIGN SECTION: ", true);
+        String st_name = TextOutputs.MessageInput("NAME: ");
+        String st_grade = TextOutputs.MessageInput("GRADE LEVEL (1-12): ");
+        String st_section = TextOutputs.MessageInput("ASSIGN SECTION: ");
         
         int st_grade_int;
 
-        while(true) {
+        for(;;) { // shorter for "while(true)"
             // name empty something
             if(st_name.isEmpty())
             {
                 console.log("Name is empty!");
                 Thread.sleep(500);
-                st_name = TextOutputs.MessageInput("RE-ENTER NAME: ", false);
+                st_name = TextOutputs.MessageInput("RE-ENTER NAME: ");
                 continue;
             }
             // number something
@@ -78,17 +78,15 @@ public class Main {
             {
                 console.log("Given input is not a number!");
                 Thread.sleep(500);
-                st_grade = TextOutputs.MessageInput("RE-ENTER GRADE LEVEL (1-12): ", false);
+                st_grade = TextOutputs.MessageInput("RE-ENTER GRADE LEVEL (1-12): ");
                 continue;
             }
-
             st_grade_int = Integer.parseInt(st_grade);
-
             if(st_grade_int > 12 || st_grade_int == 0)
             {
                 console.log("Grade level should be 1 to 12");
                 Thread.sleep(500);
-                st_grade = TextOutputs.MessageInput("RE-ENTER GRADE LEVEL (1-12): ", false);
+                st_grade = TextOutputs.MessageInput("RE-ENTER GRADE LEVEL (1-12): ");
                 continue;
             }
             // section empty something
@@ -96,10 +94,9 @@ public class Main {
             {
                 console.log("Section is empty!");
                 Thread.sleep(500);
-                st_section = TextOutputs.MessageInput("RE-ENTER SECTION: ", false);
+                st_section = TextOutputs.MessageInput("RE-ENTER SECTION: ");
                 continue;
             }
-
             break;
         }
     
@@ -127,8 +124,9 @@ public class Main {
             console.log(i + ". " + Student.Students.keySet().toArray()[i-1]);
         console.log((i++) + ". go back to menu");
         
-        while(true) {
-            String studentNum = TextOutputs.MessageInput("Pick student number: ", false); 
+        for(;;) { // shorter for "while(true)"
+            System.out.flush();
+            String studentNum = TextOutputs.MessageInput("Pick student number: "); 
             if(!numericReceiver(studentNum))
             {
                 console.log("input should be numeric!");
@@ -144,13 +142,12 @@ public class Main {
                 Thread.sleep(500);
                 continue;
             }
-
             break;
         }
 
         if(studentNum_int+1 == i) start();
         TextOutputs.Text_StudentInfo(Student.Students.keySet().toArray()[studentNum_int-1].toString());
-        System.in.read();
+        console.pause();
 
         CheckEnrolled();
     }
@@ -172,24 +169,21 @@ public class Main {
             console.log(i + ". " + Student.Students.keySet().toArray()[i-1]);
         console.log((i++) + ". go back to menu");
         
-        while(true) {
-            String studentNum = TextOutputs.MessageInput("Pick student number: ", false); 
+        for(;;) { // shorter for "while(true)"
+            String studentNum = TextOutputs.MessageInput("Pick student number: "); 
             if(!numericReceiver(studentNum))
             {
                 console.log("input should be numeric!");
                 Thread.sleep(500);
                 continue;
             }
-
             studentNum_int = Integer.parseInt(studentNum);
-
             if(studentNum_int == 0 || studentNum_int > Student.TotalStudents()+1)
             {
                 console.log("Number doesn't exist in the selection!");
                 Thread.sleep(500);
                 continue;
             }
-
             break;
         }
 

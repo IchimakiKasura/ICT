@@ -41,11 +41,11 @@ public sealed class TextIO {
     public static void MessageInput(string Message, out string output)
     {
         Console.Write(Message);
-        output = Console.ReadLine();
+        output = Console.ReadLine().Trim();
     }
     public static void ReMessageInput(string Message, ref string output)
     {
         Console.Write(Message);
-        output = Console.ReadLine();
+        output = Console.ReadLine().Trim();
     }
 }

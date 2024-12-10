@@ -6,6 +6,8 @@
 //                      (2024)                           //
 //                                                       //
 ///////////////////////////////////////////////////////////
+
+
 /// USES C#11+ WITH .NET 8
 namespace Enrollment_C_;
 class Program
@@ -60,7 +62,7 @@ class Program
         while(true)
         {
             // name something
-            if(String.IsNullOrEmpty(st_name.Trim()))
+            if(String.IsNullOrEmpty(st_name))
             {
                 Console.WriteLine("Name is empty!");
                 Thread.Sleep(500);
@@ -68,7 +70,7 @@ class Program
                 continue;
             }
 
-            // number somethinf
+            // number something
             if(!int.TryParse(st_grade, out st_grade_int))
             {
                 Console.WriteLine("Given input is not a number!");
@@ -86,7 +88,7 @@ class Program
             }
 
             // section something
-            if(String.IsNullOrEmpty(st_section.Trim()))
+            if(String.IsNullOrEmpty(st_section))
             {
                 Console.WriteLine("Section is empty!");
                 Thread.Sleep(500);
@@ -117,7 +119,7 @@ class Program
         TextIO.MainTitle("CHECK ENROLLED STUDENT:\n");
 
         int studentNum_int, i = 1;
-        foreach(dynamic student in Student.Students)
+        foreach(var student in Student.Students)
             Console.WriteLine($"{i++}. {student.Key}");
         Console.WriteLine($"{i++}. go back to menu");
 
@@ -182,12 +184,11 @@ class Program
             }
             break;
         }
-        
+
         if(studentNum_int.Equals(i)) start();
         Student.Students.Remove(Student.Students.Keys.ElementAt(studentNum_int-1));
         Console.WriteLine("STUDENT REMOVED");
         Thread.Sleep(200);
-
         RemoveEnrolled();
     }
 }

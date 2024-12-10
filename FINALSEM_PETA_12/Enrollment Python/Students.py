@@ -12,6 +12,6 @@ class Student:
             __main__.DATE: datetime.date.today().year
         }
     @staticmethod
-    def Remove(key): del Student.Student[key]
+    def Remove(key): del Student.Students[key]
     @staticmethod
     def TotalStudents(): return Student.Students.__len__()

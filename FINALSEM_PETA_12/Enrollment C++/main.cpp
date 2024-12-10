@@ -1,9 +1,10 @@
-#include <iostream>
+#include <CTime>
+#include "console.hpp"
+#include "students.hpp"
 
-using namespace std;
-
-int main(int argc, char *argv[])
+int main()
 {
-    system("PAUSE");
+    Student("Name", "9", "ICT").add();
+
     return EXIT_SUCCESS;
 }
